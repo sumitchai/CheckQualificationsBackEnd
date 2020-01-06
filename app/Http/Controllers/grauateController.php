@@ -8,8 +8,8 @@ use Illuminate\Support\Facades\DB;
 class grauateController extends Controller
 {
     public function seclectgrauate() {
-    $result=DB::select('select * from grauate');
-    return $result ;
+        $result=DB::select('SELECT COURSE_CODE,COURSE_ID FROM VW_VOQ_COURSE');
+        return $result ;
 }
 
 }
