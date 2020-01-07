@@ -11,7 +11,16 @@
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/tablefrom', function () {
+    return view('Tablefrom');
+});
+
 Route::get ('/db','grauateController@seclectgrauate');
+Route::get ('/db1','grauateController@seclectgrauate01');
+Route::get ('/db2','grauateController@seclectgrauate02');
