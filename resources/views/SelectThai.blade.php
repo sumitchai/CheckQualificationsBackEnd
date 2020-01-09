@@ -13,14 +13,14 @@
 <body>
 
 <div class="container">
-  <h2>Table</h2>
-  <p>The .table-responsive class creates a responsive table which will scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, there is no difference:</p>                                                                                      
+  <h2>นิสิตไทย</h2>                                                                               
   <div class="table-responsive">          
   <table class="table">
     <thead>
       <tr> 
-        <th>Name</th>
-        <th>Count</th> 
+        <th>ชื่อหลักสตูร</th>
+        <th>จำนวนนิสิต</th> 
+        <th>รายละเอียด</th>
       </tr>
     </thead>
     <tbody>
@@ -28,6 +28,7 @@
       <tr>
         <td>{{ $val->COURSE_NAME_TH }}</td>
         <td>{{ $val->COUNT_STUDENT }}</td> 
+        <td><button type="button" class="btn btn-primary btn-sm">ดูข้อมูล</button></td>
       </tr>
        @endforeach 
     </tbody>
