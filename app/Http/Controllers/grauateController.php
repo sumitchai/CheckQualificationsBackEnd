@@ -8,10 +8,14 @@ use DB;
 class grauateController extends Controller
 {
     public function seclectgrauate() {
-        $result=DB::select('SELECT VW_VOQ_COURSE.COURSE_NAME_EN,VW_VOQ_STD_GRADUATE.NAME_EN
-                            FROM VW_VOQ_STD_GRADUATE
-                            JOIN VW_VOQ_COURSE ON VW_VOQ_STD_GRADUATE.COURSE_ID=VW_VOQ_COURSE.COURSE_ID;');
-                return $result ;
+        $DEGREE_CODE =  (isset($_GET['degree']))?$_GET['degree']:3;
+        $result1=DB::select('SELECT VW_VOQ_COURSE.COURSE_NAME_TH,COUNT(VW_VOQ_COURSE.COURSE_NAME_TH) as COUNT_STUDENT
+                             FROM VW_VOQ_STD_GRADUATE 
+                             JOIN VW_VOQ_COURSE ON VW_VOQ_STD_GRADUATE.COURSE_ID=VW_VOQ_COURSE.COURSE_ID
+                             WHERE VW_VOQ_STD_GRADUATE.DEGREE_CODE = '.$DEGREE_CODE.'
+                             GROUP BY COURSE_NAME_TH'); 
+ 
+                 return  view('SelectThai',["course"=>$result1,'degree'=>$DEGREE_CODE]);
     }
 
     public function seclectgrauate01() {
@@ -23,7 +27,7 @@ class grauateController extends Controller
                             WHERE VW_VOQ_STD_GRADUATE.DEGREE_CODE = '.$DEGREE_CODE.'
                             GROUP BY COURSE_NAME_EN'); 
 
-                return  view('Home',["course"=>$result1,'degree'=>$DEGREE_CODE]);
+                return  view('SelectEN',["course"=>$result1,'degree'=>$DEGREE_CODE]);
     }
 
         public function seclectgrauate02() {

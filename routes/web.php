@@ -25,6 +25,10 @@ Route::get('/index', function () {
     return view('index');
 });
 
-Route::get ('/db','grauateController@seclectgrauate');
-Route::get ('/db1','grauateController@seclectgrauate01');
+Route::get('/Checkindividual', function () {
+    return view('Checkindividual');
+});
+
+Route::get ('/SelectThai','grauateController@seclectgrauate');
+Route::get ('/SelectEN','grauateController@seclectgrauate01');
 Route::get ('/db2','grauateController@seclectgrauate02');
