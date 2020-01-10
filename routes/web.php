@@ -13,7 +13,7 @@
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 
@@ -21,9 +21,6 @@ Route::get('/tablefrom', function () {
     return view('Tablefrom');
 });
 
-Route::get('/index', function () {
-    return view('index');
-});
 
 Route::get('/Checkindividual', function () {
     return view('Checkindividual');
