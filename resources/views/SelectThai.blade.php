@@ -51,7 +51,7 @@
             <tbody>
               @foreach ($course as $val) 
             <tr> 
-              <td class="body-item mbr-fonts-style display-7"></td>
+              <td class="body-item mbr-fonts-style display-7">1</td>
               <td class="body-item mbr-fonts-style display-7">{{ $val->COURSE_NAME_TH }}</td>
               <td class="body-item mbr-fonts-style display-7">{{ $val->COUNT_STUDENT }}</td>
               <td class="body-item mbr-fonts-style display-7">
