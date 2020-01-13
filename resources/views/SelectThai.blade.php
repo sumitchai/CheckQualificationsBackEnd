@@ -48,17 +48,10 @@
             <tbody>
               @foreach ($course as $val) 
             <tr> 
-<<<<<<< HEAD
-            <td class="body-item mbr-fonts-style display-7"></td>
-              <td class="body-item mbr-fonts-style display-7">{{ $val->COURSE_NAME_TH }}</td>
-              <td class="body-item mbr-fonts-style display-7">{{ $val->COUNT_STUDENT }}</td>
-              <td class="body-item mbr-fonts-style display-7">
-=======
               <td class="body-item mbr-fonts-style display-6"></td>
               <td class="body-item mbr-fonts-style display-6">{{ $val->COURSE_NAME_TH }}</td>
               <td class="body-item mbr-fonts-style display-6">{{ $val->COUNT_STUDENT }}</td>
               <td class="body-item mbr-fonts-style display-6">
->>>>>>> 330b57313dd20cae1f2bfe0b47276bc3c18949cc
                 <a href="#" class="badge badge-dark"> ดูข้อมูล</a>
               </td>
             </tr>
