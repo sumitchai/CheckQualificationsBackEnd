@@ -17,7 +17,7 @@
              
                 <div class="mbr-section-btn">
                     <a class="btn btn-md btn-bgr btn-primary display-4" href="CheckCourse.html">ตรวจสอบคุณวุฒิตามหลักสูตร</a> 
-                    <a class="btn btn-md btn-bgr btn-primary display-4" href="Checkindividual.html">ตรวจสอบคุณวุฒิรายบุคคล</a> 
+                    <a class="btn btn-md btn-bgr btn-primary display-4" href="/Checkindividual">ตรวจสอบคุณวุฒิรายบุคคล</a> 
                     
                 </div>
             </div>

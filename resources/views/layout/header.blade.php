@@ -9,7 +9,7 @@
   <link rel="shortcut icon" href="assets/images/up-536x536.png" type="image/x-icon">
   <meta name="description" content="">
   
-  <title>Home</title>
+  <title>Qualification | University Of Phayao</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
@@ -40,7 +40,7 @@
         <div class="menu-logo">
             <div class="navbar-brand">
                 <span class="navbar-logo">
-                    <a href="https://mobirise.co">
+                    <a href="/">
                         <img src="assets/images/up-536x536.png" alt="Mobirise" title="" style="height: 3.8rem;">
                     </a>
                 </span>
@@ -51,9 +51,9 @@
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item dropdown">
                     <a class="nav-link link text-black dropdown-toggle display-4" href="https://mobirise.co" data-toggle="dropdown-submenu" aria-expanded="true">เมนู</a>
               <div class="dropdown-menu">
-                <a class="text-black dropdown-item display-4" href="index.html">หน้าหลัก</a>
+                <a class="text-black dropdown-item display-4" href="/">หน้าหลัก</a>
                 <a class="text-black dropdown-item display-4" href="page5.html">ตรวจสอบคุณวุฒิตามหลักสูตร</a>
-                <a class="text-black dropdown-item display-4" href="Checkindividual.html">ตรวจสอบคุณวุฒิรายบุคคล</a>
+                <a class="text-black dropdown-item display-4" href="/Checkindividual">ตรวจสอบคุณวุฒิรายบุคคล</a>
                 
               </div>
                 </li>
@@ -66,7 +66,7 @@
               <li class="nav-item">
                 <a class="nav-link link text-black display-4" href="https://mobirise.co" aria-expanded="false">English</a>
               </li></ul>
-            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-success display-4" href="tel:+1-234-567-8901" data-toggle="modal" data-target="#myModal">
+            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-success display-4"  data-toggle="modal" data-target="#myModal">
                 <span class="mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn"></span>
                     <font face="MobiriseIcons"><span style="font-size: 25.6px;">ติดต่อเรา</span></font>
                 &nbsp;
