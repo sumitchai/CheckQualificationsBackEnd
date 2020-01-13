@@ -55,7 +55,7 @@
               <td class="body-item mbr-fonts-style display-7">{{ $val->COURSE_NAME_TH }}</td>
               <td class="body-item mbr-fonts-style display-7">{{ $val->COUNT_STUDENT }}</td>
               <td class="body-item mbr-fonts-style display-7">
-                <strong>ดูข้อมูล</strong>
+                <a href="#" class="badge badge-dark"> ดูข้อมูล</a>
               </td>
             </tr>
               @endforeach 
