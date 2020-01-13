@@ -51,11 +51,7 @@
             <tbody>
               @foreach ($course as $val) 
             <tr> 
-<<<<<<< HEAD
             <td class="body-item mbr-fonts-style display-7"></td>
-=======
-              <td class="body-item mbr-fonts-style display-7">1</td>
->>>>>>> b262f99fc381bb4e3f75baa966f7c35b1963545b
               <td class="body-item mbr-fonts-style display-7">{{ $val->COURSE_NAME_TH }}</td>
               <td class="body-item mbr-fonts-style display-7">{{ $val->COUNT_STUDENT }}</td>
               <td class="body-item mbr-fonts-style display-7">

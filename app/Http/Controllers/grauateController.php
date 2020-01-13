@@ -8,13 +8,8 @@ use DB;
 class grauateController extends Controller
 {
     public function seclectgrauate() {
-<<<<<<< HEAD
         $DEGREE_CODE =  (isset($_GET['degree']))?$_GET['degree']:0;
         $result1=DB::select('SELECT VW_VOQ_COURSE.COURSE_NAME_TH,COUNT(VW_VOQ_COURSE.COURSE_NAME_TH) as COUNT_STUDENT
-=======
-        $DEGREE_CODE =  (isset($_GET['degree']))?$_GET['degree']:3;
-        $result1=DB::select('SELECT VW_VOQ_COURSE.COURSE_NAME_TH,COUNT(VW_VOQ_COURSE.COURSE_NAME_TH) as COUNT_STUDENT 
->>>>>>> b262f99fc381bb4e3f75baa966f7c35b1963545b
                              FROM VW_VOQ_STD_GRADUATE 
                              JOIN VW_VOQ_COURSE ON VW_VOQ_STD_GRADUATE.COURSE_ID=VW_VOQ_COURSE.COURSE_ID
                              WHERE VW_VOQ_STD_GRADUATE.DEGREE_CODE = '.$DEGREE_CODE.'
