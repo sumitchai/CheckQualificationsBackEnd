@@ -19,7 +19,7 @@
             <div class="col-md-6"></div>
             <div class="col-md-6">
                 <div class="dataTables_filter">
-                  <label class="searchInfo mbr-fonts-style display-7">Search:</label>
+                  <label class="searchInfo mbr-fonts-style display-6">Search:</label>
                   <input class="form-control input-sm" disabled="">
                 </div>
             </div>
@@ -30,17 +30,17 @@
           <table class="table isSearch" cellspacing="0">
             <thead>
               <tr class="table-heads ">
-              <th class="head-item mbr-fonts-style display-7">studen id</th>
-              <th class="head-item mbr-fonts-style display-7">full name</th>
-              <th class="head-item mbr-fonts-style display-7">Description</th>
+              <th class="head-item mbr-fonts-style display-6">studen id</th>
+              <th class="head-item mbr-fonts-style display-6">full name</th>
+              <th class="head-item mbr-fonts-style display-6">Description</th>
               </tr>
             </thead>
 
             <tbody>
             <tr> 
-              <td class="body-item mbr-fonts-style display-7"></td>
-              <td class="body-item mbr-fonts-style display-7"></td>
-              <td class="body-item mbr-fonts-style display-7"></td>
+              <td class="body-item mbr-fonts-style display-6"></td>
+              <td class="body-item mbr-fonts-style display-6"></td>
+              <td class="body-item mbr-fonts-style display-6"></td>
             </tr>
             </tbody>
           </table>

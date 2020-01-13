@@ -19,7 +19,7 @@
             <div class="col-md-6"></div>
             <div class="col-md-6">
                 <div class="dataTables_filter">
-                  <label class="searchInfo mbr-fonts-style display-7">ค้นหา:</label>
+                  <label class="searchInfo mbr-fonts-style display-6">ค้นหา:</label>
                   <input class="form-control input-sm" disabled="">
                 </div>
             </div>
@@ -30,17 +30,17 @@
           <table class="table isSearch" cellspacing="0">
             <thead>
               <tr class="table-heads ">
-              <th class="head-item mbr-fonts-style display-7">รหัสนิสิต</th>
-              <th class="head-item mbr-fonts-style display-7">ชื่อ-นามสกุล</th>
-              <th class="head-item mbr-fonts-style display-7">ปีที่สำเร็จการศึกษา</th>
+              <th class="head-item mbr-fonts-style display-6">รหัสนิสิต</th>
+              <th class="head-item mbr-fonts-style display-6">ชื่อ-นามสกุล</th>
+              <th class="head-item mbr-fonts-style display-6">ปีที่สำเร็จการศึกษา</th>
               </tr>
             </thead>
 
             <tbody>
             <tr> 
-              <td class="body-item mbr-fonts-style display-7"></td>
-              <td class="body-item mbr-fonts-style display-7"></td>
-              <td class="body-item mbr-fonts-style display-7"></td>
+              <td class="body-item mbr-fonts-style display-6"></td>
+              <td class="body-item mbr-fonts-style display-6"></td>
+              <td class="body-item mbr-fonts-style display-6"></td>
             </tr>
             </tbody>
           </table>

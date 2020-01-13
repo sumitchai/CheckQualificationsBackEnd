@@ -19,7 +19,9 @@
   <link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
+  <link rel="stylesheet" href="/path/to/bootstrap.min.css">
+  <link rel="stylesheet" href="/path/to/bootstrap-submenu.min.css">
+
   
   
 </head>
@@ -121,6 +123,10 @@
   <script src="assets/datatables/data-tables.bootstrap4.min.js"></script>
   <script src="assets/theme/js/script.js"></script>
   <script src="assets/formoid/formoid.min.js"></script>
+  <script src="/path/to/jquery.min.js"></script>
+  <script src="/path/to/bootstrap.min.js"></script>
+  <script src="/path/to/bootstrap-submenu.min.js"></script>
+    
   
   
 </body>
