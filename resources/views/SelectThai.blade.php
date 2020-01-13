@@ -10,7 +10,7 @@
         <strong>ระดับการศึกษา : </strong><br>
         <div class="dropdown">
           <button class="btn btn-light  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            ปริญญาตรี
+            เลือกระดับปริญญา
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="SelectTH?degree=2">ปริญญาตรี</a>

@@ -8,6 +8,8 @@
   
   
   <div class="container container-table">
+
+
       <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5">Verification Of Qualifications<br></h2>
       <h3 class="mbr-section-subtitle mbr-fonts-style align-center pb-5 mbr-light display-5">
         <strong>Education Level : </strong><br>
@@ -21,6 +23,7 @@
             <a class="dropdown-item" href="SelectEN?degree=4">Doctoral Degree</a>
             <a class="dropdown-item" href="SelectEN?degree=5">Double Degree</a>
             <a class="dropdown-item" href="SelectEN?degree=6">Doctorate Program</a>
+
           </div>
         </div>
       </h3>
