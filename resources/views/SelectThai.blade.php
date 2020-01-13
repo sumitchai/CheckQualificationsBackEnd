@@ -13,7 +13,7 @@
         <strong>ระดับการศึกษา : </strong><br>
         <div class="dropdown">
           <button class="btn btn-light  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            ปริญญาตรี
+            เลือกระดับปริญญา
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="SelectTH?degree=2">ปริญญาตรี</a>
@@ -51,11 +51,11 @@
             <tbody>
               @foreach ($course as $val) 
             <tr> 
-              <td class="body-item mbr-fonts-style display-7"></td>
+            <td class="body-item mbr-fonts-style display-7"></td>
               <td class="body-item mbr-fonts-style display-7">{{ $val->COURSE_NAME_TH }}</td>
               <td class="body-item mbr-fonts-style display-7">{{ $val->COUNT_STUDENT }}</td>
               <td class="body-item mbr-fonts-style display-7">
-                <a href="#" class="badge badge-dark"> ดูข้อมูล</a>
+                <a href="/SelectThailist" class="badge badge-dark"> ดูข้อมูล</a>
               </td>
             </tr>
               @endforeach 

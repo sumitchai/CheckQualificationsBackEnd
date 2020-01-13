@@ -30,14 +30,16 @@
           <table class="table isSearch" cellspacing="0">
             <thead>
               <tr class="table-heads ">
-              <th class="head-item mbr-fonts-style display-7">รหัสนิสิต</th>
-              <th class="head-item mbr-fonts-style display-7">ชื่อ-นามสกุล</th>
-              <th class="head-item mbr-fonts-style display-7">ปีที่สำเร็จการศึกษา</th>
+                <th class="head-item mbr-fonts-style display-7">ลำดับ</th>
+                <th class="head-item mbr-fonts-style display-7">รหัสนิสิต</th>
+                <th class="head-item mbr-fonts-style display-7">ชื่อ-นามสกุล</th>
+                <th class="head-item mbr-fonts-style display-7">ปีที่สำเร็จการศึกษา</th>
               </tr>
             </thead>
 
             <tbody>
-            <tr> 
+            <tr>
+              <th class="head-item mbr-fonts-style display-7"></th>
               <td class="body-item mbr-fonts-style display-7"></td>
               <td class="body-item mbr-fonts-style display-7"></td>
               <td class="body-item mbr-fonts-style display-7"></td>
