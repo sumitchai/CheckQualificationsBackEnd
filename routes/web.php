@@ -26,6 +26,6 @@ Route::get('/Checkindividual', function () {
     return view('Checkindividual');
 });
 
-Route::get ('/SelectThai','grauateController@seclectgrauate');
+Route::get ('/SelectTH','grauateController@seclectgrauate');
 Route::get ('/SelectEN','grauateController@seclectgrauate01');
 Route::get ('/db2','grauateController@seclectgrauate02');
