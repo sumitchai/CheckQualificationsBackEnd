@@ -17,9 +17,9 @@
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="SelectTH?degree=2">ปริญญาตรี</a>
+            <a class="dropdown-item" href="SelectTH?degree=5">ปริญญาตรีควบโท</a>
             <a class="dropdown-item" href="SelectTH?degree=3">ปริญญาโท</a>
             <a class="dropdown-item" href="SelectTH?degree=4">ปริญญาเอก</a>
-            <a class="dropdown-item" href="SelectTH?degree=5">ปริญญาตรีควบโท</a>
             <a class="dropdown-item" href="SelectTH?degree=6">ประกาศนียบัตร</a>
           </div>
         </div>
@@ -55,7 +55,7 @@
               <td class="body-item mbr-fonts-style display-7">{{ $val->COURSE_NAME_TH }}</td>
               <td class="body-item mbr-fonts-style display-7">{{ $val->COUNT_STUDENT }}</td>
               <td class="body-item mbr-fonts-style display-7">
-                <a href="/SelectThailist" class="badge badge-dark"> ดูข้อมูล</a>
+                <a href="#" class="badge badge-dark"> ดูข้อมูล</a>
               </td>
             </tr>
               @endforeach 
