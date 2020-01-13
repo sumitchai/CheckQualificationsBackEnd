@@ -10,19 +10,8 @@
   <div class="container container-table">
       <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5">ตรวจสอบคุณวุฒิตามหลักสูตร<br></h2>
       <h3 class="mbr-section-subtitle mbr-fonts-style align-center pb-5 mbr-light display-5">
-        <strong>ระดับการศึกษา : </strong><br>
-        <div class="dropdown">
-          <button class="btn btn-light  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            ปริญญาตรี
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="SelectTH?degree=2">ปริญญาตรี</a>
-            <a class="dropdown-item" href="SelectTH?degree=3">ปริญญาโท</a>
-            <a class="dropdown-item" href="SelectTH?degree=4">ปริญญาเอก</a>
-            <a class="dropdown-item" href="SelectTH?degree=5">ปริญญาตรีควบโท</a>
-            <a class="dropdown-item" href="SelectTH?degree=6">ประกาศนียบัตร</a>
-          </div>
-        </div>
+        <strong>ระดับการศึกษา : <!---ปริญญา----> </strong><br><br>
+        <strong> <!-----ชื่อหลักสูตร------>
       </h3>
       <div class="table-wrapper">
         <div class="container">
@@ -41,24 +30,18 @@
           <table class="table isSearch" cellspacing="0">
             <thead>
               <tr class="table-heads ">
-                <th class="head-item mbr-fonts-style display-7">ลำดับ</th>
-                <th class="head-item mbr-fonts-style display-7">หลักสูตร</th>
-                <th class="head-item mbr-fonts-style display-7">จำนวนนิสิต</th>
-                <th class="head-item mbr-fonts-style display-7">รายละเอียด</th>
+              <th class="head-item mbr-fonts-style display-7">รหัสนิสิต</th>
+              <th class="head-item mbr-fonts-style display-7">ชื่อ-นามสกุล</th>
+              <th class="head-item mbr-fonts-style display-7">ปีที่สำเร็จการศึกษา</th>
               </tr>
             </thead>
 
             <tbody>
-              @foreach ($course as $val) 
             <tr> 
-              <td class="body-item mbr-fonts-style display-7">1</td>
-              <td class="body-item mbr-fonts-style display-7">{{ $val->COURSE_NAME_TH }}</td>
-              <td class="body-item mbr-fonts-style display-7">{{ $val->COUNT_STUDENT }}</td>
-              <td class="body-item mbr-fonts-style display-7">
-                <a href="#" class="badge badge-dark"> ดูข้อมูล</a>
-              </td>
+              <td class="body-item mbr-fonts-style display-7"></td>
+              <td class="body-item mbr-fonts-style display-7"></td>
+              <td class="body-item mbr-fonts-style display-7"></td>
             </tr>
-              @endforeach 
             </tbody>
           </table>
         </div>
