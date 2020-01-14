@@ -47,7 +47,7 @@
                 <th class="head-item mbr-fonts-style display-7">รายละเอียด</th>
               </tr>
             </thead>
-
+            
             <tbody>
               @foreach ($course as $val) 
             <tr> 
@@ -59,6 +59,7 @@
               </td>
             </tr>
               @endforeach 
+              
             </tbody>
           </table>
         </div>

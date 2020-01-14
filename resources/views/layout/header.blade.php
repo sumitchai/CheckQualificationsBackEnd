@@ -52,19 +52,19 @@
                     <a class="nav-link link text-black dropdown-toggle display-4" href="https://mobirise.co" data-toggle="dropdown-submenu" aria-expanded="true">เมนู</a>
               <div class="dropdown-menu">
                 <a class="text-black dropdown-item display-4" href="/">หน้าหลัก</a>
-                <a class="text-black dropdown-item display-4" href="page5.html">ตรวจสอบคุณวุฒิตามหลักสูตร</a>
+                <a class="text-black dropdown-item display-4" href="/SelectTH">ตรวจสอบคุณวุฒิตามหลักสูตร</a>
                 <a class="text-black dropdown-item display-4" href="/Checkindividual">ตรวจสอบคุณวุฒิรายบุคคล</a>
                 
               </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link link text-black display-4" href="https://mobirise.co" aria-expanded="false">ภาษาไทย</a>
+                  <a class="nav-link link text-black display-4" href="/SelectTH" aria-expanded="false">ภาษาไทย</a>
               </li>
               <li class="nav-item">
                 <a class="text display-4">|</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link text-black display-4" href="https://mobirise.co" aria-expanded="false">English</a>
+                <a class="nav-link link text-black display-4" href="/SelectEN" aria-expanded="false">English</a>
               </li></ul>
             <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-success display-4"  data-toggle="modal" data-target="#myModal">
                 <span class="mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn"></span>
@@ -124,4 +124,4 @@
   
   
 </body>
-</html>
+</html> 

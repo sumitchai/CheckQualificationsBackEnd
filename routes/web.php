@@ -35,5 +35,6 @@ Route::get('/SelectENlist', function () {
 });
 
 Route::get ('/SelectTH','grauateController@seclectgrauate');
+Route::get ('/Select','grauateController@seclectcourse');
 Route::get ('/SelectEN','grauateController@seclectgrauate01');
 Route::get ('/db2','grauateController@seclectgrauate02');
