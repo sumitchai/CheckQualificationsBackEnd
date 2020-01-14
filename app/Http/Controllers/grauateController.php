@@ -12,7 +12,7 @@ class grauateController extends Controller
         $result1=DB::select('SELECT VW_VOQ_COURSE.COURSE_NAME_TH,COUNT(VW_VOQ_COURSE.COURSE_NAME_TH) as COUNT_STUDENT
                              FROM VW_VOQ_STD_GRADUATE 
                              JOIN VW_VOQ_COURSE ON VW_VOQ_STD_GRADUATE.COURSE_ID=VW_VOQ_COURSE.COURSE_ID
-                             WHERE VW_VOQ_STD_GRADUATE.DEGREE_CODE = '.$DEGREE_CODE.'
+                             WHERE VW_VOQ_STD_GRADUATE.DEGREE_CODE = '.$DEGREE_CODE.' AND VW_VOQ_STD_GRADUATE.ACAD_YEAR >=2553
                              GROUP BY COURSE_NAME_TH'); 
  
                  return  view('SelectThai',["course"=>$result1,'degree'=>$DEGREE_CODE]);
@@ -24,7 +24,7 @@ class grauateController extends Controller
         $result1=DB::select('SELECT VW_VOQ_COURSE.COURSE_NAME_EN,COUNT(VW_VOQ_COURSE.COURSE_NAME_EN) as COUNT_STUDENT 
                              FROM VW_VOQ_STD_GRADUATE 
                              JOIN VW_VOQ_COURSE ON VW_VOQ_STD_GRADUATE.COURSE_ID=VW_VOQ_COURSE.COURSE_ID
-                             WHERE VW_VOQ_STD_GRADUATE.DEGREE_CODE = '.$DEGREE_CODE.'
+                             WHERE VW_VOQ_STD_GRADUATE.DEGREE_CODE = '.$DEGREE_CODE.' AND VW_VOQ_STD_GRADUATE.ACAD_YEAR >=2553
                              GROUP BY COURSE_NAME_EN'); 
  
                  return  view('SelectEN',["course"=>$result1,'degree'=>$DEGREE_CODE]);
