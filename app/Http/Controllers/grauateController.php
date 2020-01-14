@@ -9,10 +9,10 @@ class grauateController extends Controller
 {
     public function seclectgrauate() {
         $DEGREE_CODE =  (isset($_GET['degree']))?$_GET['degree']:3;
-        $result1=DB::select('SELECT VW_VOQ_COURSE.COURSE_NAME_TH,COUNT(VW_VOQ_COURSE.COURSE_NAME_TH) as COUNT_STUDENT 
+        $result1=DB::select('SELECT VW_VOQ_COURSE.COURSE_NAME_TH,COUNT(VW_VOQ_COURSE.COURSE_NAME_TH) as COUNT_STUDENT
                              FROM VW_VOQ_STD_GRADUATE 
                              JOIN VW_VOQ_COURSE ON VW_VOQ_STD_GRADUATE.COURSE_ID=VW_VOQ_COURSE.COURSE_ID
-                             WHERE VW_VOQ_STD_GRADUATE.DEGREE_CODE = '.$DEGREE_CODE.'
+                             WHERE VW_VOQ_STD_GRADUATE.DEGREE_CODE = '.$DEGREE_CODE.' AND VW_VOQ_STD_GRADUATE.ACAD_YEAR >=2553
                              GROUP BY COURSE_NAME_TH'); 
  
                  return  view('SelectThai',["course"=>$result1,'degree'=>$DEGREE_CODE]);
@@ -24,20 +24,22 @@ class grauateController extends Controller
         $result1=DB::select('SELECT VW_VOQ_COURSE.COURSE_NAME_EN,COUNT(VW_VOQ_COURSE.COURSE_NAME_EN) as COUNT_STUDENT 
                              FROM VW_VOQ_STD_GRADUATE 
                              JOIN VW_VOQ_COURSE ON VW_VOQ_STD_GRADUATE.COURSE_ID=VW_VOQ_COURSE.COURSE_ID
-                             WHERE VW_VOQ_STD_GRADUATE.DEGREE_CODE = '.$DEGREE_CODE.'
+                             WHERE VW_VOQ_STD_GRADUATE.DEGREE_CODE = '.$DEGREE_CODE.' AND VW_VOQ_STD_GRADUATE.ACAD_YEAR >=2553
                              GROUP BY COURSE_NAME_EN'); 
  
                  return  view('SelectEN',["course"=>$result1,'degree'=>$DEGREE_CODE]);
     }
     public function seclectcourse() {
-        $COURSE_ID =  (isset($_GET['degree']))?$_GET['degree']:211;
-        $result1=DB::select('SELECT VW_VOQ_STD_GRADUATE.STUDENT_CODE,VW_VOQ_STD_GRADUATE.NAME_TH,VW_VOQ_STD_GRADUATE.ACAD_YEAR
-                             FROM VW_VOQ_COURSE
-                             JOIN VW_VOQ_STD_GRADUATE ON VW_VOQ_COURSE.COURSE_ID=VW_VOQ_STD_GRADUATE.COURSE_ID
-                             WHERE VW_VOQ_COURSE.COURSE_ID = '.$COURSE_ID.'
-                             GROUP BY STUDENT_CODE'); 
- 
-                 return  view('SelectEN',["course"=>$result1,'degree'=>$COURSE_ID]);
+        
+        $result1=DB::select('SELECT STUDENT_CODE,NAME_TH,NAME_EN,ACAD_YEAR 
+                             FROM VW_VOQ_STD_GRADUATE
+                             WHERE VW_VOQ_STD_GRADUATE.COURSE_ID = VW_VOQ_STD_GRADUATE.COURSE_ID
+                             '); 
+                 return  view('SelectThailist',["course"=>$result1]);
+                    }
+}
+
+
 
     //     public function seclectgrauate02() {
     //     $result = DB::table('VW_VOQ_STD_GRADUATE')
@@ -46,9 +48,3 @@ class grauateController extends Controller
     //     ->get();
     //     return  view('Home',[""=>$result]);
     // }
-    
-    
-    
-   
-}
-}

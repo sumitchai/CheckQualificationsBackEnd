@@ -2,7 +2,7 @@
 
 @section('main')
 <br><br><br><br>
-<section class="engine"><a href="https://mobirise.info/l">free site templates</a></section><section class="header5 cid-rN35s1IUnO mbr-parallax-background" id="header5-24">
+<section class="engine"><a href="https://mobirise.info/h">create a web page</a></section><section class="header5 cid-rN35s1IUnO mbr-parallax-background" id="header5-24">
 
     
 
@@ -15,11 +15,8 @@
             <div class="text-content">
                 <h1 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-1">ตรวจสอบคุณวุฒิ<br>มหาวิทยาลัยพะเยา</h1><br>
              
-                <div class="mbr-section-btn">
-                    <a class="btn btn-md btn-bgr btn-primary display-4" href="CheckCourse.html">ตรวจสอบคุณวุฒิตามหลักสูตร</a> 
-                    <a class="btn btn-md btn-bgr btn-primary display-4" href="/Checkindividual">ตรวจสอบคุณวุฒิรายบุคคล</a> 
-                    
-                </div>
+                <div class="mbr-section-btn"><a class="btn btn-md btn-bgr btn-primary display-4" href="/SelectTH">ตรวจสอบคุณวุฒิตามหลักสูตร</a> 
+                    <a class="btn btn-md btn-bgr btn-primary display-4" href="/Checkindividual">ตรวจสอบคุณวุฒิรายบุคคล</a></div>
             </div>
         </div>
     </div>

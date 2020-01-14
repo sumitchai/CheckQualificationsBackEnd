@@ -19,30 +19,35 @@
             <div class="col-md-6"></div>
             <div class="col-md-6">
                 <div class="dataTables_filter">
-                  <label class="searchInfo mbr-fonts-style display-7">ค้นหา:</label>
+                  <label class="searchInfo mbr-fonts-style display-6">ค้นหา:</label>
                   <input class="form-control input-sm" disabled="">
                 </div>
             </div>
           </div>
         </div>
-
+     
+ 
         <div class="container scroll">
           <table class="table isSearch" cellspacing="0">
             <thead>
               <tr class="table-heads ">
-              <th class="head-item mbr-fonts-style display-7">รหัสนิสิต</th>
-              <th class="head-item mbr-fonts-style display-7">ชื่อ-นามสกุล</th>
-              <th class="head-item mbr-fonts-style display-7">ปีที่สำเร็จการศึกษา</th>
+              <th class="head-item mbr-fonts-style display-6">รหัสนิสิต</th>
+              <th class="head-item mbr-fonts-style display-6">ชื่อ-นามสกุล</th>
+              <th class="head-item mbr-fonts-style display-6">ชื่อ-อังกฤษ</th>
+              <th class="head-item mbr-fonts-style display-6">ปีที่สำเร็จการศึกษา</th>
               </tr>
             </thead>
-
             <tbody>
+              @foreach ($course as $val)
             <tr> 
-              <td class="body-item mbr-fonts-style display-7"></td>
-              <td class="body-item mbr-fonts-style display-7"></td>
-              <td class="body-item mbr-fonts-style display-7"></td>
-            </tr>
-            </tbody>
+              <td class="body-item mbr-fonts-style display-6">{{ $val->STUDENT_CODE }}</td>
+              <td class="body-item mbr-fonts-style display-6">{{ $val->NAME_TH }}</td>
+              <td class="body-item mbr-fonts-style display-6">{{ $val->NAME_EN}}</td>
+              <td class="body-item mbr-fonts-style display-6">{{ $val->ACAD_YEAR }}</td>
+              </tr>
+            @endforeach
+              </tbody>
+            
           </table>
         </div>
         <div class="container table-info-container">

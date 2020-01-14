@@ -33,7 +33,7 @@
             <div class="col-md-6"></div>
             <div class="col-md-6">
                 <div class="dataTables_filter">
-                  <label class="searchInfo mbr-fonts-style display-7">Search:</label>
+                  <label class="searchInfo mbr-fonts-style display-6">Search:</label>
                   <input class="form-control input-sm" disabled="">
                 </div>
             </div>
@@ -44,10 +44,10 @@
           <table class="table isSearch" cellspacing="0">
             <thead>
               <tr class="table-heads ">
-                <th class="head-item mbr-fonts-style display-7">no</th>
-                <th class="head-item mbr-fonts-style display-7">course</th>
-                <th class="head-item mbr-fonts-style display-7">total</th>
-                <th class="head-item mbr-fonts-style display-7">details</th>
+                <th class="head-item mbr-fonts-style display-6">no</th>
+                <th class="head-item mbr-fonts-style display-6">course</th>
+                <th class="head-item mbr-fonts-style display-6">total</th>
+                <th class="head-item mbr-fonts-style display-6">details</th>
               </tr>
             </thead>
             
@@ -55,10 +55,10 @@
             <tbody>
               @foreach ($course as $val) 
             <tr> 
-              <td class="body-item mbr-fonts-style display-7">1</td>
-              <td class="body-item mbr-fonts-style display-7">{{ $val->COURSE_NAME_EN }}</td>
-              <td class="body-item mbr-fonts-style display-7">{{ $val->COUNT_STUDENT }}</td>
-              <td class="body-item mbr-fonts-style display-7">
+              <td class="body-item mbr-fonts-style display-6"></td>
+              <td class="body-item mbr-fonts-style display-6">{{ $val->COURSE_NAME_EN }}</td>
+              <td class="body-item mbr-fonts-style display-6">{{ $val->COUNT_STUDENT }}</td>
+              <td class="body-item mbr-fonts-style display-6">
                 <a href="#" class="badge badge-dark">view</a>
               </td>
             </tr>

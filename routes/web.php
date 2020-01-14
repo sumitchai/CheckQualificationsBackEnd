@@ -26,15 +26,15 @@ Route::get('/Checkindividual', function () {
     return view('Checkindividual');
 });
 
-Route::get('/SelectThailist', function () {
-    return view('SelectThailist');
-});
+// Route::get('/SelectThailist', function () {
+//     return view('SelectThailist');
+// });
 
 Route::get('/SelectENlist', function () {
     return view('SelectENlist');
 });
 
 Route::get ('/SelectTH','grauateController@seclectgrauate');
-Route::get ('/Select','grauateController@seclectcourse');
+Route::get ('/SelectThailist','grauateController@seclectcourse');
 Route::get ('/SelectEN','grauateController@seclectgrauate01');
 Route::get ('/db2','grauateController@seclectgrauate02');
