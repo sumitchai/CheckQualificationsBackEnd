@@ -66,11 +66,15 @@
               <li class="nav-item">
                 <a class="nav-link link text-black display-4" href="/SelectEN" aria-expanded="false">English</a>
               </li></ul>
-            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-success display-4"  data-toggle="modal" data-target="#myModal">
+            <div class="navbar-buttons mbr-section-btn">
+                <a class="btn btn-sm btn-success display-4"  data-toggle="modal" data-target="#myModal">
                 <span class="mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn"></span>
-                    <font face="MobiriseIcons"><span style="font-size: 25.6px;">ติดต่อเรา</span></font>
+                    <font face="MobiriseIcons">
+                        <span style="font-size: 25.6px;">ติดต่อเรา</span>
+                    </font>
                 &nbsp;
-              </a></div>
+              </a>
+            </div>
         </div>
     </nav>
     <!-- Modal -->
