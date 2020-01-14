@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'sqlsrv'),
+    'default' => env('DB_CONNECTION', 'mysql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -48,8 +48,8 @@ return [
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'checklog'),
-            'username' => env('DB_USERNAME', 'root'),
+            'database' => env('DB_DATABASE', 'forge'),
+            'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
@@ -81,28 +81,16 @@ return [
         'sqlsrv' => [
             'driver' => 'sqlsrv',
             'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '10.204.10.80'),
-            'port' => env('DB_PORT', '1433'),
-            'database' => env('DB_DATABASE', 'UpReg'),
-            'username' => env('DB_USERNAME', 'sql.voq'),
-            'password' => env('DB_PASSWORD', 'PvGPLSK9mlIhMH7V'),
+            'host' => env('UP_HOST', 'localhost'),
+            'port' => env('UP_PORT', '1433'),
+            'database' => env('UP_DATABASE', 'forge'),
+            'username' => env('UP_USERNAME', 'forge'),
+            'password' => env('UP_PASSWORD', ''),
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
         ],
 
-        'sqlsrv2' => [
-            'driver' => 'sqlsrv',
-            'url' => env('DATABASE_URL2'),
-            'host' => env('DB_HOST2', 'DESKTOP-81NK8B7\SIRAPOP'),
-            'port' => env('DB_PORT2', '1433'),
-            'database' => env('DB_DATABASE2', 'check'),
-            'username' => env('DB_USERNAME2', 'DESKTOP-81NK8B7\RIME'),
-            'password' => env('DB_PASSWORD2', ''),
-            'charset' => 'utf8',
-            'prefix' => '',
-            'prefix_indexes' => true,
-        ],
     ],
 
     /*
@@ -131,10 +119,10 @@ return [
 
     'redis' => [
 
-        'client' => env('REDIS_CLIENT', 'predis'),
+        'client' => env('REDIS_CLIENT', 'phpredis'),
 
         'options' => [
-            'cluster' => env('REDIS_CLUSTER', 'predis'),
+            'cluster' => env('REDIS_CLUSTER', 'redis'),
             'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_database_'),
         ],
 
