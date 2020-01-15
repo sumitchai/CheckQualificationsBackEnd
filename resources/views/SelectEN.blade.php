@@ -53,9 +53,10 @@
             
 
             <tbody>
+              <?php $i = 1; ?>
               @foreach ($course as $val) 
             <tr> 
-              <td class="body-item mbr-fonts-style display-6"></td>
+            <td class="body-item mbr-fonts-style display-6">{{$i++}}</td>
               <td class="body-item mbr-fonts-style display-6">{{ $val->COURSE_NAME_EN }}</td>
               <td class="body-item mbr-fonts-style display-6">{{ $val->COUNT_STUDENT }}</td>
               <td class="body-item mbr-fonts-style display-6">
