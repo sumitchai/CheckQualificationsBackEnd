@@ -25,7 +25,16 @@
 </head>
 <body>
 <section class="menu cid-rN35OUwakP" once="menu" id="menu2-26">
-
+    <?php
+    if(Session::has('locale'))
+    {
+    $locale = Session::get('locale');
+    App::setLocale($locale);
+    }else{
+    App::setLocale('en');
+    $locale = 'en';
+    }
+    ?>
     
 
     <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
@@ -49,28 +58,28 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item dropdown">
-                    <a class="nav-link link text-black dropdown-toggle display-4" href="https://mobirise.co" data-toggle="dropdown-submenu" aria-expanded="true">เมนู</a>
+                    <a class="nav-link link text-black dropdown-toggle display-4" href="https://mobirise.co" data-toggle="dropdown-submenu" aria-expanded="true">{{__('text.menu')}}</a>
               <div class="dropdown-menu">
-                <a class="text-black dropdown-item display-4" href="/">หน้าหลัก</a>
-                <a class="text-black dropdown-item display-4" href="/SelectTH">ตรวจสอบคุณวุฒิตามหลักสูตร</a>
-                <a class="text-black dropdown-item display-4" href="/Checkindividual">ตรวจสอบคุณวุฒิรายบุคคล</a>
+                <a class="text-black dropdown-item display-4" href="/">{{__('text.home')}}</a>
+                <a class="text-black dropdown-item display-4" href="/SelectTH">{{__('text.checkcoure')}}</a>
+                <a class="text-black dropdown-item display-4" href="/Checkindividual">{{__('text.personal')}}</a>
                 
               </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link link text-black display-4" href="/SelectTH" aria-expanded="false">ภาษาไทย</a>
+                  <a class="nav-link link text-black display-4" href="{{url('lang/th')}}" aria-expanded="false">ภาษาไทย</a>
               </li>
               <li class="nav-item">
                 <a class="text display-4">|</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link text-black display-4" href="/SelectEN" aria-expanded="false">English</a>
+                <a class="nav-link link text-black display-4" href="{{url('lang/en')}}" aria-expanded="false">English</a>
               </li></ul>
             <div class="navbar-buttons mbr-section-btn">
                 <a class="btn btn-sm btn-success display-4"  data-toggle="modal" data-target="#myModal">
                 <span class="mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn"></span>
                     <font face="MobiriseIcons">
-                        <span style="font-size: 25.6px;">ติดต่อเรา</span>
+                        <span style="font-size: 25.6px;">{{__('text.contract')}}</span>
                     </font>
                 &nbsp;
               </a>
@@ -83,16 +92,16 @@
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title text-center" id="myModalLong">กองบริการการศึกษา : มหาวิทยาลัยพะเยา</h4>
+                <h4 class="modal-title text-center" id="myModalLong">{{__('text.zz')}}</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
             </div>
             <div class="modal-body text-center" style="font-size: 18px;">
-                <b>งานทะเบียนนิสิตและประมวลผล</b><br>
-                <a> 19 หมู่ 2 ตำบลแ่กา อำเภอเมือง จังหวัดพะเยา รหัสไปรษณีย์ 56000</a><br>
-                <a>โทรศัพท์:  054466666 </a>
+                <b>{{__('text.contractname')}}</b><br>
+                <a> {{__('text.contractaddress')}}</a><br>
+                <a>{{__('text.contractphone')}} </a>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">{{__('text.close')}}</button>
             </div><br/>
         </div>
     </div>

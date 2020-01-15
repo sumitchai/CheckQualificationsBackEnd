@@ -1,5 +1,14 @@
 @extends('layout.header')
-
+<?php
+if(Session::has('locale'))
+{
+$locale = Session::get('locale');
+App::setLocale($locale);
+}else{
+App::setLocale('en');
+$locale = 'en';
+}
+?>
 @section('main')
 <br><br><br><br>
 <section>
@@ -14,11 +23,12 @@
                 <div class="column-content">
                     <div class="text-content">
                         <br><br>
-                        <h1 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-1">ตรวจสอบคุณวุฒิ<br>มหาวิทยาลัยพะเยา</h1><br>
+                        <h1 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-1">{{__('text.textindex')}}</h1>
+                        <h1 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-1">{{__('text.university')}}</h1>
                      
                         <div class="mbr-section-btn">
-                            <a class="btn btn-md btn-bgr btn-primary display-4" href="/SelectTH">ตรวจสอบคุณวุฒิตามหลักสูตร</a> 
-                            <a class="btn btn-md btn-bgr btn-primary display-4" href="/Checkindividual">ตรวจสอบคุณวุฒิรายบุคคล</a>
+                            <a class="btn btn-md btn-bgr btn-primary display-4" href="/SelectTH">{{__('text.checkcoure')}}</a> 
+                            <a class="btn btn-md btn-bgr btn-primary display-4" href="/Checkindividual">{{__('text.personal')}}</a>
                         </div>
                     </div>
                 </div>

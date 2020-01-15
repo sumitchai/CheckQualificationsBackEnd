@@ -38,3 +38,10 @@ Route::get ('/SelectTH','grauateController@seclectgrauate');
 Route::get ('/SelectThailist','grauateController@seclectcourse');
 Route::get ('/SelectEN','grauateController@seclectgrauate01');
 Route::get ('/db2','grauateController@seclectgrauate02');
+
+//Change language
+Route::get('lang/{locale}', function ($locale) {
+    //App::setLocale($locale);
+    Session::put('locale', $locale);
+    return redirect()->back();
+    });
