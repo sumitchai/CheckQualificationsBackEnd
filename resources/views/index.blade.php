@@ -17,12 +17,11 @@ $locale = 'en';
         <img src="assets/images/home.png" class="responsive">
     </div>
 
-    <div class="item2">
-        <div class="grid-item">
+    <div class="item2 center">
+        <div >
             <div class="container-full-width clearfix">
                 <div class="column-content">
-                    <div class="text-content">
-                        <br><br>
+                    <div class="text">
                         <h1 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-1">{{__('text.textindex')}}</h1>
                         <h1 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-1">{{__('text.university')}}</h1>
                      
@@ -48,11 +47,6 @@ $locale = 'en';
       padding: 0px;
     }
     
-    .grid-item {
-      text-align: center;
-      padding: 20px;
-      font-size: 30px;
-    }
 
     .responsive {
       width: 90%;
@@ -67,6 +61,16 @@ $locale = 'en';
     .item2 {
         grid-column: 2  ;
         grid-row: 1 ;
+        text-align: center;
+    }
+
+    .center {
+    padding: 70px 0;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     }
     
     </style>
