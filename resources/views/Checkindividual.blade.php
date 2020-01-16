@@ -3,13 +3,13 @@
 @section('main')
 <br><br><br><br><br>
 
-<section class="mbr-section form1 cid-rJyj8GnMBf" id="form1-17">
+<section>
     <div class="container-full-width">
 
         <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style ">ตรวจสอบคุณวุฒิรายบุคคล</h2>
         
         <div class="row justify-content-center">
-            <div class="media-container-column col-lg-8" data-form-type="formoid">
+            <div>
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
