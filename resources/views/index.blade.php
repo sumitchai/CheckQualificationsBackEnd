@@ -26,7 +26,7 @@ $locale = 'en';
                         <h1 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-1">{{__('text.university')}}</h1>
                      
                         <div class="mbr-section-btn">
-                            <a class="btn btn-md btn-bgr btn-primary display-4" href="/SelectTH">{{__('text.checkcoure')}}</a> 
+                            <a class="btn btn-md btn-bgr btn-primary display-4" href="/Check_course">{{__('text.checkcoure')}}</a> 
                             <a class="btn btn-md btn-bgr btn-primary display-4" href="/Checkindividual">{{__('text.personal')}}</a>
                         </div>
                     </div>

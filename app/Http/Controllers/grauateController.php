@@ -15,7 +15,7 @@ class grauateController extends Controller
                              WHERE VW_VOQ_STD_GRADUATE.DEGREE_CODE = '.$DEGREE_CODE.' AND VW_VOQ_STD_GRADUATE.ACAD_YEAR >=2553
                              GROUP BY COURSE_NAME_TH'); 
  
-                 return  view('SelectThai',["course"=>$result1,'degree'=>$DEGREE_CODE]);
+                 return  view('Check_course',["course"=>$result1,'degree'=>$DEGREE_CODE]);
     }
 
     public function seclectgrauate01() {
