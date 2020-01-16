@@ -12,9 +12,29 @@ App::setLocale('en');
 $locale = 'en';
 }
 ?>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="text/javascript">
+function hideshow1()
+{
+var s1= document.getElementById('RTID');
+if( s1.options[s1.selectedIndex].value=="99")
+{document.getElementById('RTIDANS').style.display = "block";}else{document.getElementById('RTIDANS').style.display = "none";}
+}
+
+
+function hideshow2()
+{
+var s1= document.getElementById('OGID');
+if( s1.options[s1.selectedIndex].value=="99")
+{document.getElementById('OGIDANS').style.display = "block";}else{document.getElementById('OGIDANS').style.display = "none";}
+}
+</script>
+
 <section>
     <div class="container-full-width">
-        <br><br><br>
+        <br><br>
 
         <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style ">{{__('text.personal')}}</h2>
         
@@ -120,25 +140,30 @@ $locale = 'en';
                     </div>
                     <div class="form-group col-sm-6 display-5">
                         <label>{{__('text.obinfo')}}</label>   
-                        <select name="RTID" id="RTID" class="form-control  select2-hidden-accessible" onchange="shownote()" required="" tabindex="-1" aria-hidden="true">
-                            <option class="display-5" value="">{{__('text.ch')}}</option>
-                            <option class="display-5" value="01">{{__('text.obstudy')}}</option>
-                            <option class="display-5" value="02">{{__('text.objob')}}</option>
-                            <option class="display-5" value="03">{{__('text.obsalary')}}</option>
-                            <option class="display-5" value="04">{{__('text.obevidence')}}</option>
+                        <select name="RTID" id="RTID" class="form-control  select2 select2-hidden-accessible"  onChange="hideshow1()">
+                            <option class="display-5" value="1">{{__('text.ch')}}</option>
+                            <option class="display-5" value="2">{{__('text.objob')}}</option>
+                            <option class="display-5" value="3">{{__('text.obsalary')}}</option>
+                            <option class="display-5" value="4">{{__('text.obevidence')}} </option>
                             <option class="display-5" value="99">{{__('text.another')}}</option>
                         </select>
-                        
+                        <div  id="RTIDANS" style="display:none;">โปรดระบุ
+                            <input class="form-control display-7" name="RTIDANS" id="RTIDANS" type="text"  placeholder="โปรดระบุ"/>
+                        </div>
                     </div>
                     <div class="form-group col-sm-6 display-5">
                         <label>{{__('text.department')}}</label>
-                        <select id="OGID" name="OGID" class="form-control  select2 select2-hidden-accessible" required="" tabindex="-1" aria-hidden="true">
+                        <select id="OGID" name="OGID" class="form-control  select2 select2-hidden-accessible" onChange="hideshow2()">
                             <option class="display-5"  value="">{{__('text.dd')}}</option>
                             <option class="display-5"  value="01">{{__('text.governmentofficial')}}</option>
                             <option class="display-5"  value="02">{{__('text.stateowned')}}</option>
                             <option class="display-5"  value="03">{{__('text.privatecompany')}}</option>
-                            <option class="display-5"  value="04">{{__('text.another')}}</option>
-                        </select>                        
+                            <option class="display-5"  value="99">{{__('text.another')}}</option>
+                        </select>  
+                        
+                        <div  id="OGIDANS" style="display:none;">โปรดระบุ
+                            <input class="form-control display-7" name="OGIDANS" id="OGIDANS" type="text"  placeholder="โปรดระบุ"/>
+                        </div>
                     </div>
                     <div class="form-group col-sm-6 display-5">
                         <label>{{__('text.mail')}}</label>
