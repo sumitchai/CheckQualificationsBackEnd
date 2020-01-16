@@ -56,7 +56,8 @@ return[
 	'btn02' => 'Reset',
 	'ty' => 'Thanks for filling out the form!',	
 	'sh' => 'Showing',	
-	'sh2' => 'Rows'
+	'sh2' => 'Rows',
+	'dd' =>'Choose once'
 
 	
 ]

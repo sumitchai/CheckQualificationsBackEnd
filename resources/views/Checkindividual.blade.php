@@ -2,26 +2,35 @@
 
 @section('main')
 <br><br><br><br><br>
-
+<?php
+if(Session::has('locale'))
+{
+$locale = Session::get('locale');
+App::setLocale($locale);
+}else{
+App::setLocale('en');
+$locale = 'en';
+}
+?>
 <section>
     <div class="container-full-width">
         <br><br>
 
-        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style ">ตรวจสอบคุณวุฒิรายบุคคล</h2>
+        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style ">{{__('text.personal')}}</h2>
         
         <div class="container">
             <nav class="navbar  fbg-light">
                 <ul class="nav nav-pills" role="tablist" >
                     <li class="nav-item nav-pills active">
-                        <a class="nav-link btn-outline-secondary active" data-toggle="tab" href="#SSN"">เลขประจำตัวประชาชน </a>
+                        <a class="nav-link btn-outline-secondary active" data-toggle="tab" href="#SSN">{{__('text.idcard')}} </a>
                     </li>
                     <div ></div>
                     <li class="nav-item nav-pills">
-                        <a class="nav-link btn-outline-secondary" data-toggle="tab" href="#name">ชื่อ-นามสกุล </a>
+                        <a class="nav-link btn-outline-secondary" data-toggle="tab" href="#name">{{__('text.name')}} </a>
                     </li>
                     <div></div>
                     <li class="nav-item nav-pills">
-                        <a class="nav-link btn-outline-secondary " data-toggle="tab" href="#studenID" >รหัสนิสิต</a>
+                        <a class="nav-link btn-outline-secondary " data-toggle="tab" href="#studenID" >{{__('text.code')}}</a>
                     </li>
                 </ul>
             </nav><br>
@@ -33,16 +42,16 @@
                 <div role="tabpanel" class="tab-pane active" id="SSN">
                     <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="vordh/gURSSKD0ZGMhwpPXnXQfCdn1kgIzcb9RLMtD4POU/26VfzPT4ZQdfy3sekKAHsqN21f9gBkkSBDvFDpO0+riTtmt7266nKhPlmOobIncgB2HZdLa/FUfHNQgOt">
                         <div class="row">
-                            <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+                            <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">{{__('text.ty')}}</div>
                             <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
                             </div>
                         </div>
                         <div class="dragArea row">
                             <div class="col-sm-6  form-group" data-for="name">
-                                <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-7">เลขประจำตัวประชาชน</label>
-                                <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-1e" placeholder="ระบุเลขประจำตัวประชาชน"><p></p>
+                                <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-7">{{__('text.idcard')}}</label>
+                                <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-1e" placeholder={{__('text.idcard')}}><p></p>
                                 <div class="col-md-12 input-group-btn align-center">
-                                    <button type="submit" class="btn btn-form btn-secondary display-4" href="Checkindividual">Reset
+                                    <button type="submit" class="btn btn-form btn-secondary display-4" href="Checkindividual">{{__('text.btn02')}}
 
                                     </button>
                                 </div>
@@ -55,20 +64,20 @@
                 <div role="tabpanel" class="tab-pane fade" id="name">
                     <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="vordh/gURSSKD0ZGMhwpPXnXQfCdn1kgIzcb9RLMtD4POU/26VfzPT4ZQdfy3sekKAHsqN21f9gBkkSBDvFDpO0+riTtmt7266nKhPlmOobIncgB2HZdLa/FUfHNQgOt">
                         <div class="row">
-                            <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+                            <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">{{__('text.ty')}}</div>
                             <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
                             </div>
                         </div>
                         <div class="dragArea row">
                             <div class="col-sm-6  form-group" data-for="name">
-                                <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-6">ชื่อ</label>
-                                <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-1e" placeholder="ระบุชื่อ">
+                                <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-6">{{__('text.name')}}</label>
+                                <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-1e" placeholder={{__('text.nname')}}>
                             </div>
                             <div class="col-sm-6  form-group">
-                                <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-6">นามสกุล</label>
-                                <input type="text" name="surname" data-form-field="Surname" required="required" class="form-control display-6" id="surname-form1-1e" placeholder="ระบุนามสกุล">
+                                <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-6">{{__('text.lname')}}</label>
+                                <input type="text" name="surname" data-form-field="Surname" required="required" class="form-control display-6" id="surname-form1-1e" placeholder={{__('text.lname')}}>
                             </div>
-                            <div class="col-md-12 input-group-btn align-center"><button type="submit" class="btn btn-form btn-secondary display-4">Reset</button></div> 
+                            <div class="col-md-12 input-group-btn align-center"><button type="submit" class="btn btn-form btn-secondary display-4">{{__('text.btn02')}}</button></div> 
                         </div>
                     </form>
                 </div>
@@ -77,13 +86,13 @@
                 <div role="tabpanel" class="tab-pane fade" id="studenID">
                     <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="vordh/gURSSKD0ZGMhwpPXnXQfCdn1kgIzcb9RLMtD4POU/26VfzPT4ZQdfy3sekKAHsqN21f9gBkkSBDvFDpO0+riTtmt7266nKhPlmOobIncgB2HZdLa/FUfHNQgOt">
                         <div class="row">
-                            <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+                            <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">{{__('text.btn02')}}</div>
                             <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
                             </div>
                         </div>
                         <div class="dragArea row">
                             <div class="col-sm-6  form-group" data-for="name">
-                                <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-7">รหัสนิสิต</label>
+                                <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-7">{{__('text.code')}}</label>
                                 <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-1e" placeholder="ระบุรหัสนิสิต"><p></p>
                                 <div class="col-md-12 input-group-btn align-center"><button type="submit" class="btn btn-form btn-secondary display-4" href="Checkindividual">Reset</button></div>
                             </div>  
@@ -96,51 +105,51 @@
             <!---Formbuilder Form--->
             <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="Nqufa8UczwmfDW6m4yWU8BqgRYVDV+1j7x1IHzMQdCfMftPYZq3BjtuxEKBb5komQLGpLk7E5inGB9TszlbPVxOAuBwCYWRaaUgWVpSTBfe7+4USDydIs5rbMWiydd37">
                 <div class="row">
-                    <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+                    <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">{{__('text.ty')}}</div>
                     <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
                     </div>
                 </div>
                 <div class="dragArea row ">
                     <div class="col-sm-6  form-group" data-for="companyName">
-                        <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-7">ชื่อหน่วยงาน</label>
-                        <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-1f" placeholder="ระบุชื่อหน่วยงาน">
+                        <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-7">{{__('text.namecompa')}}</label>
+                        <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-1f" placeholder={{__('text.namecompa')}}>
                     </div>
                     <div class="col-sm-6  form-group" data-for="name">
-                        <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-7">ชื่อ-สกุลผู้ขอตรวจสอบ</label>
-                        <input type="text" name="companyName" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-1f" placeholder="ระบุชื่อ-นามสกุลผู้ขอตรวจสอบ">
+                        <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-7">{{__('text.nameinfo')}}</label>
+                        <input type="text" name="companyName" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-1f" placeholder={{__('text.nameinfo')}}>
                     </div>
                     <div class="form-group col-sm-6">
-                        <label>วัตถุประสงค์ในการตรวจสอบ</label>   
+                        <label>{{__('text.obinfo')}}</label>   
                         <select name="RTID" id="RTID" class="form-control  select2-hidden-accessible" onchange="shownote()" required="" tabindex="-1" aria-hidden="true">
-                            <option value="">เลือกวัตถุประสงค์</option>
-                            <option value="01">เพื่อรับเข้าศึกษาต่อ</option>
-                            <option value="02">เพื่อรับเข้าทำงาน</option>
-                            <option value="03">เพื่อปรับฐานเงินเดือนหรือโครงสร้างหน่วยงาน</option>
-                            <option value="04">เพื่อเป็นหลักฐานประกอบการอสิทธิ์ลดวันรับราชการกองประจำการ</option>
-                            <option value="99">อื่นๆ</option>
+                            <option value="">{{__('text.ch')}}</option>
+                            <option value="01">{{__('text.obstudy')}}</option>
+                            <option value="02">{{__('text.objob')}}</option>
+                            <option value="03">{{__('text.obsalary')}}</option>
+                            <option value="04">{{__('text.obevidence')}}</option>
+                            <option value="99">{{__('text.another')}}</option>
                         </select>
                         
                     </div>
                     <div class="form-group col-sm-6">
-                        <label>ประเภทหน่วยงาน</label>
+                        <label>{{__('text.department')}}</label>
                         <select id="OGID" name="OGID" class="form-control  select2 select2-hidden-accessible" required="" tabindex="-1" aria-hidden="true">
-                            <option value="">เลือกประเภทหน่วยงาน</option>
-                            <option value="01">หน่วยงานราชการ</option>
-                            <option value="02">หน่วยงานรัฐวิสาหกิจ</option>
-                            <option value="03">หน่วยงานเอกชน</option>
-                            <option value="04">อื่นๆ</option>
+                            <option value="">{{__('text.dd')}}</option>
+                            <option value="01">{{__('text.governmentofficial')}}</option>
+                            <option value="02">{{__('text.stateowned')}}</option>
+                            <option value="03">{{__('text.privatecompany')}}</option>
+                            <option value="04">{{__('text.another')}}</option>
                         </select>                        
                     </div>
                     <div class="form-group col-sm-6">
-                        <label>อีเมล์</label>
-                        <input id="email" name="email" class="form-control" placeholder="อีเมล์ exsample@email.com" type="email" required="">	
+                        <label>{{__('text.mail')}}</label>
+                        <input id="email" name="email" class="form-control" placeholder="exsample@email.com" type="email" required="">	
                     </div>
                     <div class="form-group col-sm-6">
-                        <label>โทรศัพท์</label>
-                        <input type="text" id="phone" name="phone" class="form-control" placeholder="โทรศัพท์" required="">		
+                        <label>{{__('text.phonenumber')}}</label>
+                        <input type="text" id="phone" name="phone" class="form-control" placeholder="{{__('text.phonenumber')}}" required="">		
                     </div>
-                    <div class="col-md-12 input-group-btn align-center"><button type="submit" class="btn btn-form btn-success display-4">Check</button>
-                         <button type="submit" class="btn btn-form btn-secondary display-4">Reset</button>
+                    <div class="col-md-12 input-group-btn align-center"><button type="submit" class="btn btn-form btn-success display-4">{{__('text.btn01')}}</button>
+                         <button type="submit" class="btn btn-form btn-secondary display-4">{{__('text.btn02')}}</button>
                     </div>
                     
                      
