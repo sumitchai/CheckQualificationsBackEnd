@@ -22,11 +22,11 @@ $locale = 'en';
             {{__('text.degree')}}
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="SelectTH?degree=2">{{__('text.bachelor')}}</a>
-            <a class="dropdown-item" href="SelectTH?degree=5">{{__('text.dual')}}</a>
-            <a class="dropdown-item" href="SelectTH?degree=3">{{__('text.masters')}}</a>
-            <a class="dropdown-item" href="SelectTH?degree=4">{{__('text.doctor')}}</a>
-            <a class="dropdown-item" href="SelectTH?degree=6">{{__('text.certificate')}}</a>
+            <a class="dropdown-item" href="Check_course?degree=2">{{__('text.bachelor')}}</a>
+            <a class="dropdown-item" href="Check_course?degree=5">{{__('text.dual')}}</a>
+            <a class="dropdown-item" href="Check_course?degree=3">{{__('text.masters')}}</a>
+            <a class="dropdown-item" href="Check_course?degree=4">{{__('text.doctor')}}</a>
+            <a class="dropdown-item" href="Check_course?degree=6">{{__('text.certificate')}}</a>
           </div>
         </div>
       </h3>

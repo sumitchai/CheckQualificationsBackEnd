@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'sqlsrv'),
 
     /*
     |--------------------------------------------------------------------------
@@ -81,11 +81,11 @@ return [
         'sqlsrv' => [
             'driver' => 'sqlsrv',
             'url' => env('DATABASE_URL'),
-            'host' => env('UP_HOST', 'localhost'),
+            'host' => env('UP_HOST', '10.204.10.80'),
             'port' => env('UP_PORT', '1433'),
-            'database' => env('UP_DATABASE', 'forge'),
-            'username' => env('UP_USERNAME', 'forge'),
-            'password' => env('UP_PASSWORD', ''),
+            'database' => env('UP_DATABASE', 'UpReg'),
+            'username' => env('UP_USERNAME', 'sql.voq'),
+            'password' => env('UP_PASSWORD', 'PvGPLSK9mlIhMH7V'),
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
