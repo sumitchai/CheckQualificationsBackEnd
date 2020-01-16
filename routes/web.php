@@ -35,11 +35,12 @@ Route::get('/SelectENlist', function () {
 });
 
 Route::get ('/Check_course','grauateController@seclectgrauate');
+
 Route::get ('/SelectThailist','grauateController@seclectcourse');
 Route::get ('/SelectEN','grauateController@seclectgrauate01');
 Route::get ('/db2','grauateController@seclectgrauate02');
 
-//Change language
+//เปลี่ยนภาษา
 Route::get('lang/{locale}', function ($locale) {
     //App::setLocale($locale);
     Session::put('locale', $locale);
