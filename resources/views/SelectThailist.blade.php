@@ -54,9 +54,9 @@
           <div class="row info">
             <div class="col-md-6">
               <div class="dataTables_info mbr-fonts-style display-7">
-                <span class="infoBefore">Showing</span>
+                <span class="infoBefore">{{__('text.sh')}}</span>
                 <span class="inactive infoRows"></span>
-                <span class="infoAfter">entries</span>
+                <span class="infoAfter">{{__('text.sh2')}}</span>
                 <span class="infoFilteredBefore">(filtered from</span>
                 <span class="inactive infoRows"></span>
                 <span class="infoFilteredAfter"> total entries)</span>
