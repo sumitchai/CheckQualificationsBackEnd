@@ -18,16 +18,13 @@ $locale = 'en';
       <h3 class="mbr-section-subtitle mbr-fonts-style align-center pb-5 mbr-light display-5">
         <strong>ระดับการศึกษา : </strong><br>
         <div class="dropdown">
-          <button class="btn btn-light  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            เลือกระดับปริญญา
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="Check_course?degree=2">ปริญญาตรี</a>
-            <a class="dropdown-item" href="Check_course?degree=5">ปริญญาโท</a>
-            <a class="dropdown-item" href="Check_course?degree=3">ปริญญาเอก</a>
-            <a class="dropdown-item" href="Check_course?degree=4">ปริญญาตรีควบโท</a>
-            <a class="dropdown-item" href="Check_course?degree=6">ประกาศนียบัตร</a>
-          </div>
+          <select class="btn btn-light  dropdown-toggle" style="height :60px" name="dropdown" onchange="location = this.options[this.selectedIndex].value;">
+            <option class="dropdown-item display-6" value="Check_course?degree=2">ปริญญาตรี</option>
+            <option class="dropdown-item display-6" value="Check_course?degree=5">ปริญญาโท</option>
+            <option class="dropdown-item display-6" value="Check_course?degree=3">ปริญญาเอก</option>
+            <option class="dropdown-item display-6" value="Check_course?degree=4">ปริญญาตรีควบโท</option>
+            <option class="dropdown-item display-6" value="Check_course?degree=6">ประกาศนียบัตร</option>
+          </select>
         </div>
       </h3>
       <div class="table-wrapper">
