@@ -6,19 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Mobirise v4.11.6, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="{{env('APP_URL')}}/assets/images/up-536x536.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/images/up-536x536.png" type="image/x-icon">
   <meta name="description" content="">
   
   <title>Qualification | University Of Phayao</title>
-  <link rel="stylesheet" href="{{env('APP_URL')}}/assets/web/{{env('APP_URL')}}/assets/mobirise-icons2/mobirise2.css">
-  <link rel="stylesheet" href="{{env('APP_URL')}}/assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="{{env('APP_URL')}}/assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="{{env('APP_URL')}}/assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="{{env('APP_URL')}}/assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="{{env('APP_URL')}}/assets/tether/tether.min.css">
-  <link rel="stylesheet" href="{{env('APP_URL')}}/assets/datatables/data-tables.bootstrap4.min.css">
-  <link rel="stylesheet" href="{{env('APP_URL')}}/assets/theme/css/style.css">
-  <link rel="preload" as="style" href="{{env('APP_URL')}}/assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="{{env('APP_URL')}}/assets/mobirise/css/mbr-additional.css" type="text/css">
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/datatables/data-tables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
   
   
@@ -50,7 +50,7 @@
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="/">
-                        <img src="{{env('APP_URL')}}/assets/images/up-536x536.png" alt="Mobirise" title="" style="height: 3.8rem;">
+                        <img src="assets/images/up-536x536.png" alt="Mobirise" title="" style="height: 3.8rem;">
                     </a>
                 </span>
                 
@@ -58,11 +58,11 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item dropdown">
-                    <a class="nav-link link text-black dropdown-toggle display-4" href="https://mobirise.co" data-toggle="dropdown-submenu" aria-expanded="true">{{__('text.menu')}}</a>
+                    <a class="nav-link link text-black dropdown-toggle display-4" href="https://mobirise.co" data-toggle="dropdown-submenu" aria-expanded="true">เมนู</a>
               <div class="dropdown-menu">
-                <a class="text-black dropdown-item display-4" href="/">{{__('text.home')}}</a>
-                <a class="text-black dropdown-item display-4" href="/SelectTH">{{__('text.checkcoure')}}</a>
-                <a class="text-black dropdown-item display-4" href="/Checkindividual">{{__('text.personal')}}</a>
+                <a class="text-black dropdown-item display-4" href="/">หน้าแรก</a>
+                <a class="text-black dropdown-item display-4" href="/SelectTH">ตรวจสอบคุณวุฒิตามหลักสูตร</a>
+                <a class="text-black dropdown-item display-4" href="/Checkindividual">ตรวจสอบคุณวุฒิรายบุคคล</a>
                 
               </div>
                 </li>
@@ -79,7 +79,7 @@
                 <a class="btn btn-sm btn-success display-4"  data-toggle="modal" data-target="#myModal">
                 <span class="mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn"></span>
                     <font face="MobiriseIcons">
-                        <span style="font-size: 25.6px;">{{__('text.contract')}}</span>
+                        <span style="font-size: 25.6px;">ติดต่อ</span>
                     </font>
                 &nbsp;
               </a>
@@ -92,16 +92,16 @@
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title text-center" id="myModalLong">{{__('text.zz')}}</h4>
+                <h4 class="modal-title text-center" id="myModalLong">กองบริการการศึกษา : มหาวิทยาลัยพะเยา</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
             </div>
             <div class="modal-body text-center" style="font-size: 18px;">
-                <b>{{__('text.contractname')}}</b><br>
-                <a> {{__('text.contractaddress')}}</a><br>
-                <a>{{__('text.contractphone')}} </a>
+                <b>งานทะเบียนนิสิตและประมวลผล</b><br>
+                <a> 19 หมู่ 2 ตำบลแม่กา อำเภอเมือง จังหวัดพะเยา รหัสไปรษณีย์ 56000</a><br>
+                <a>โทรศัพท์:  054466666 </a>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">{{__('text.close')}}</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">ปิด</button>
             </div><br/>
         </div>
     </div>
@@ -121,19 +121,19 @@
         @show
 
 
-  <script src="{{env('APP_URL')}}/assets/web/{{env('APP_URL')}}/assets/jquery/jquery.min.js"></script>
-  <script src="{{env('APP_URL')}}/assets/popper/popper.min.js"></script>
-  <script src="{{env('APP_URL')}}/assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="{{env('APP_URL')}}/assets/dropdown/js/nav-dropdown.js"></script>
-  <script src="{{env('APP_URL')}}/assets/dropdown/js/navbar-dropdown.js"></script>
-  <script src="{{env('APP_URL')}}/assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="{{env('APP_URL')}}/assets/tether/tether.min.js"></script>
-  <script src="{{env('APP_URL')}}/assets/touchswipe/jquery.touch-swipe.min.js"></script>
-  <script src="{{env('APP_URL')}}/assets/parallax/jarallax.min.js"></script>
-  <script src="{{env('APP_URL')}}/assets/datatables/jquery.data-tables.min.js"></script>
-  <script src="{{env('APP_URL')}}/assets/datatables/data-tables.bootstrap4.min.js"></script>
-  <script src="{{env('APP_URL')}}/assets/theme/js/script.js"></script>
-  <script src="{{env('APP_URL')}}/assets/formoid/formoid.min.js"></script>
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/dropdown/js/nav-dropdown.js"></script>
+  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/parallax/jarallax.min.js"></script>
+  <script src="assets/datatables/jquery.data-tables.min.js"></script>
+  <script src="assets/datatables/data-tables.bootstrap4.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  <script src="assets/formoid/formoid.min.js"></script>
   
   
 </body>

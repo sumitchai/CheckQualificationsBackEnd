@@ -36,13 +36,13 @@ if( s1.options[s1.selectedIndex].value=="99")
     <div class="container-full-width">
         <br><br>
 
-        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style ">{{__('text.personal')}}</h2>
+        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style ">ตรวจสอบคุณวุฒิรายบุคคล</h2>
         
         <div class="container">
             <nav class="navbar  fbg-light">
                 <ul class="nav nav-pills" role="tablist" >
                     <li class="nav-item nav-pills active">
-                        <a class="nav-link btn-outline-secondary active display-5" data-toggle="tab" href="#SSN">{{__('text.idcard')}} </a>
+                        <a class="nav-link btn-outline-secondary active display-5" data-toggle="tab" href="#SSN">เลขบัตรประชาชน</a>
                     </li>
                     <div ></div>
                     <li class="nav-item nav-pills">
