@@ -22,7 +22,7 @@ $locale = 'en';
             <div class="container-full-width clearfix">
                 <div class="column-content">
                     <div class="text">
-                        <h1 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-1">ระบบตรวจสอบคุณวุฒิ</h1>
+                        <h1 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-1">ระบบตรวจสอบคุณวุฒิ </h1>
                         <h1 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-1">มหาวิทยาลัยพะเยา</h1>
                      
                         <div class="mbr-section-btn">

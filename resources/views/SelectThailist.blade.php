@@ -31,7 +31,7 @@
           <table class="table isSearch" cellspacing="0">
             <thead>
               <tr class="table-heads ">
-              <th class="head-item mbr-fonts-style display-6">รหัสนิสิต</th>
+              <th class="head-item mbr-fonts-style display-6">รหัสนิสิต </th>
               <th class="head-item mbr-fonts-style display-6">ชื่อ-นามสกุล</th>
               <th class="head-item mbr-fonts-style display-6">ชื่อ-อังกฤษ</th>
               <th class="head-item mbr-fonts-style display-6">ปีที่สำเร็จการศึกษา</th>
