@@ -152,7 +152,7 @@ if( s1.options[s1.selectedIndex].value=="99")
                         </div>
                     </div>
                     <div class="form-group col-sm-6 display-5">
-                        <label>{{__('text.department')}}</label>
+                        <label>ประเภทหน่วยงาน</label>
                         <select id="OGID" name="OGID" class="form-control  select2 select2-hidden-accessible" onChange="hideshow2()">
                             <option class="display-5"  value="">เลือกประเภทหน่วยงาน</option>
                             <option class="display-5"  value="01">หน่วยงานราชการ</option>
@@ -166,19 +166,19 @@ if( s1.options[s1.selectedIndex].value=="99")
                         </div>
                     </div>
                     <div class="form-group col-sm-6 display-5">
-                        <label>{{__('text.mail')}}</label>
+                        <label>อีเมล์</label>
                         <input id="email" name="email" class="form-control" placeholder="exsample@email.com" type="email" required="">	
                     </div>
 
                     <div class="form-group col-sm-6 display-5">
-                        <label>{{__('text.phonenumber')}}</label>
-                        <input type="text" id="phone" name="phone" class="form-control" placeholder="{{__('text.phonenumber')}}" required="">	
+                        <label>หมายเลขโทรศัพท์</label>
+                        <input type="text" id="phone" name="phone" class="form-control" placeholder="ระบุหมายเลขโทรศัพท์" required="">	
                         <br>
                     </div>
                     
                     <div class="col-md-12 input-group-btn align-center ">
-                        <button type="submit" class="btn btn-form btn-success display-5">{{__('text.btn01')}}</button>
-                        <button type="submit" class="btn btn-form btn-secondary display-5">{{__('text.btn02')}}</button>
+                        <button type="submit" class="btn btn-form btn-success display-5">ตรวจสอบ</button>
+                        <button type="submit" class="btn btn-form btn-secondary display-5">คืนค่า</button>
                     <br><br><br>
                     </div>
                     
