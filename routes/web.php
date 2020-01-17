@@ -34,10 +34,6 @@ Route::get('/SelectENlist', function () {
     return view('SelectENlist');
 });
 
-Route::get('/testxxx', function () {
-    return view('testxxx');
-});
-
 Route::get ('/Check_course','grauateController@seclectgrauate');
 
 Route::get ('/SelectThailist','grauateController@seclectcourse');
