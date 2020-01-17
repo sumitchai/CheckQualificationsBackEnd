@@ -23,9 +23,9 @@ $locale = 'en';
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="Check_course?degree=2">ปริญญาตรี</a>
-            <a class="dropdown-item" href="Check_course?degree=5">ปริญญาโท</a>
-            <a class="dropdown-item" href="Check_course?degree=3">ปริญญาเอก</a>
-            <a class="dropdown-item" href="Check_course?degree=4">ปริญญาตรีควบโท</a>
+            <a class="dropdown-item" href="Check_course?degree=5">ปริญญาตรีควบโท</a>
+            <a class="dropdown-item" href="Check_course?degree=3">ปริญญาโท</a>
+            <a class="dropdown-item" href="Check_course?degree=4">ปริญญาเอก</a>
             <a class="dropdown-item" href="Check_course?degree=6">ประกาศนียบัตร</a>
           </div>
         </div>
