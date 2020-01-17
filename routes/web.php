@@ -42,7 +42,11 @@ Route::resource ('Checkindividual', 'insertController');
 Route::resource ('test', 'TestController');
 Route::post ('test/update/{id}', 'TestController@update');
 Route::get ('test/delete/{id}', 'TestController@destroy');
-Route::resource ('book', 'BookController');
+Route::resource ('book', 'insertController');
+
+
+
+
 //เปลี่ยนภาษา
 Route::get('lang/{locale}', function ($locale) {
     //App::setLocale($locale);

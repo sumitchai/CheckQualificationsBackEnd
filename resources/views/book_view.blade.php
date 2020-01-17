@@ -6,14 +6,14 @@
  <table class="table">
      <tr>
          <td>Course ID</td>
-         <td>Name</td>
+         <td>count<td>
          <td>Action</td>
      </tr>
      @foreach ($data as $x)
      <tr>
-        <td>{{$x->course_id}}</td>
-        <td>{{$x->name}}</td>
-        <td><a href="/book/{{$x->course_id}}">View User</a></td>
+        <td>{{$x->COURSE_NAME_TH}}</td>
+        <td></td>
+        <td><a href="/book/{{$x->COURSE_ID}}">View User</a></td>
      </tr>
      @endforeach
      
