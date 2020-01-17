@@ -42,7 +42,7 @@ if( s1.options[s1.selectedIndex].value=="99")
             <nav class="navbar  fbg-light">
                 <ul class="nav nav-pills" role="tablist" >
                     <li class="nav-item nav-pills active">
-                        <a class="nav-link btn-outline-secondary active display-5" data-toggle="tab" href="#SSN">เลขบัตรประชาชน </a>
+                        <a class="nav-link btn-outline-secondary active display-5" data-toggle="tab" href="#SSN">เลขบัตรประชาชน</a>
                     </li>
                     <div ></div>
                     <li class="nav-item nav-pills">

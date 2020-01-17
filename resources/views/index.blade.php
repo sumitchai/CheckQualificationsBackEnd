@@ -22,12 +22,12 @@ $locale = 'en';
             <div class="container-full-width clearfix">
                 <div class="column-content">
                     <div class="text">
-                        <h1 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-1">{{__('text.textindex')}}</h1>
-                        <h1 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-1">{{__('text.university')}}</h1>
+                        <h1 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-1">ระบบตรวจสอบคุณวุฒิ</h1>
+                        <h1 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-1">มหาวิทยาลัยพะเยา</h1>
                      
                         <div class="mbr-section-btn">
-                            <a class="btn btn-md btn-bgr btn-primary display-4" href="/Check_course">{{__('text.checkcoure')}}</a> 
-                            <a class="btn btn-md btn-bgr btn-primary display-4" href="/Checkindividual">{{__('text.personal')}}</a>
+                            <a class="btn btn-md btn-bgr btn-primary display-4" href="/Check_course">ตรวจสอบคุณวุฒิตามหลักสูตร</a> 
+                            <a class="btn btn-md btn-bgr btn-primary display-4" href="/Checkindividual">ตรวจสอบคุณวุฒิรายบุคคล</a>
                         </div>
                     </div>
                 </div>
