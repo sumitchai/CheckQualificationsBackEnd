@@ -36,21 +36,21 @@ if( s1.options[s1.selectedIndex].value=="99")
     <div class="container-full-width">
         <br><br>
 
-        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style ">{{__('text.personal')}}</h2>
+        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style ">ตรวจสอบคุณวุฒิรายบุคคล</h2>
         
         <div class="container">
             <nav class="navbar  fbg-light">
                 <ul class="nav nav-pills" role="tablist" >
                     <li class="nav-item nav-pills active">
-                        <a class="nav-link btn-outline-secondary active display-5" data-toggle="tab" href="#SSN">{{__('text.idcard')}} </a>
+                        <a class="nav-link btn-outline-secondary active display-5" data-toggle="tab" href="#SSN">เลขบัตรประชาชน </a>
                     </li>
                     <div ></div>
                     <li class="nav-item nav-pills">
-                        <a class="nav-link btn-outline-secondary display-5" data-toggle="tab" href="#name">{{__('text.name')}} </a>
+                        <a class="nav-link btn-outline-secondary display-5" data-toggle="tab" href="#name">ชื่อ-นามสกุล </a>
                     </li>
                     <div></div>
                     <li class="nav-item nav-pills">
-                        <a class="nav-link btn-outline-secondary display-5" data-toggle="tab" href="#studenID"  >{{__('text.code')}}</a>
+                        <a class="nav-link btn-outline-secondary display-5" data-toggle="tab" href="#studenID"  >รหัสนิสิต</a>
                     </li>
                 </ul>
             </nav><br>
@@ -62,16 +62,16 @@ if( s1.options[s1.selectedIndex].value=="99")
                 <div role="tabpanel" class="tab-pane active" id="SSN">
                     <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="vordh/gURSSKD0ZGMhwpPXnXQfCdn1kgIzcb9RLMtD4POU/26VfzPT4ZQdfy3sekKAHsqN21f9gBkkSBDvFDpO0+riTtmt7266nKhPlmOobIncgB2HZdLa/FUfHNQgOt">
                         <div class="row">
-                            <div hidden="hidden" data-form-alert="" class="alert alert-success col-12 display-5">{{__('text.ty')}}</div>
+                            <div hidden="hidden" data-form-alert="" class="alert alert-success col-12 display-5">กรอกแบบฟรอมเรียบร้อยแล้ว</div>
                             <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
                             </div>
                         </div>
                         <div class="dragArea row">
                             <div class="col-sm-6  form-group" data-for="name">
-                                <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">{{__('text.idcard')}}</label>
-                                <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-1e" placeholder={{__('text.idcard')}}><p></p>
+                                <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">เลขบัตรประชาชน</label>
+                                <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-1e" placeholder="เลขบัตรประชาชน"><p></p>
                                 <div class="col-md-12 input-group-btn align-center">
-                                    <button type="submit" class="btn btn-form btn-secondary display-5" href="Checkindividual">{{__('text.btn02')}}
+                                    <button type="submit" class="btn btn-form btn-secondary display-5" href="Checkindividual">คืนค่า
 
                                     </button>
                                 </div>
@@ -84,14 +84,14 @@ if( s1.options[s1.selectedIndex].value=="99")
                 <div role="tabpanel" class="tab-pane fade" id="name">
                     <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="vordh/gURSSKD0ZGMhwpPXnXQfCdn1kgIzcb9RLMtD4POU/26VfzPT4ZQdfy3sekKAHsqN21f9gBkkSBDvFDpO0+riTtmt7266nKhPlmOobIncgB2HZdLa/FUfHNQgOt">
                         <div class="row">
-                            <div hidden="hidden" data-form-alert="" class="alert alert-success col-12 display-5">{{__('text.ty')}}</div>
+                            <div hidden="hidden" data-form-alert="" class="alert alert-success col-12 display-5">กรอกแบบฟรอมเรียบร้อยแล้ว</div>
                             <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
                             </div>
                         </div>
                         <div class="dragArea row">
                             <div class="col-sm-6  form-group" data-for="name">
-                                <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">{{__('text.name')}}</label>
-                                <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-5" id="name-form1-1e" placeholder={{__('text.nname')}}>
+                                <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">ชื่อ-นามสกุล</label>
+                                <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-5" id="name-form1-1e" placeholder=>
                             </div>
                             <div class="col-sm-6  form-group">
                                 <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">{{__('text.lname')}}</label>
@@ -113,8 +113,8 @@ if( s1.options[s1.selectedIndex].value=="99")
                         <div class="dragArea row">
                             <div class="col-sm-6  form-group" data-for="name">
                                 <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">{{__('text.code')}}</label>
-                                <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-5" id="name-form1-1e" placeholder="ระบุรหัสนิสิต"><p></p>
-                                <div class="col-md-12 input-group-btn align-center"><button type="submit" class="btn btn-form btn-secondary display-5" href="Checkindividual">Reset</button></div>
+                                <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-5" id="name-form1-1e" placeholder="{{__('text.code')}}"><p></p>
+                                <div class="col-md-12 input-group-btn align-center"><button type="submit" class="btn btn-form btn-secondary display-5" href="Checkindividual">{{__('text.btn02')}}</button></div>
                             </div>  
                         </div>
                     </form>
@@ -147,8 +147,8 @@ if( s1.options[s1.selectedIndex].value=="99")
                             <option class="display-5" value="4">{{__('text.obevidence')}} </option>
                             <option class="display-5" value="99">{{__('text.another')}}</option>
                         </select>
-                        <div  id="RTIDANS" style="display:none;">โปรดระบุ
-                            <input class="form-control display-7" name="RTIDANS" id="RTIDANS" type="text"  placeholder="โปรดระบุ"/>
+                        <div  id="RTIDANS" style="display:none;">{{__('text.Other')}}
+                            <input class="form-control display-7" name="RTIDANS" id="RTIDANS" type="text"  placeholder="{{__('text.Other2')}}"/>
                         </div>
                     </div>
                     <div class="form-group col-sm-6 display-5">
@@ -161,8 +161,8 @@ if( s1.options[s1.selectedIndex].value=="99")
                             <option class="display-5"  value="99">{{__('text.another')}}</option>
                         </select>  
                         
-                        <div  id="OGIDANS" style="display:none;">โปรดระบุ
-                            <input class="form-control display-7" name="OGIDANS" id="OGIDANS" type="text"  placeholder="โปรดระบุ"/>
+                        <div  id="OGIDANS" style="display:none;">{{__('text.Other')}}
+                            <input class="form-control display-7" name="OGIDANS" id="OGIDANS" type="text"  placeholder="{{__('text.Other2')}}"/>
                         </div>
                     </div>
                     <div class="form-group col-sm-6 display-5">
