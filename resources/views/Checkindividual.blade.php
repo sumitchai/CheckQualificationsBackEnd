@@ -90,14 +90,14 @@ if( s1.options[s1.selectedIndex].value=="99")
                         </div>
                         <div class="dragArea row">
                             <div class="col-sm-6  form-group" data-for="name">
-                                <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">ชื่อ-นามสกุล</label>
-                                <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-5" id="name-form1-1e" placeholder=>
+                                <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">ชื่อ</label>
+                                <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-5" id="name-form1-1e" placeholder="ระบุชื่อ">
                             </div>
                             <div class="col-sm-6  form-group">
-                                <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">{{__('text.lname')}}</label>
-                                <input type="text" name="surname" data-form-field="Surname" required="required" class="form-control display-5" id="surname-form1-1e" placeholder={{__('text.lname')}}>
+                                <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">นามสกุล</label>
+                                <input type="text" name="surname" data-form-field="Surname" required="required" class="form-control display-5" id="surname-form1-1e" placeholder="ระบุนามสกุล">
                             </div>
-                            <div class="col-md-12 input-group-btn align-center"><button type="submit" class="btn btn-form btn-secondary display-5">{{__('text.btn02')}}</button></div> 
+                            <div class="col-md-12 input-group-btn align-center"><button type="submit" class="btn btn-form btn-secondary display-5">คืนค่า</button></div> 
                         </div>
                     </form>
                 </div>
@@ -106,15 +106,15 @@ if( s1.options[s1.selectedIndex].value=="99")
                 <div role="tabpanel" class="tab-pane fade" id="studenID">
                     <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="vordh/gURSSKD0ZGMhwpPXnXQfCdn1kgIzcb9RLMtD4POU/26VfzPT4ZQdfy3sekKAHsqN21f9gBkkSBDvFDpO0+riTtmt7266nKhPlmOobIncgB2HZdLa/FUfHNQgOt">
                         <div class="row">
-                            <div hidden="hidden" data-form-alert="" class="alert alert-success col-12 display-5">{{__('text.btn02')}}</div>
+                            <div hidden="hidden" data-form-alert="" class="alert alert-success col-12 display-5">คืนค่า</div>
                             <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
                             </div>
                         </div>
                         <div class="dragArea row">
                             <div class="col-sm-6  form-group" data-for="name">
-                                <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">{{__('text.code')}}</label>
-                                <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-5" id="name-form1-1e" placeholder="{{__('text.code')}}"><p></p>
-                                <div class="col-md-12 input-group-btn align-center"><button type="submit" class="btn btn-form btn-secondary display-5" href="Checkindividual">{{__('text.btn02')}}</button></div>
+                                <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">รหัสนิสิต</label>
+                                <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-5" id="name-form1-1e" placeholder="ระบุรหัสนิสิต"><p></p>
+                                <div class="col-md-12 input-group-btn align-center"><button type="submit" class="btn btn-form btn-secondary display-5" href="Checkindividual">คืนค่า</button></div>
                             </div>  
                         </div>
                     </form>
@@ -125,44 +125,44 @@ if( s1.options[s1.selectedIndex].value=="99")
             <!---Formbuilder Form--->
             <form action="https://mobirise.com/" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="Nqufa8UczwmfDW6m4yWU8BqgRYVDV+1j7x1IHzMQdCfMftPYZq3BjtuxEKBb5komQLGpLk7E5inGB9TszlbPVxOAuBwCYWRaaUgWVpSTBfe7+4USDydIs5rbMWiydd37">
                 <div class="row">
-                    <div hidden="hidden" data-form-alert="" class="alert alert-success col-12 display-5">{{__('text.ty')}}</div>
+                    <div hidden="hidden" data-form-alert="" class="alert alert-success col-12 display-5">กรอกแบบฟรอมเรียบร้อยแล้ว</div>
                     <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
                     </div>
                 </div>
                 <div class="dragArea row ">
                     <div class="col-sm-6  form-group" data-for="companyName">
-                        <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-5">{{__('text.namecompa')}}</label>
-                        <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-1f" placeholder={{__('text.namecompa')}}>
+                        <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-5">ชื่อหน่วยงาน</label>
+                        <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-1f" placeholder="ระบุชื่อหน่วยงาน">
                     </div>
                     <div class="col-sm-6  form-group" data-for="name">
-                        <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-5">{{__('text.nameinfo')}}</label>
-                        <input type="text" name="companyName" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-1f" placeholder={{__('text.nameinfo')}}>
+                        <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-5">ชื่อ-นามสกุลผู้ขอตรวจสอบ</label>
+                        <input type="text" name="companyName" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-1f" placeholder="ระบุชื่อ-นามสกุลผู้ขอตรวจสอบ">
                     </div>
                     <div class="form-group col-sm-6 display-5">
-                        <label>{{__('text.obinfo')}}</label>   
+                        <label>วัตถประสงค์ในการตรวจสอบ</label>   
                         <select name="RTID" id="RTID" class="form-control  select2 select2-hidden-accessible"  onChange="hideshow1()">
-                            <option class="display-5" value="1">{{__('text.ch')}}</option>
-                            <option class="display-5" value="2">{{__('text.objob')}}</option>
-                            <option class="display-5" value="3">{{__('text.obsalary')}}</option>
-                            <option class="display-5" value="4">{{__('text.obevidence')}} </option>
-                            <option class="display-5" value="99">{{__('text.another')}}</option>
+                            <option class="display-5" value="1">เพื่อรับเข้าศึกษาต่อ</option>
+                            <option class="display-5" value="2">เพื่อรับเข้าทำงาน</option>
+                            <option class="display-5" value="3">เพื่อปรับฐานเงินเดือนหรือโครงสร้างหน่วยงาน</option>
+                            <option class="display-5" value="4">เพื่อเป็นหลักฐานประกอบการอสิทธิ์ลดวันรับราชการกองประจำการ </option>
+                            <option class="display-5" value="99">อื่นๆ</option>
                         </select>
-                        <div  id="RTIDANS" style="display:none;">{{__('text.Other')}}
-                            <input class="form-control display-7" name="RTIDANS" id="RTIDANS" type="text"  placeholder="{{__('text.Other2')}}"/>
+                        <div  id="RTIDANS" style="display:none;">ระบุอื่นๆ
+                            <input class="form-control display-7" name="RTIDANS" id="RTIDANS" type="text"  placeholder="กรุณาระบุอื่นๆ"/>
                         </div>
                     </div>
                     <div class="form-group col-sm-6 display-5">
                         <label>{{__('text.department')}}</label>
                         <select id="OGID" name="OGID" class="form-control  select2 select2-hidden-accessible" onChange="hideshow2()">
-                            <option class="display-5"  value="">{{__('text.dd')}}</option>
-                            <option class="display-5"  value="01">{{__('text.governmentofficial')}}</option>
-                            <option class="display-5"  value="02">{{__('text.stateowned')}}</option>
-                            <option class="display-5"  value="03">{{__('text.privatecompany')}}</option>
-                            <option class="display-5"  value="99">{{__('text.another')}}</option>
+                            <option class="display-5"  value="">เลือกประเภทหน่วยงาน</option>
+                            <option class="display-5"  value="01">หน่วยงานราชการ</option>
+                            <option class="display-5"  value="02">หน่วยงานรัฐวิสาหกิจ</option>
+                            <option class="display-5"  value="03">หน่วยงานเอกชน</option>
+                            <option class="display-5"  value="99">อื่นๆ</option>
                         </select>  
                         
-                        <div  id="OGIDANS" style="display:none;">{{__('text.Other')}}
-                            <input class="form-control display-7" name="OGIDANS" id="OGIDANS" type="text"  placeholder="{{__('text.Other2')}}"/>
+                        <div  id="OGIDANS" style="display:none;">ระบุอื่นๆ
+                            <input class="form-control display-7" name="OGIDANS" id="OGIDANS" type="text"  placeholder="กรุณาระบุอื่นๆ"/>
                         </div>
                     </div>
                     <div class="form-group col-sm-6 display-5">
