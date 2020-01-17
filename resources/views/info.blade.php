@@ -30,7 +30,7 @@
           <table class="table isSearch" cellspacing="0">
             <thead>
               <tr class="table-heads ">
-              <th class="head-item mbr-fonts-style display-6">studen id</th>
+              <th class="head-item mbr-fonts-style display-6">studen id </th>
               <th class="head-item mbr-fonts-style display-6">full name</th>
               <th class="head-item mbr-fonts-style display-6">Description</th>
               </tr>

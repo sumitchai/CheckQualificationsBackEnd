@@ -18,7 +18,7 @@
             Bachelor Degree
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="SelectEN?degree=2">Bachelor Degree</a>
+            <a class="dropdown-item" href="SelectEN?degree=2">Bachelor Degree </a>
             <a class="dropdown-item" href="SelectEN?degree=3">Masters Degree</a>
             <a class="dropdown-item" href="SelectEN?degree=4">Doctoral Degree</a>
             <a class="dropdown-item" href="SelectEN?degree=5">Double Degree</a>

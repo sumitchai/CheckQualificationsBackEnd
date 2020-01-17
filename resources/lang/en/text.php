@@ -57,7 +57,9 @@ return[
 	'ty' => 'Thanks for filling out the form!',	
 	'sh' => 'Showing',	
 	'sh2' => 'Rows',
-	'dd' =>'Choose once'
+	'dd' =>'Choose once',
+	'Other' => 'Specify other',
+	'Other2' => 'Please specify other'
 
 	
 ]
