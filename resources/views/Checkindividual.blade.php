@@ -69,7 +69,7 @@ if( s1.options[s1.selectedIndex].value=="99")
                         <div class="dragArea row">
                             <div class="col-sm-6  form-group" data-for="name">
                                 <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">เลขบัตรประชาชน</label>
-                                <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-1e" placeholder="เลขบัตรประชาชน"><p></p>
+                                <input type="text" name="ID_SSN" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-1e" placeholder="เลขบัตรประชาชน"><p></p>
                                 <div class="col-md-12 input-group-btn align-center">
                                     <button type="submit" class="btn btn-form btn-secondary display-5" href="Checkindividual">คืนค่า
 
@@ -91,11 +91,11 @@ if( s1.options[s1.selectedIndex].value=="99")
                         <div class="dragArea row">
                             <div class="col-sm-6  form-group" data-for="name">
                                 <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">ชื่อ</label>
-                                <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-5" id="name-form1-1e" placeholder="ระบุชื่อ">
+                                <input type="text" name="NAME" data-form-field="Name" required="required" class="form-control display-5" id="name-form1-1e" placeholder="ระบุชื่อ">
                             </div>
                             <div class="col-sm-6  form-group">
                                 <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">นามสกุล</label>
-                                <input type="text" name="surname" data-form-field="Surname" required="required" class="form-control display-5" id="surname-form1-1e" placeholder="ระบุนามสกุล">
+                                <input type="text" name="SUR_NAME" data-form-field="Surname" required="required" class="form-control display-5" id="surname-form1-1e" placeholder="ระบุนามสกุล">
                             </div>
                             <div class="col-md-12 input-group-btn align-center"><button type="submit" class="btn btn-form btn-secondary display-5">คืนค่า</button></div> 
                         </div>
@@ -113,7 +113,7 @@ if( s1.options[s1.selectedIndex].value=="99")
                         <div class="dragArea row">
                             <div class="col-sm-6  form-group" data-for="name">
                                 <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">รหัสนิสิต</label>
-                                <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-5" id="name-form1-1e" placeholder="ระบุรหัสนิสิต"><p></p>
+                                <input type="text" name="ID_STUDENT" data-form-field="Name" required="required" class="form-control display-5" id="name-form1-1e" placeholder="ระบุรหัสนิสิต"><p></p>
                                 <div class="col-md-12 input-group-btn align-center"><button type="submit" class="btn btn-form btn-secondary display-5" href="Checkindividual">คืนค่า</button></div>
                             </div>  
                         </div>
@@ -132,15 +132,15 @@ if( s1.options[s1.selectedIndex].value=="99")
                 <div class="dragArea row ">
                     <div class="col-sm-6  form-group" data-for="companyName">
                         <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-5">ชื่อหน่วยงาน</label>
-                        <input type="text" name="name" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-1f" placeholder="ระบุชื่อหน่วยงาน">
+                        <input type="text" name="companyname" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-1f" placeholder="ระบุชื่อหน่วยงาน">
                     </div>
                     <div class="col-sm-6  form-group" data-for="name">
                         <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-5">ชื่อ-นามสกุลผู้ขอตรวจสอบ</label>
-                        <input type="text" name="companyName" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-1f" placeholder="ระบุชื่อ-นามสกุลผู้ขอตรวจสอบ">
+                        <input type="text" name="namecheck" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-1f" placeholder="ระบุชื่อ-นามสกุลผู้ขอตรวจสอบ">
                     </div>
                     <div class="form-group col-sm-6 display-5">
                         <label>วัตถประสงค์ในการตรวจสอบ</label>   
-                        <select name="RTID" id="RTID" class="form-control  select2 select2-hidden-accessible"  onChange="hideshow1()">
+                        <select name="Objective" id="RTID" class="form-control  select2 select2-hidden-accessible"  onChange="hideshow1()">
                             <option class="display-5" value="1">เพื่อรับเข้าศึกษาต่อ</option>
                             <option class="display-5" value="2">เพื่อรับเข้าทำงาน</option>
                             <option class="display-5" value="3">เพื่อปรับฐานเงินเดือนหรือโครงสร้างหน่วยงาน</option>
@@ -148,12 +148,12 @@ if( s1.options[s1.selectedIndex].value=="99")
                             <option class="display-5" value="99">อื่นๆ</option>
                         </select>
                         <div  id="RTIDANS" style="display:none;">ระบุอื่นๆ
-                            <input class="form-control display-7" name="RTIDANS" id="RTIDANS" type="text"  placeholder="กรุณาระบุอื่นๆ"/>
+                            <input class="form-control display-7" name="Objective" id="RTIDANS" type="text"  placeholder="กรุณาระบุอื่นๆ"/>
                         </div>
                     </div>
                     <div class="form-group col-sm-6 display-5">
                         <label>ประเภทหน่วยงาน</label>
-                        <select id="OGID" name="OGID" class="form-control  select2 select2-hidden-accessible" onChange="hideshow2()">
+                        <select id="OGID" name="department" class="form-control  select2 select2-hidden-accessible" onChange="hideshow2()">
                             <option class="display-5"  value="">เลือกประเภทหน่วยงาน</option>
                             <option class="display-5"  value="01">หน่วยงานราชการ</option>
                             <option class="display-5"  value="02">หน่วยงานรัฐวิสาหกิจ</option>
@@ -162,17 +162,17 @@ if( s1.options[s1.selectedIndex].value=="99")
                         </select>  
                         
                         <div  id="OGIDANS" style="display:none;">ระบุอื่นๆ
-                            <input class="form-control display-7" name="OGIDANS" id="OGIDANS" type="text"  placeholder="กรุณาระบุอื่นๆ"/>
+                            <input class="form-control display-7" name="department" id="OGIDANS" type="text"  placeholder="กรุณาระบุอื่นๆ"/>
                         </div>
                     </div>
                     <div class="form-group col-sm-6 display-5">
                         <label>อีเมล์</label>
-                        <input id="email" name="email" class="form-control" placeholder="exsample@email.com" type="email" required="">	
+                        <input id="email" name="e_mail" class="form-control" placeholder="exsample@email.com" type="email" required="">	
                     </div>
 
                     <div class="form-group col-sm-6 display-5">
                         <label>หมายเลขโทรศัพท์</label>
-                        <input type="text" id="phone" name="phone" class="form-control" placeholder="ระบุหมายเลขโทรศัพท์" required="">	
+                        <input type="text" id="phone" name="phone_number" class="form-control" placeholder="ระบุหมายเลขโทรศัพท์" required="">	
                         <br>
                     </div>
                     

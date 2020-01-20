@@ -22,9 +22,9 @@ Route::get('/tablefrom', function () {
 });
 
 
-// Route::get('/Checkindividual', function () {
-//     return view('Checkindividual');
-// });
+Route::get('/Checkindividual', function () {
+    return view('Checkindividual');
+});
 
 // Route::get('/SelectThailist', function () {
 //     return view('SelectThailist');
@@ -42,11 +42,12 @@ Route::get ('/Check_course','grauateController@seclectgrauate');
 
 Route::get ('/SelectThailist','grauateController@seclectcourse');
 Route::get ('/SelectEN','grauateController@seclectgrauate01');
-Route::resource ('Checkindividual', 'insertController');
+Route::get ('/Check_course', 'grauateController@seclectgrauate');
 Route::resource ('test', 'TestController');
 Route::post ('test/update/{id}', 'TestController@update');
 Route::get ('test/delete/{id}', 'TestController@destroy');
 Route::resource ('book', 'insertController');
+Route::resource ('Checkindividual', 'CheckController');
 
 
 
