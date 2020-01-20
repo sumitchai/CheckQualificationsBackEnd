@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
 
 class insertController extends Controller
 {
@@ -13,7 +14,12 @@ class insertController extends Controller
      */
     public function index()
     {
-        return view('Checkindividual');
+        $DEGREE_CODE =  (isset($_GET['degree']))?$_GET['degree']:2;
+        $data = DB::connection('sqlsrv')->table('VW_VOQ_COURSE')
+        ->join('VW_VOQ_STD_GRADUATE', 'VW_VOQ_COURSE.COURSE_ID', '=', 'VW_VOQ_STD_GRADUATE.COURSE_ID')
+        ->where('VW_VOQ_STD_GRADUATE.DEGREE_CODE', '=', '.$DEGREE_CODE.')
+        ->get();
+        return view('book_view',['data'=>$data,'degree'=>$DEGREE_CODE]);
     }
 
     /**
@@ -23,7 +29,7 @@ class insertController extends Controller
      */
     public function create()
     {
-        // return view('Checkindividual');
+     
     }
 
     /**
@@ -45,7 +51,8 @@ class insertController extends Controller
      */
     public function show($id)
     {
-        //
+        $data = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')->where('COURSE_ID',$id)->get();
+        return view('book',['data'=>$data]);
     }
 
     /**

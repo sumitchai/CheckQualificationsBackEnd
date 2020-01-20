@@ -5,15 +5,15 @@
 
  <table class="table">
      <tr>
-         <td>Name</td>
-         <td>Type</td>
-         <td>Oct</td> 
+         <td>รหัสนิสิต</td>
+         <td>ชื่อ</td>
+         <td>ปีที่จบ</td> 
      </tr>
      @foreach ($data as $x)
      <tr>
-        <td>{{$x->name}}</td>
-        <td>{{$x->type}}</td>
-        <td>{{$x->oct}}</td>
+        <td>{{$x->STUDENT_CODE}}</td>
+        <td>{{$x->NAME_TH}}</td>
+        <td>{{$x->ACAD_YEAR}}</td>
       
      </tr>
      @endforeach
