@@ -15,10 +15,10 @@ class CreateCheckindividualTable extends Migration
     {
         Schema::create('checkindividual', function (Blueprint $table) { 
             $table->bigIncrements('id');
-            $table->string('NAME');
-            $table->string('SUR_NAME');
-            $table->string('ID_STUDENT');
-            $table->string('ID_SSN');
+            $table->string('NAME')->nullable();
+            $table->string('SUR_NAME')->nullable();
+            $table->string('ID_STUDENT')->nullable();
+            $table->string('ID_SSN')->nullable();
             $table->string('companyname');
             $table->string('namecheck');
             $table->string('Objective');
