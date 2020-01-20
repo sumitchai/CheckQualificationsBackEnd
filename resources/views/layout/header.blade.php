@@ -61,7 +61,7 @@
                     <a class="nav-link link text-black dropdown-toggle display-4" href="https://mobirise.co" data-toggle="dropdown-submenu" aria-expanded="true">เมนู</a>
               <div class="dropdown-menu">
                 <a class="text-black dropdown-item display-4" href="/">หน้าแรก</a>
-                <a class="text-black dropdown-item display-4" href="/SelectTH">ตรวจสอบคุณวุฒิตามหลักสูตร </a>
+                <a class="text-black dropdown-item display-4" href="/Check_course">ตรวจสอบคุณวุฒิตามหลักสูตร </a>
                 <a class="text-black dropdown-item display-4" href="/Checkindividual">ตรวจสอบคุณวุฒิรายบุคคล</a>
                 
               </div>

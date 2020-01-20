@@ -72,7 +72,7 @@ if( s1.options[s1.selectedIndex].value=="99")
                                 <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">เลขบัตรประชาชน</label>
                                 <input type="text" name="ID_SSN" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-1e" placeholder="เลขบัตรประชาชน"><p></p>
                                 <div class="col-md-12 input-group-btn align-center">
-                                    <button type="submit" class="btn btn-form btn-secondary display-5" href="Checkindividual">คืนค่า
+                                    <button type="reset" class="btn btn-form btn-secondary display-5" href="Checkindividual">คืนค่า
 
                                     </button>
                                 </div>
@@ -99,7 +99,9 @@ if( s1.options[s1.selectedIndex].value=="99")
                                 <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">นามสกุล</label>
                                 <input type="text" name="SUR_NAME" data-form-field="Surname" required="required" class="form-control display-5" id="surname-form1-1e" placeholder="ระบุนามสกุล">
                             </div>
-                            <div class="col-md-12 input-group-btn align-center"><button type="submit" class="btn btn-form btn-secondary display-5">คืนค่า</button></div> 
+                            <div class="col-md-12 input-group-btn align-center">
+                                <button type="reset" class="btn btn-form btn-secondary display-5">คืนค่า</button>
+                            </div> 
                         </div>
                     </form>
                 </div>
@@ -117,7 +119,9 @@ if( s1.options[s1.selectedIndex].value=="99")
                             <div class="col-sm-6  form-group" data-for="name">
                                 <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">รหัสนิสิต</label>
                                 <input type="text" name="ID_STUDENT" data-form-field="Name" required="required" class="form-control display-5" id="name-form1-1e" placeholder="ระบุรหัสนิสิต"><p></p>
-                                <div class="col-md-12 input-group-btn align-center"><button type="submit" class="btn btn-form btn-secondary display-5" href="Checkindividual">คืนค่า</button></div>
+                                <div class="col-md-12 input-group-btn align-center">
+                                    <button type="reset" class="btn btn-form btn-secondary display-5" href="Checkindividual">คืนค่า</button>
+                                </div>
                             </div>  
                         </div>
                     </form>
@@ -182,7 +186,7 @@ if( s1.options[s1.selectedIndex].value=="99")
                     
                     <div class="col-md-12 input-group-btn align-center ">
                         <button type="submit" class="btn btn-form btn-success display-5">ตรวจสอบ</button>
-                        <button type="submit" class="btn btn-form btn-secondary display-5">คืนค่า</button>
+                        <button type="reset" class="btn btn-form btn-secondary display-5">คืนค่า</button>
                     <br><br><br>
                     </div>
                     
