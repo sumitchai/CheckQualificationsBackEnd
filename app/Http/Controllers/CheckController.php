@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use DB;
+use App\Checkup;
 
-class insertController extends Controller
+class CheckController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class insertController extends Controller
      */
     public function index()
     {
-        $data = DB::connection('sqlsrv')->table('VW_VOQ_COURSE')->get();
-        return view('book_view',['data'=>$data]);
+        $data = Checkup::get(); 
+        return view('Checkindividual',['data'=>$data]);
     }
 
     /**
@@ -25,7 +25,7 @@ class insertController extends Controller
      */
     public function create()
     {
-     
+        //
     }
 
     /**
@@ -36,7 +36,10 @@ class insertController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $check = new Checkup();
+        $check->fill($request->all()); 
+        $check->save();
+        return \redirect('/Checkindividual');
     }
 
     /**
@@ -47,8 +50,7 @@ class insertController extends Controller
      */
     public function show($id)
     {
-        $data = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')->where('COURSE_ID',$id)->get();
-        return view('book',['data'=>$data]);
+        //
     }
 
     /**
