@@ -2,16 +2,6 @@
 
 @section('main')
 <br><br><br><br>
-<?php
-if(Session::has('locale'))
-{
-$locale = Session::get('locale');
-App::setLocale($locale);
-}else{
-App::setLocale('en');
-$locale = 'en';
-}
-?>
 <section class="section-table cid-rN9ViYOSs1" id="table1-2e">
   <div class="container container-table">
       <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5">ตรวจสอบคุณวุฒิตามหลักสูตร <br></h2>
@@ -56,13 +46,13 @@ $locale = 'en';
             
             <tbody>
               <?php $i = 1; ?>
-              @foreach ($course as $val) 
+              @foreach ($data as $x) 
             <tr> 
               <td class="body-item mbr-fonts-style display-6">{{$i++}}</td>
-              <td class="body-item mbr-fonts-style display-6">{{ $val->COURSE_NAME_TH }}</td>
-              <td class="body-item mbr-fonts-style display-6">{{ $val->COUNT_STUDENT }}</td>
+              <td class="body-item mbr-fonts-style display-6">{{$x->COURSE_NAME_TH}}</td>
+              <td class="body-item mbr-fonts-style display-6">{{$x->count}}</td>
               <td class="body-item mbr-fonts-style display-6">
-                <a href="#" class="badge badge-dark"> ดูข้อมูล</a>
+                <a href="/SelectThailist/{{$x->COURSE_NAME_TH}}" class="badge badge-dark"> ดูข้อมูล</a>
               </td>
             </tr>
               @endforeach 

@@ -14,8 +14,13 @@ class insertController extends Controller
      */
     public function index()
     {
-        $data = DB::connection('sqlsrv')->table('VW_VOQ_COURSE')->get();
-        return view('book_view',['data'=>$data]);
+        $data = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
+        ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
+        ->select(DB::Raw('COURSE_NAME_TH, COUNT(*) as count'))
+        ->where('ACAD_YEAR', '>=', 2553)
+        ->groupBy('COURSE_NAME_TH')
+        ->get();
+        return view('Check_course',['data'=>$data]);
     }
 
     /**
@@ -47,8 +52,10 @@ class insertController extends Controller
      */
     public function show($id)
     {
-        $data = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')->where('COURSE_ID',$id)->get();
-        return view('book',['data'=>$data]);
+        $data = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
+        ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
+        ->where('COURSE_NAME_TH',$id)->get();
+        return view('SelectThailist',['data'=>$data]);
     }
 
     /**

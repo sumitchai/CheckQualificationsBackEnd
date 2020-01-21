@@ -33,17 +33,17 @@
               <tr class="table-heads ">
               <th class="head-item mbr-fonts-style display-6">รหัสนิสิต </th>
               <th class="head-item mbr-fonts-style display-6">ชื่อ-นามสกุล</th>
-              <th class="head-item mbr-fonts-style display-6">ชื่อ-อังกฤษ</th>
+              
               <th class="head-item mbr-fonts-style display-6">ปีที่สำเร็จการศึกษา</th>
               </tr>
             </thead>
             <tbody>
-              @foreach ($course as $val)
+              @foreach ($data as $x)
             <tr> 
-              <td class="body-item mbr-fonts-style display-6">{{ $val->STUDENT_CODE }}</td>
-              <td class="body-item mbr-fonts-style display-6">{{ $val->NAME_TH }}</td>
-              <td class="body-item mbr-fonts-style display-6">{{ $val->NAME_EN}}</td>
-              <td class="body-item mbr-fonts-style display-6">{{ $val->ACAD_YEAR }}</td>
+              <td class="body-item mbr-fonts-style display-6">{{$x->STUDENT_CODE}}</td>
+              <td class="body-item mbr-fonts-style display-6">{{$x->NAME_TH}}</td>
+              
+              <td class="body-item mbr-fonts-style display-6">{{$x->ACAD_YEAR}}</td>
               </tr>
             @endforeach
               </tbody>

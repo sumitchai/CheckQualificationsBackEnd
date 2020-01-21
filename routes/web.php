@@ -38,16 +38,17 @@ Route::get('/dataindividual', function () {
     return view('dataindividual');
 });
 
-Route::get ('/Check_course','grauateController@seclectgrauate');
+//Route::get ('/Check_course','grauateController@seclectgrauate');
 
-Route::get ('/SelectThailist','grauateController@seclectcourse');
+//Route::get ('/SelectThailist','grauateController@seclectcourse');
 Route::get ('/SelectEN','grauateController@seclectgrauate01');
-Route::get ('/Check_course', 'grauateController@seclectgrauate');
+//Route::get ('/Check_course', 'grauateController@seclectgrauate');
 Route::resource ('test', 'TestController');
 Route::post ('test/update/{id}', 'TestController@update');
 Route::get ('test/delete/{id}', 'TestController@destroy');
-Route::resource ('book', 'insertController');
+Route::resource ('Check_course', 'insertController');
 Route::resource ('Checkindividual', 'CheckController');
+Route::resource ('SelectThailist', 'insertController');
 
 
 
