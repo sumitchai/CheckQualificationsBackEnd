@@ -1,19 +1,46 @@
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+@extends('layout.header')
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+@section('main')
+<br><br><br><br>
 
-<!-- (Optional) Latest compiled and minified JavaScript translation files -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/i18n/defaults-*.min.js"></script>
+<section >
+  <div class="mbr-form form-with-styler" style="padding : 40px">
+    <br><br>
+    <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style ">ข้อมูลการตรวจสอบคุณวุฒิรายบุคคล</h2>
+    <br>
+    <div >
+      <div class="row">
+        <div class="col-sm-6" style="padding-left:120px; padding-right:20px;">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text display-5">ชื่อ-นามสกุล : นางสาวอุรวี มาหล้า</p>
+              <p class="card-text display-5">หลักสูตร :	หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์</p>
+              <p class="card-text display-5">คณะ : คณะวิทยาศาสตร์</p>
+              <p class="card-text display-5">ปีสำเร็จการศึกษา (พ.ศ.): 2561</p>
+              <p class="card-text display-5">วันที่สำเร็จการศึกษา (พ.ศ.): 09 เม.ย. 2562</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6" style="padding-left:20px; padding-right:120px;">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text display-5">Fullname :	Miss AURAVEE MALA</p>
+              <p class="card-text display-5">Curriculum : Bachelor of Science Program in Computer Science</p>
+              <p class="card-text display-5">Facuty : Faculty of Science</p>
+              <p class="card-text display-5">Year of Graduation (A.D.) : 2018</p>
+              <p class="card-text display-5">Graduation date (A.D.) : 09 APR 2019</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="input-group-btn item-right" style="float: right ; padding-right : 120px">
+        <button type="submit" class="btn btn-form btn-success display-5">ดาวน์โหลด</button>
+      </div>
+      <br><br><br><br><br>
+    </div>
+  </div>
+</section>
 
-<select class="selectpicker">
-  <option>Mustard</option>
-  <option>Ketchup</option>
-  <option>Barbecue</option>
-</select>
-<script>
-  $(function () {
-    $('select').selectpicker();
-  });
-</script>
+
+
