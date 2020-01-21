@@ -35,7 +35,7 @@
       </div>
       <br>
       <div class="input-group-btn item-right" style="float: right ; padding-right : 120px">
-        <button type="submit" class="btn btn-form btn-success display-5">ดาวน์โหลด</button>
+        <a download="/dataindividual" href="/dataindividual" class="btn btn-form btn-success display-5" type="submit"><span class="glyphicon glyphicon-save"></span>ดาวน์โหลด</a>
       </div>
       <br><br><br><br><br>
     </div>
