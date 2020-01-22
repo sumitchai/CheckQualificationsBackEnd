@@ -26,7 +26,7 @@
             <div class="col-md-6"></div>
             <div class="col-md-6">
                 <div class="dataTables_filter">
-                  <label class="searchInfo mbr-fonts-style display-6">ค้นหา : </label><br>
+                  <label class="searchInfo mbr-fonts-style display-6">ค้นหา : </label>
                   <input class="form-control input-sm" disabled="">
                 </div>
             </div>
