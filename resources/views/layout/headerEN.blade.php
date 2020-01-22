@@ -53,7 +53,7 @@
               <div class="dropdown-menu">
                 <a class="text-black dropdown-item display-4" href="/indexEN">Home</a>
                 <a class="text-black dropdown-item display-4" href="/Check_course_EN">Check The Course Qualifications</a>
-                <a class="text-black dropdown-item display-4" href="/Checkindividual">Individual Qualification Examination</a>
+                <a class="text-black dropdown-item display-4" href="/CheckindividualEN">Individual Qualification Examination</a>
                 
               </div>
                 </li>
