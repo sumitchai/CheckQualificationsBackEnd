@@ -159,7 +159,7 @@ if( s1.options[s1.selectedIndex].value=="99")
                         </div>
                     </div>
                     <div class="form-group col-sm-6 display-5" >
-                        <label>ประเภทหน่วยงาน</label>
+                        <label>Type of Agency</label>
                         <select id="OGID" name="department" class="form-control  select2 select2-hidden-accessible" onChange="hideshow2()">
                             <option class="display-5"  value="">Select Type of Agency</option>
                             <option class="display-5"  value="01">Government agencies</option>
