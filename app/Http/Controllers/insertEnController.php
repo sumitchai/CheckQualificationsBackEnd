@@ -58,6 +58,7 @@ class insertEnController extends Controller
         ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
         ->where('COURSE_NAME_EN',$id)
         ->where('ACAD_YEAR', '>=', 2553)
+        ->orderBy('ACAD_YEAR')
         ->get();
         return view('SelectEN',['data'=>$data]);
     }
