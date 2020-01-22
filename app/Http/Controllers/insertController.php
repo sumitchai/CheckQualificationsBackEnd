@@ -14,13 +14,14 @@ class insertController extends Controller
      */
     public function index()
     {
+        $DEGREE_CODE =  (isset($_GET['degree']))?$_GET['degree']:3;
         $data = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
         ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
         ->select(DB::Raw('COURSE_NAME_TH, COUNT(*) as count'))
-        ->where('ACAD_YEAR', '>=', 2553)
+        ->where('DEGREE_CODE','=',$DEGREE_CODE)
         ->groupBy('COURSE_NAME_TH')
         ->get();
-        return view('Check_course',['data'=>$data]);
+        return  view('Check_course',["course"=>$data,'degree'=>$DEGREE_CODE]);
     }
 
     /**
@@ -54,7 +55,9 @@ class insertController extends Controller
     {
         $data = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
         ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
-        ->where('COURSE_NAME_TH',$id)->get();
+        ->where('COURSE_NAME_TH',$id)
+        ->where('ACAD_YEAR', '>=', 2553)
+        ->get();
         return view('SelectThailist',['data'=>$data]);
     }
 

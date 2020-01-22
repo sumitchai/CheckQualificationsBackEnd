@@ -46,7 +46,7 @@
             
             <tbody>
               <?php $i = 1; ?>
-              @foreach ($data as $x) 
+              @foreach ($course as $x) 
             <tr> 
               <td class="body-item mbr-fonts-style display-6">{{$i++}}</td>
               <td class="body-item mbr-fonts-style display-6">{{$x->COURSE_NAME_TH}}</td>
