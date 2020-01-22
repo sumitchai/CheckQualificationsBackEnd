@@ -46,9 +46,17 @@ Route::get ('/SelectEN','grauateController@seclectgrauate01');
 Route::resource ('test', 'TestController');
 Route::post ('test/update/{id}', 'TestController@update');
 Route::get ('test/delete/{id}', 'TestController@destroy');
+
+
 Route::resource ('Check_course', 'insertController');
-Route::resource ('Checkindividual', 'CheckController');
 Route::resource ('SelectThailist', 'insertController');
+
+
+Route::resource ('Check_course_EN', 'insertEnController');
+Route::resource ('SelectEN', 'insertEnController');
+
+
+Route::resource ('Checkindividual', 'CheckController');
 
 
 

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 
-class insertController extends Controller
+class insertEnController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,12 +17,12 @@ class insertController extends Controller
         $DEGREE_CODE =  (isset($_GET['degree']))?$_GET['degree']:3;
         $data = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
         ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
-        ->select(DB::Raw('COURSE_NAME_TH, COUNT(*) as count'))
+        ->select(DB::Raw('COURSE_NAME_EN, COUNT(*) as count'))
         ->where('DEGREE_CODE','=',$DEGREE_CODE)
-        ->groupBy('COURSE_NAME_TH')
+        ->groupBy('COURSE_NAME_EN')
         ->orderBy('count')
         ->get();
-        return  view('Check_course',["course"=>$data,'degree'=>$DEGREE_CODE]);
+        return  view('Check_course_EN',["course"=>$data,'degree'=>$DEGREE_CODE]);
     }
 
     /**
@@ -56,10 +56,10 @@ class insertController extends Controller
     {
         $data = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
         ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
-        ->where('COURSE_NAME_TH',$id)
+        ->where('COURSE_NAME_EN',$id)
         ->where('ACAD_YEAR', '>=', 2553)
         ->get();
-        return view('SelectThailist',['data'=>$data]);
+        return view('SelectEN',['data'=>$data]);
     }
 
     /**
