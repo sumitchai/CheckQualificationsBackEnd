@@ -40,7 +40,7 @@
         <div class="menu-logo">
             <div class="navbar-brand">
                 <span class="navbar-logo">
-                    <a href="/">
+                    <a href="/indexEN">
                         <img src="assets/images/up-536x536.png" alt="Mobirise" title="" style="height: 3.8rem;">
                     </a>
                 </span>
@@ -49,16 +49,16 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item dropdown">
-                    <a class="nav-link link text-black dropdown-toggle display-4" href="https://mobirise.co" data-toggle="dropdown-submenu" aria-expanded="true">เมนู</a>
+                    <a class="nav-link link text-black dropdown-toggle display-4" href="https://mobirise.co" data-toggle="dropdown-submenu" aria-expanded="true">Menu</a>
               <div class="dropdown-menu">
-                <a class="text-black dropdown-item display-4" href="/">หน้าแรก</a>
-                <a class="text-black dropdown-item display-4" href="/Check_course">ตรวจสอบคุณวุฒิตามหลักสูตร </a>
-                <a class="text-black dropdown-item display-4" href="/Checkindividual">ตรวจสอบคุณวุฒิรายบุคคล</a>
+                <a class="text-black dropdown-item display-4" href="/indexEN">Home</a>
+                <a class="text-black dropdown-item display-4" href="/Check_course_EN">Check The Course Qualifications</a>
+                <a class="text-black dropdown-item display-4" href="/Checkindividual">Individual Qualification Examination</a>
                 
               </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link link text-black display-4" href="/" aria-expanded="false">ภาษาไทย</a>
+                  <a class="nav-link link text-black display-4" href="/" aria-expanded="false">Thai</a>
               </li>
               <li class="nav-item">
                 <a class="text display-4">|</a>
@@ -70,7 +70,7 @@
                 <a class="btn btn-sm btn-success display-4"  data-toggle="modal" data-target="#myModal">
                 <span class="mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn"></span>
                     <font face="MobiriseIcons">
-                        <span style="font-size: 25.6px;">ติดต่อ</span>
+                        <span style="font-size: 25.6px;">Contact us</span>
                     </font>
                 &nbsp;
               </a>
@@ -92,7 +92,7 @@
                 <a>โทรศัพท์:  054466666 </a>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">ปิด</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
             </div><br/>
         </div>
     </div>
@@ -108,7 +108,7 @@
 </footer>
 <!-- Footer -->
 </section>
-        @section('main')
+        @section('mainEN')
         @show
 
 
