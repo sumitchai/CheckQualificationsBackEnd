@@ -14,7 +14,7 @@ class insertEnController extends Controller
      */
     public function index()
     {
-        $DEGREE_CODE =  (isset($_GET['degree']))?$_GET['degree']:3;
+        $DEGREE_CODE =  (isset($_GET['degree']))?$_GET['degree']:0;
         $data = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
         ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
         ->select(DB::Raw('COURSE_NAME_EN, COUNT(*) as count'))
