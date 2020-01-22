@@ -12,11 +12,11 @@
             Choose a level
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="Check_course?degree=2">Bachelor degree</a>
-            <a class="dropdown-item" href="Check_course?degree=5">Bachelor's Degree</a>
-            <a class="dropdown-item" href="Check_course?degree=3">Master's Degree</a>
-            <a class="dropdown-item" href="Check_course?degree=4">Ph.D</a>
-            <a class="dropdown-item" href="Check_course?degree=6">diploma</a>
+            <a class="dropdown-item" href="Check_course_EN?degree=2">Bachelor degree</a>
+            <a class="dropdown-item" href="Check_course_EN?degree=5">Bachelor's Degree</a>
+            <a class="dropdown-item" href="Check_course_EN?degree=3">Master's Degree</a>
+            <a class="dropdown-item" href="Check_course_EN?degree=4">Ph.D</a>
+            <a class="dropdown-item" href="Check_course_EN?degree=6">diploma</a>
           </div>
         </div>
       </h3>

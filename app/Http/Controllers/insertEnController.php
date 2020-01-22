@@ -20,6 +20,7 @@ class insertEnController extends Controller
         ->select(DB::Raw('COURSE_NAME_EN, COUNT(*) as count'))
         ->where('DEGREE_CODE','=',$DEGREE_CODE)
         ->groupBy('COURSE_NAME_EN')
+        ->orderBy('count')
         ->get();
         return  view('Check_course_EN',["course"=>$data,'degree'=>$DEGREE_CODE]);
     }
