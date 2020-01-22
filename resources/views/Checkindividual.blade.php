@@ -146,7 +146,7 @@ if( s1.options[s1.selectedIndex].value=="99")
                         <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-5">ชื่อ-นามสกุลผู้ขอตรวจสอบ</label>
                         <input type="text" name="namecheck" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-1f" placeholder="ระบุชื่อ-นามสกุลผู้ขอตรวจสอบ">
                     </div>
-                    <div class="form-group col-sm-6 display-5">
+                    <div class="form-group col-sm-6 display-5" >
                         <label>วัตถประสงค์ในการตรวจสอบ</label>   
                         <select name="Objective" id="RTID" class="form-control  select2 select2-hidden-accessible"  onChange="hideshow1()">
                             <option class="display-5" value="1">เพื่อรับเข้าศึกษาต่อ</option>
@@ -159,7 +159,7 @@ if( s1.options[s1.selectedIndex].value=="99")
                             <input class="form-control display-7" name="Objective" id="RTIDANS" type="text"  placeholder="กรุณาระบุอื่นๆ"/>
                         </div>
                     </div>
-                    <div class="form-group col-sm-6 display-5">
+                    <div class="form-group col-sm-6 display-5" >
                         <label>ประเภทหน่วยงาน</label>
                         <select id="OGID" name="department" class="form-control  select2 select2-hidden-accessible" onChange="hideshow2()">
                             <option class="display-5"  value="">เลือกประเภทหน่วยงาน</option>
