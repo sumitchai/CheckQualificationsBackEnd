@@ -31,6 +31,7 @@
           <table class="table isSearch" cellspacing="0">
             <thead>
               <tr class="table-heads ">
+                <th class="head-item mbr-fonts-style display-6"> ลำดับ </th>
               <th class="head-item mbr-fonts-style display-6">รหัสนิสิต </th>
               <th class="head-item mbr-fonts-style display-6">ชื่อ-นามสกุล</th>
               
@@ -38,8 +39,10 @@
               </tr>
             </thead>
             <tbody>
+              <?php $i = 1; ?>
               @foreach ($data as $x)
             <tr> 
+              <td class="body-item mbr-fonts-style display-6">{{$i++}}</td>
               <td class="body-item mbr-fonts-style display-6">{{$x->STUDENT_CODE}}</td>
               <td class="body-item mbr-fonts-style display-6">{{$x->NAME_TH}}</td>
               
