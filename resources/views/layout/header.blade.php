@@ -25,16 +25,7 @@
 </head>
 <body>
 <section class="menu cid-rN35OUwakP" once="menu" id="menu2-26">
-    <?php
-    if(Session::has('locale'))
-    {
-    $locale = Session::get('locale');
-    App::setLocale($locale);
-    }else{
-    App::setLocale('en');
-    $locale = 'en';
-    }
-    ?>
+ 
     
 
     <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">

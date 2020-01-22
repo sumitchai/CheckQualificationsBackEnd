@@ -1,6 +1,4 @@
-@extends('layout.header')
 
-@section('main')
 <br><br><br><br><br><br><br><br><br><br>
 
  <table class="table">
