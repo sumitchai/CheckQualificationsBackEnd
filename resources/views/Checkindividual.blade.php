@@ -54,7 +54,7 @@ if( s1.options[s1.selectedIndex].value=="99")
             <!-- Tab panes -->
             <div class="tab-content">
                 <!-- เลขประชาชน -->
-                <div role="tabpanel" class="tab-pane active" id="SSN">
+                <div role="tabpanel" class="tab-pane active" id="SSN" >
                     <form action="/Checkindividual" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="vordh/gURSSKD0ZGMhwpPXnXQfCdn1kgIzcb9RLMtD4POU/26VfzPT4ZQdfy3sekKAHsqN21f9gBkkSBDvFDpO0+riTtmt7266nKhPlmOobIncgB2HZdLa/FUfHNQgOt">
                         @csrf
                         <div class="row">
@@ -63,7 +63,7 @@ if( s1.options[s1.selectedIndex].value=="99")
                             </div>
                         </div>
                         <div class="dragArea row">
-                            <div class="col-sm-6  form-group" data-for="name">
+                            <div class="col-sm-6  form-group" data-for="name" >
                                 <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">เลขบัตรประชาชน</label>
                                 <input type="text" name="ID_SSN" data-form-field="Name" required="required" class="form-control display-7" id="name-form1-1e" placeholder="เลขบัตรประชาชน"><p></p>
                                 <div class="col-md-12 input-group-btn align-center">
@@ -145,28 +145,28 @@ if( s1.options[s1.selectedIndex].value=="99")
                         <label>วัตถประสงค์ในการตรวจสอบ</label>   
                         <select name="Objective" id="RTID" class="form-control  select2 select2-hidden-accessible"  onChange="hideshow1()">
                             <option class="display-5" value="">เลือกประเภทหน่วยงาน</option>
-                            <option class="display-5" value="1" >เพื่อรับเข้าศึกษาต่อ</option>
-                            <option class="display-5" value="2">เพื่อรับเข้าทำงาน</option>
-                            <option class="display-5" value="3">เพื่อปรับฐานเงินเดือนหรือโครงสร้างหน่วยงาน</option>
-                            <option class="display-5" value="4">เพื่อเป็นหลักฐานประกอบการอสิทธิ์ลดวันรับราชการกองประจำการ </option>
+                            <option class="display-5" value="เพื่อรับเข้าศึกษาต่อ" >เพื่อรับเข้าศึกษาต่อ</option>
+                            <option class="display-5" value="เพื่อรับเข้าทำงาน">เพื่อรับเข้าทำงาน</option>
+                            <option class="display-5" value="เพื่อปรับฐานเงินเดือนหรือโครงสร้างหน่วยงาน">เพื่อปรับฐานเงินเดือนหรือโครงสร้างหน่วยงาน</option>
+                            <option class="display-5" value="เพื่อเป็นหลักฐานประกอบการอสิทธิ์ลดวันรับราชการกองประจำการ">เพื่อเป็นหลักฐานประกอบการอสิทธิ์ลดวันรับราชการกองประจำการ </option>
                             <option class="display-5" value="99">อื่นๆ</option>
                         </select>
                         <div  id="RTIDANS" style="display:none;">ระบุอื่นๆ
-                            <input class="form-control display-7" name="Objective" id="RTIDANS" type="text"  placeholder="กรุณาระบุอื่นๆ"/>
+                            <input class="form-control display-7" name="Objective_1" id="RTIDANS" type="text"  placeholder="กรุณาระบุอื่นๆ"/>
                         </div>
                     </div>
                     <div class="form-group col-sm-6 display-5" >
                         <label>ประเภทหน่วยงาน</label>
                         <select id="OGID" name="department" class="form-control  select2 select2-hidden-accessible" onChange="hideshow2()">
                             <option class="display-5"  value="">เลือกประเภทหน่วยงาน</option>
-                            <option class="display-5"  value="01">หน่วยงานราชการ</option>
-                            <option class="display-5"  value="02">หน่วยงานรัฐวิสาหกิจ</option>
-                            <option class="display-5"  value="03">หน่วยงานเอกชน</option>
+                            <option class="display-5"  value="หน่วยงานราชการ">หน่วยงานราชการ</option>
+                            <option class="display-5"  value="หน่วยงานรัฐวิสาหกิจ">หน่วยงานรัฐวิสาหกิจ</option>
+                            <option class="display-5"  value="หน่วยงานเอกชน">หน่วยงานเอกชน</option>
                             <option class="display-5"  value="99">อื่นๆ</option>
                         </select>  
                         
                         <div  id="OGIDANS" style="display:none;">ระบุอื่นๆ
-                            <input class="form-control display-7" name="department" id="OGIDANS" type="text"  placeholder="กรุณาระบุอื่นๆ"/>
+                            <input class="form-control display-7" name="department_1" id="OGIDANS" type="text"  placeholder="กรุณาระบุอื่นๆ"/>
                         </div>
                     </div>
                     <div class="form-group col-sm-6 display-5">

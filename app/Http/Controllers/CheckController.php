@@ -37,6 +37,7 @@ class CheckController extends Controller
     public function store(Request $request)
     {
         $check = new Checkup();
+        print_r($request->all());
         $check->fill($request->all()); 
         $check->save();
         return \redirect('/Checkindividual');

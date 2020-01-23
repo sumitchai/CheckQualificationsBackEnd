@@ -22,7 +22,9 @@ class CreateCheckindividualTable extends Migration
             $table->string('companyname');
             $table->string('namecheck');
             $table->string('Objective');
+            $table->string('Objective_1')->nullable();
             $table->string('department');
+            $table->string('department_1')->nullable();
             $table->string('e_mail');
             $table->string('phone_number');
             $table->timestamps();            
