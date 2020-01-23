@@ -2,16 +2,7 @@
 
 @section('mainEN')
 <br><br><br><br><br>
-<?php
-if(Session::has('locale'))
-{
-$locale = Session::get('locale');
-App::setLocale($locale);
-}else{
-App::setLocale('en');
-$locale = 'en';
-}
-?>
+
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 

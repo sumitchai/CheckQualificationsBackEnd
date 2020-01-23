@@ -1,14 +1,5 @@
 @extends('layout.header')
-<?php
-if(Session::has('locale'))
-{
-$locale = Session::get('locale');
-App::setLocale($locale);
-}else{
-App::setLocale('en');
-$locale = 'en';
-}
-?>
+
 @section('main')
 <br><br><br><br>
 <section>

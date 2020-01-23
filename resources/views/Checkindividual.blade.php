@@ -21,6 +21,10 @@ var s1= document.getElementById('OGID');
 if( s1.options[s1.selectedIndex].value=="99")
 {document.getElementById('OGIDANS').style.display = "block";}else{document.getElementById('OGIDANS').style.display = "none";}
 }
+
+
+
+
 </script>
 
 <section>
@@ -141,7 +145,7 @@ if( s1.options[s1.selectedIndex].value=="99")
                         <label>วัตถประสงค์ในการตรวจสอบ</label>   
                         <select name="Objective" id="RTID" class="form-control  select2 select2-hidden-accessible"  onChange="hideshow1()">
                             <option class="display-5" value="">เลือกประเภทหน่วยงาน</option>
-                            <option class="display-5" value="1">เพื่อรับเข้าศึกษาต่อ</option>
+                            <option class="display-5" value="1" >เพื่อรับเข้าศึกษาต่อ</option>
                             <option class="display-5" value="2">เพื่อรับเข้าทำงาน</option>
                             <option class="display-5" value="3">เพื่อปรับฐานเงินเดือนหรือโครงสร้างหน่วยงาน</option>
                             <option class="display-5" value="4">เพื่อเป็นหลักฐานประกอบการอสิทธิ์ลดวันรับราชการกองประจำการ </option>
