@@ -60,7 +60,7 @@ if( s1.options[s1.selectedIndex].value=="99")
             <div class="tab-content">
                 <!-- เลขประชาชน -->
                 <div role="tabpanel" class="tab-pane active" id="SSN">
-                    <form action="/Checkindividual" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="vordh/gURSSKD0ZGMhwpPXnXQfCdn1kgIzcb9RLMtD4POU/26VfzPT4ZQdfy3sekKAHsqN21f9gBkkSBDvFDpO0+riTtmt7266nKhPlmOobIncgB2HZdLa/FUfHNQgOt">
+                    <form action="/CheckindividualEN" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="vordh/gURSSKD0ZGMhwpPXnXQfCdn1kgIzcb9RLMtD4POU/26VfzPT4ZQdfy3sekKAHsqN21f9gBkkSBDvFDpO0+riTtmt7266nKhPlmOobIncgB2HZdLa/FUfHNQgOt">
                         @csrf
                         <div class="row">
                             <div hidden="hidden" data-form-alert="" class="alert alert-success col-12 display-5">Thanks for filling out the form!</div>
@@ -81,7 +81,7 @@ if( s1.options[s1.selectedIndex].value=="99")
 
                 <!-- ชื่อ สุกล -->
                 <div role="tabpanel" class="tab-pane fade" id="name">
-                    <form action="/Checkindividual" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="vordh/gURSSKD0ZGMhwpPXnXQfCdn1kgIzcb9RLMtD4POU/26VfzPT4ZQdfy3sekKAHsqN21f9gBkkSBDvFDpO0+riTtmt7266nKhPlmOobIncgB2HZdLa/FUfHNQgOt">
+                    <form action="/CheckindividualEN" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="vordh/gURSSKD0ZGMhwpPXnXQfCdn1kgIzcb9RLMtD4POU/26VfzPT4ZQdfy3sekKAHsqN21f9gBkkSBDvFDpO0+riTtmt7266nKhPlmOobIncgB2HZdLa/FUfHNQgOt">
                         @csrf
                         <div class="row">
                             <div hidden="hidden" data-form-alert="" class="alert alert-success col-12 display-5">Thanks for filling out the form!</div>
@@ -106,7 +106,7 @@ if( s1.options[s1.selectedIndex].value=="99")
 
                 <!-- รหัสนิสิต -->
                 <div role="tabpanel" class="tab-pane fade" id="studenID">
-                    <form action="/Checkindividual" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="vordh/gURSSKD0ZGMhwpPXnXQfCdn1kgIzcb9RLMtD4POU/26VfzPT4ZQdfy3sekKAHsqN21f9gBkkSBDvFDpO0+riTtmt7266nKhPlmOobIncgB2HZdLa/FUfHNQgOt">
+                    <form action="/CheckindividualEN" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="vordh/gURSSKD0ZGMhwpPXnXQfCdn1kgIzcb9RLMtD4POU/26VfzPT4ZQdfy3sekKAHsqN21f9gBkkSBDvFDpO0+riTtmt7266nKhPlmOobIncgB2HZdLa/FUfHNQgOt">
                         @csrf
                         <div class="row">
                             <div hidden="hidden" data-form-alert="" class="alert alert-success col-12 display-5">Thanks for filling out the form!</div>
@@ -128,7 +128,7 @@ if( s1.options[s1.selectedIndex].value=="99")
             </div>
 
             <!---Formbuilder Form--->
-            <form action="/Checkindividual" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="Nqufa8UczwmfDW6m4yWU8BqgRYVDV+1j7x1IHzMQdCfMftPYZq3BjtuxEKBb5komQLGpLk7E5inGB9TszlbPVxOAuBwCYWRaaUgWVpSTBfe7+4USDydIs5rbMWiydd37">
+            <form action="/CheckindividualEN" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="Nqufa8UczwmfDW6m4yWU8BqgRYVDV+1j7x1IHzMQdCfMftPYZq3BjtuxEKBb5komQLGpLk7E5inGB9TszlbPVxOAuBwCYWRaaUgWVpSTBfe7+4USDydIs5rbMWiydd37">
                 @csrf
                 <div class="row">
                     <div hidden="hidden" data-form-alert="" class="alert alert-success col-12 display-5">Thanks for filling out the form!</div>

@@ -57,14 +57,12 @@ Route::resource ('SelectEN', 'insertEnController');
 
 
 Route::resource ('Checkindividual', 'CheckController');
+Route::resource ('CheckindividualEN', 'CheckENController');
 
 Route::get('/indexEN', function () {
     return view('indexEN');
 });
 
-Route::get('/CheckindividualEN', function () {
-    return view('CheckindividualEN');
-});
 
 
 
