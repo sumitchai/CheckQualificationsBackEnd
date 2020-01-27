@@ -6,13 +6,25 @@
   <div class="container container-table">
       <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5">ตรวจสอบคุณวุฒิตามหลักสูตร <br></h2>
       <h3 class="mbr-section-subtitle mbr-fonts-style align-center pb-5 mbr-light display-5">
-        <strong>ระดับการศึกษา : </strong><br>
+        <strong>ระดับการศึกษา :    
+          @if ($degree == 2)
+          ปริญญาตรี
+          @elseif($degree == 5) 
+          ปริญญาตรีควบโท
+          @elseif($degree == 3) 
+          ปริญญาโท
+          @elseif($degree == 4) 
+          ปริญญาเอก
+          @else
+          ประกาศนียบัตร
+          @endif
+         </strong><br>
         <div class="dropdown">
           <button class="btn btn-light  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             เลือกระดับปริญญา
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="Check_course?degree=2">ปริญญาตรี</a>
+            <a class="dropdown-item " href="Check_course?degree=2">ปริญญาตรี</a>
             <a class="dropdown-item" href="Check_course?degree=5">ปริญญาตรีควบโท</a>
             <a class="dropdown-item" href="Check_course?degree=3">ปริญญาโท</a>
             <a class="dropdown-item" href="Check_course?degree=4">ปริญญาเอก</a>
