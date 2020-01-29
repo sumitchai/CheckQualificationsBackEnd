@@ -35,7 +35,7 @@
       </div>
       <br>
       <div class="input-group-btn item-right" style="float: right ; padding-right : 120px">
-        <a download="/dataindividual" href="/dataindividual" class="btn btn-form btn-success display-5" type="submit"><span class="glyphicon glyphicon-save"></span>ดาวน์โหลด</a>
+        <a href="{{ route('HtmlToPDF') }}" class="btn btn-form btn-success display-5" type="submit" target ="_blank"><span class="glyphicon glyphicon-save"></span>ดาวน์โหลด</a>
       </div>
       <br><br><br><br><br>
     </div>

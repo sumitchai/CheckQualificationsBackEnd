@@ -14,7 +14,7 @@ class insertController extends Controller
      */
     public function index()
     {
-        $DEGREE_CODE =  (isset($_GET['degree']))?$_GET['degree']:2;
+        $DEGREE_CODE =  (isset($_GET['degree']))?$_GET['degree']:0;
         $data = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
         ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
         ->select(DB::Raw('COURSE_NAME_TH, COUNT(*) as count'))
@@ -59,7 +59,6 @@ class insertController extends Controller
         ->select('STUDENT_CODE','NAME_TH','ACAD_YEAR','COURSE_NAME_TH')
         ->where('COURSE_NAME_TH',$id)
         ->where('ACAD_YEAR', '>=', 2553)
-        ->distinct('STUDENT_CODE,NAME_TH,ACAD_YEAR,COURSE_NAME_TH')
         ->orderBy('ACAD_YEAR')
         ->get();
         return view('SelectThailist',['data'=>$data]);

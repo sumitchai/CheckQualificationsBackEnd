@@ -1,6 +1,6 @@
-@extends('layout.header')
+@extends('layout.headerEN')
 
-@section('main')
+@section('mainEN')
 <br><br><br><br>
 <section class="section-table cid-rN9ViYOSs1" id="table1-2e">
   <div class="container container-table">

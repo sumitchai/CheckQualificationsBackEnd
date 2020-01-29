@@ -56,10 +56,10 @@ class PdfDemoController extends Controller
     {    
         $view = \View::make('HtmlToPDF');
         $html_content = $view->render();
-      
- 
+
+        PDF::SetFont('thniramit','',15);
         PDF::SetTitle('Sample PDF');
-        PDF::AddPage();
+        PDF::AddPage('P', 'A4');
         PDF::writeHTML($html_content, true, false, true, false, '');
  
         PDF::Output(uniqid().'_SamplePDF.pdf');

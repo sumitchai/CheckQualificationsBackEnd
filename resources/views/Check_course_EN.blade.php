@@ -6,17 +6,31 @@
   <div class="container container-table">
       <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5">Check the qualifications according to the course<br></h2>
       <h3 class="mbr-section-subtitle mbr-fonts-style align-center pb-5 mbr-light display-5">
-        <strong>Education level : </strong><br>
+        <strong>Education level : 
+          @if ($degree == 2)
+          Bachelor degree
+          @elseif($degree == 5) 
+          Bachelor and Master degree
+          @elseif($degree == 3) 
+          Master degree
+          @elseif($degree == 4) 
+          Doctoral degree
+          @elseif($degree == 6) 
+          Certificate  Program 
+          @else
+          Choose a level
+          @endif
+        </strong><br>
         <div class="dropdown">
           <button class="btn btn-light  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Choose a level
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="Check_course_EN?degree=2">Bachelor degree</a>
-            <a class="dropdown-item" href="Check_course_EN?degree=5">Bachelor's Degree</a>
-            <a class="dropdown-item" href="Check_course_EN?degree=3">Master's Degree</a>
-            <a class="dropdown-item" href="Check_course_EN?degree=4">Ph.D</a>
-            <a class="dropdown-item" href="Check_course_EN?degree=6">diploma</a>
+            <a class="dropdown-item" href="Check_course_EN?degree=5">Bachelor and Master degree</a>
+            <a class="dropdown-item" href="Check_course_EN?degree=3">Master degree</a>
+            <a class="dropdown-item" href="Check_course_EN?degree=4">Doctoral degree</a>
+            <a class="dropdown-item" href="Check_course_EN?degree=6">Certificate  Program </a>
           </div>
         </div>
       </h3>

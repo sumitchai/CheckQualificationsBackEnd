@@ -15,8 +15,10 @@
           ปริญญาโท
           @elseif($degree == 4) 
           ปริญญาเอก
-          @else
+          @elseif($degree == 6) 
           ประกาศนียบัตร
+          @else
+          เลือกระดับปริญญา
           @endif
          </strong><br>
         <div class="dropdown">
