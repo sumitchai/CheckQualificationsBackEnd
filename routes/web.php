@@ -34,9 +34,9 @@ Route::get('/SelectENlist', function () {
     return view('SelectENlist');
 });
 
-Route::get('/dataindividual', function () {
-    return view('dataindividual');
-});
+// Route::get('/dataindividual', function () {
+//     return view('dataindividual');
+// });
 
 //Route::get ('/Check_course','grauateController@seclectgrauate');
 
@@ -58,6 +58,7 @@ Route::resource ('SelectEN', 'insertEnController');
 
 Route::resource ('Checkindividual', 'CheckController');
 Route::resource ('CheckindividualEN', 'CheckENController');
+Route::resource ('dataindividual', 'CheckController');
 
 Route::get('/indexEN', function () {
     return view('indexEN');
