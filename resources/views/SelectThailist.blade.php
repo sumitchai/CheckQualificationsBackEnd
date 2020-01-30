@@ -9,16 +9,16 @@
       <h3 class="mbr-section-subtitle mbr-fonts-style align-center pb-5 mbr-light display-5">
 
         <strong>ระดับการศึกษา :
-           @foreach ($data as $x)
-              {{$x->DEGREE_NAME_TH}}
-              @break($x->DEGREE_NAME_TH)
-            @endforeach 
+          @foreach ($data as $x)
+            {{$x->DEGREE_NAME_TH}}
+            @break($x->DEGREE_NAME_TH)
+          @endforeach 
         </strong><br>
         
         <strong> 
           @foreach ($data as $x)
-                  {{ $x->COURSE_NAME_TH}}
-                  @break($x->COURSE_NAME_TH)
+            {{ $x->COURSE_NAME_TH}}
+            @break($x->COURSE_NAME_TH)
           @endforeach
         </strong>
       </h3>
