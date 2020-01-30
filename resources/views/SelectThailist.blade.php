@@ -7,8 +7,20 @@
   <div class="container container-table">
       <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5">ตรวจสอบคุณวุฒิตามหลักสูตร<br></h2>
       <h3 class="mbr-section-subtitle mbr-fonts-style align-center pb-5 mbr-light display-5">
-        <strong>ระดับการศึกษา : <!---ปริญญา----></strong><br>
-        <strong> <!-----ชื่อหลักสูตร------><strong>
+
+        <strong>ระดับการศึกษา :
+           @foreach ($data as $x)
+              {{$x->DEGREE_NAME_TH}}
+              @break($x->DEGREE_NAME_TH)
+            @endforeach 
+        </strong><br>
+        
+        <strong> 
+          @foreach ($data as $x)
+                  {{ $x->COURSE_NAME_TH}}
+                  @break($x->COURSE_NAME_TH)
+          @endforeach
+        </strong>
       </h3>
       <div class="table-wrapper">
         <div class="container">
@@ -31,6 +43,7 @@
               <th class="head-item mbr-fonts-style display-6">รหัสนิสิต </th>
               <th class="head-item mbr-fonts-style display-6">ชื่อ-นามสกุล</th>
               <th class="head-item mbr-fonts-style display-6">ปีที่สำเร็จการศึกษา</th>
+              
               </tr>
             </thead>
             
@@ -41,8 +54,8 @@
               <td class="body-item mbr-fonts-style display-6">{{$i++}}</td>
               <td class="body-item mbr-fonts-style display-6">{{$x->STUDENT_CODE}}</td>
               <td class="body-item mbr-fonts-style display-6">{{$x->NAME_TH}}</td>
-              
               <td class="body-item mbr-fonts-style display-6">{{$x->ACAD_YEAR}}</td>
+              
               </tr>
               @endforeach
               </tbody>

@@ -181,7 +181,7 @@ if( s1.options[s1.selectedIndex].value=="99")
                     </div>
                     
                     <div class="col-md-12 input-group-btn align-center ">
-                        <button type="submit" class="btn btn-form btn-success display-5">ตรวจสอบ</button>
+                        <a href="dataindividual" type="submit" class="btn btn-form btn-success display-5">ตรวจสอบ</a>
                         <button type="reset" class="btn btn-form btn-secondary display-5">คืนค่า</button>
                     <br><br><br>
                     </div>
