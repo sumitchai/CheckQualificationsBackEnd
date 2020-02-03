@@ -5,7 +5,11 @@
 @foreach ($data as $x)
 <section >
   <div class="mbr-form form-with-styler" style="padding : 40px">
-    <br><br>
+    <br>
+      <div class="mbr-section-btn">
+        <a class="btn btn-md btn-bgr btn-primary display-4" onclick="goBack()">ย้อนกลับ</a> 
+      </div>
+    <br>
     <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style ">ข้อมูลการตรวจสอบคุณวุฒิรายบุคคล</h2>
     <br>
     <div >
@@ -42,6 +46,10 @@
     </div>
   </div>
 </section>
-
+<script>
+  function goBack() {
+    window.history.back();
+  }
+  </script>
 
 
