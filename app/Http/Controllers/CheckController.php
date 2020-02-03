@@ -37,11 +37,12 @@ class CheckController extends Controller
      */
     public function store(Request $request)
     {
+        
         $check = new Checkup();
         print_r($request->all());
         $check->fill($request->all()); 
         $check->save();
-        return view('dataindividual');
+        // return \redirect('/Checkindividual');
     }
 
     /**
@@ -52,6 +53,7 @@ class CheckController extends Controller
      */
     public function show($id)
     {   
+
         $student_code =  (isset($_GET['$student_code']))?$_GET['$student_code']:0;
         $name_th =  (isset($_GET['name_th']))?$_GET['name_th']:0;
         $citizen_id =  (isset($_GET['citizen_id']))?$_GET['citizen_id']:0;
