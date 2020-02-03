@@ -64,10 +64,10 @@ class PdfDemoController extends Controller
         PDF::SetTitle('Sample PDF');
         PDF::AddPage('P', 'A4');
         PDF::writeHTML($html_content, true, false, true, false, '');
-        $upktt = DB::connection('sqlsrv')->table('VW_VOQ_COURSE')
-        ->select('COURSE_NAME_TH')
+        $upktt = DB::connection('mysql')->table('checkindividual')
+        ->select('NAME','namecheck')
         ->get();
-        print_r($upktt);
+        //print_r($upktt);
         
         PDF::Output(uniqid().'Qualification.pdf');
     }
