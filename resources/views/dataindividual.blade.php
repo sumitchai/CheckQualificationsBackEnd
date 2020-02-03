@@ -5,7 +5,11 @@
 @foreach ($data as $x)
 <section >
   <div class="mbr-form form-with-styler" style="padding : 40px">
-    <br><br>
+    <br>
+      <div class="mbr-section-btn">
+        <a class="btn btn-md btn-bgr btn-primary display-4" onclick="goBack()">ย้อนกลับ</a> 
+      </div>
+    <br>
     <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style ">ข้อมูลการตรวจสอบคุณวุฒิรายบุคคล</h2>
     <br>
     <div >
@@ -24,9 +28,9 @@
         <div class="col-sm-6" style="padding-left:20px; padding-right:120px;">
           <div class="card">
             <div class="card-body">
-              <p class="card-text display-5">Fullname :	{{$x->NAME_TH}}</p>
-              <p class="card-text display-5">Curriculum : {{$x->COURSE_NAME_TH}}</p>
-              <p class="card-text display-5">Facuty :  {{ $x->FACULTY_NAME_TH }}</p>
+              <p class="card-text display-5">Fullname :	{{$x->NAME_EN}}</p>
+              <p class="card-text display-5">Curriculum : {{$x->COURSE_NAME_EN}}</p>
+              <p class="card-text display-5">Facuty :  {{ $x->FACULTY_NAME_EN}}</p>
               <p class="card-text display-5">Year of Graduation (A.D.) : {{ $x->ACAD_YEAR }}</p>
               <p class="card-text display-5">Graduation date (A.D.) : {{ $x->GRADUATE_DATE }}</p>
             </div>
@@ -42,6 +46,10 @@
     </div>
   </div>
 </section>
-
+<script>
+  function goBack() {
+    window.history.back();
+  }
+  </script>
 
 

@@ -16,6 +16,7 @@ class CheckController extends Controller
     public function index()
     {
         $data = Checkup::get(); 
+        $datas = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')->get();
         return view('Checkindividual',['data'=>$data]);
     }
 

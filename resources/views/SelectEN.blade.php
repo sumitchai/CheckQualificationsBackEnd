@@ -6,8 +6,18 @@
   <div class="container container-table">
       <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5">Check the qualifications according to the course<br></h2>
       <h3 class="mbr-section-subtitle mbr-fonts-style align-center pb-5 mbr-light display-5">
-        <strong>Education level : <!---ปริญญา----></strong><br>
-        <strong> <!-----ชื่อหลักสูตร------><strong>
+        <strong>Education level : 
+          @foreach ($data as $x)
+            {{$x->DEGREE_NAME_EN}}
+            @break($x->DEGREE_NAME_EN)
+          @endforeach 
+      </strong><br>
+      <strong> 
+        @foreach ($data as $x)
+          {{ $x->COURSE_NAME_EN}}
+          @break($x->COURSE_NAME_EN)
+        @endforeach
+      </strong>
       </h3>
       <div class="table-wrapper">
         <div class="container">
