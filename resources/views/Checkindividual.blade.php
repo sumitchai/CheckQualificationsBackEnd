@@ -67,7 +67,7 @@ if( s1.options[s1.selectedIndex].value=="99")
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name" >
                                     <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">เลขบัตรประชาชน</label>
-                                    <input type="number" name="ID_SSN" data-form-field="Name" class="form-control display-7" id="name-form1-1e" placeholder="เลขบัตรประชาชน"><p></p>
+                                    <input type="text" name="ID_SSN" data-form-field="Name" class="form-control display-7" id="name-form1-1e" placeholder="เลขบัตรประชาชน"><p></p>
                                     <div class="col-md-12 input-group-btn align-center">
                                         <button type="reset" class="btn btn-form btn-secondary display-5" href="Checkindividual">คืนค่า
 
@@ -113,7 +113,7 @@ if( s1.options[s1.selectedIndex].value=="99")
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name">
                                     <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">รหัสนิสิต</label>
-                                    <input type="number" name="ID_STUDENT" data-form-field="Name"  class="form-control display-5" id="name-form1-1e" placeholder="ระบุรหัสนิสิต"><p></p>
+                                    <input type="text" name="ID_STUDENT" data-form-field="Name"  class="form-control display-5" id="name-form1-1e" placeholder="ระบุรหัสนิสิต"><p></p>
                                     <div class="col-md-12 input-group-btn align-center">
                                         <button type="reset" class="btn btn-form btn-secondary display-5" href="Checkindividual">คืนค่า</button>
                                     </div>
@@ -175,7 +175,7 @@ if( s1.options[s1.selectedIndex].value=="99")
 
                         <div class="form-group col-sm-6 display-5">
                             <label>หมายเลขโทรศัพท์</label>
-                            <input type="number" id="phone" name="phone_number" class="form-control" placeholder="ระบุหมายเลขโทรศัพท์" required="">	
+                            <input type="text" id="phone" name="phone_number" class="form-control" placeholder="ระบุหมายเลขโทรศัพท์" required="">	
                             <br>
                         </div>
                         
