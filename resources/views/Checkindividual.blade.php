@@ -93,7 +93,7 @@ if( s1.options[s1.selectedIndex].value=="99")
                                 </div>
                                 <div class="col-sm-6  form-group">
                                     <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">นามสกุล</label>
-                                    <input type="text" name="SUR_NAME" data-form-field="Surname"  class="form-control display-5" id="surname-form1-1e" placeholder="ระบุนามสกุล">
+                                    <input type="search" name="SUR_NAME" data-form-field="Surname"  class="form-control display-5" id="surname-form1-1e" placeholder="ระบุนามสกุล">
                                 </div>
                                 <div class="col-md-12 input-group-btn align-center">
                                     <button type="reset" class="btn btn-form btn-secondary display-5">คืนค่า</button>
@@ -175,7 +175,7 @@ if( s1.options[s1.selectedIndex].value=="99")
 
                         <div class="form-group col-sm-6 display-5">
                             <label>หมายเลขโทรศัพท์</label>
-                            <input type="number" id="phone" name="phone_number" class="form-control" placeholder="ระบุหมายเลขโทรศัพท์" required="">	
+                            <input type="text" id="phone" name="phone_number" class="form-control" placeholder="ระบุหมายเลขโทรศัพท์" required="">	
                             <br>
                         </div>
                         
