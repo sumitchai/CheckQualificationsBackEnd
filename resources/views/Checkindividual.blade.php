@@ -88,12 +88,8 @@ if( s1.options[s1.selectedIndex].value=="99")
                             </div>
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name">
-                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">ชื่อ</label>
+                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">ชื่อ-นามสกุล</label>
                                     <input type="search" name="NAME" data-form-field="Name"  class="form-control display-5" id="name-form1-1e" placeholder="ระบุชื่อ">
-                                </div>
-                                <div class="col-sm-6  form-group">
-                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">นามสกุล</label>
-                                    <input type="search" name="SUR_NAME" data-form-field="Surname"  class="form-control display-5" id="surname-form1-1e" placeholder="ระบุนามสกุล">
                                 </div>
                                 <div class="col-md-12 input-group-btn align-center">
                                     <button type="reset" class="btn btn-form btn-secondary display-5">คืนค่า</button>
