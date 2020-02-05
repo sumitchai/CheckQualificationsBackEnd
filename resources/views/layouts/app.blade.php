@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
+    <!-- Site made with Mobirise Website Builder v4.11.6, https://mobirise.com -->
+    <!-- mobirise -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v4.11.6, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="{{env('APP_URL')}}/assets/images/up-536x536.png" type="image/x-icon">
+    <meta name="description" content="">
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>กลับ</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -15,6 +25,18 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- mobirise -->
+    <link rel="stylesheet" href="{{env('APP_URL')}}/assets/web/{{env('APP_URL')}}/assets/mobirise-icons2/mobirise2.css">
+    <link rel="stylesheet" href="{{env('APP_URL')}}/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{env('APP_URL')}}/assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="{{env('APP_URL')}}/assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="{{env('APP_URL')}}/assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="{{env('APP_URL')}}/assets/tether/tether.min.css">
+    <link rel="stylesheet" href="{{env('APP_URL')}}/assets/datatables/data-tables.bootstrap4.min.css">
+    <link rel="stylesheet" href="{{env('APP_URL')}}/assets/theme/css/style.css">
+    <link rel="preload" as="style" href="{{env('APP_URL')}}/assets/mobirise/css/mbr-additional.css">
+    <link rel="stylesheet" href="{{env('APP_URL')}}/assets/mobirise/css/mbr-additional.css" type="text/css">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -24,7 +46,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    กลับหน้าหลัก
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -76,5 +98,20 @@
             @yield('content')
         </main>
     </div>
+
+    <!-- mobirise -->
+    <script src="{{env('APP_URL')}}/assets/web/{{env('APP_URL')}}/assets/jquery/jquery.min.js"></script>
+    <script src="{{env('APP_URL')}}/assets/popper/popper.min.js"></script>
+    <script src="{{env('APP_URL')}}/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{env('APP_URL')}}/assets/dropdown/js/nav-dropdown.js"></script>
+    <script src="{{env('APP_URL')}}/assets/dropdown/js/navbar-dropdown.js"></script>
+    <script src="{{env('APP_URL')}}/assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="{{env('APP_URL')}}/assets/tether/tether.min.js"></script>
+    <script src="{{env('APP_URL')}}/assets/touchswipe/jquery.touch-swipe.min.js"></script>
+    <script src="{{env('APP_URL')}}/assets/parallax/jarallax.min.js"></script>
+    <script src="{{env('APP_URL')}}/assets/datatables/jquery.data-tables.min.js"></script>
+    <script src="{{env('APP_URL')}}/assets/datatables/data-tables.bootstrap4.min.js"></script>
+    <script src="{{env('APP_URL')}}/assets/theme/js/script.js"></script>
+    <script src="{{env('APP_URL')}}/assets/formoid/formoid.min.js"></script>
 </body>
 </html>
