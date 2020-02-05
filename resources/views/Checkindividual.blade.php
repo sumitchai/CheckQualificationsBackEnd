@@ -28,7 +28,7 @@ if( s1.options[s1.selectedIndex].value=="99")
 </script>
 
 <section>
-    <form action="/Checkindividual" method="POST" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="Nqufa8UczwmfDW6m4yWU8BqgRYVDV+1j7x1IHzMQdCfMftPYZq3BjtuxEKBb5komQLGpLk7E5inGB9TszlbPVxOAuBwCYWRaaUgWVpSTBfe7+4USDydIs5rbMWiydd37">
+    <form action="/dataindividual" method="get" class="mbr-form form-with-styler" data-form-title="Mobirise Form"><input type="hidden" name="email" data-form-email="true" value="Nqufa8UczwmfDW6m4yWU8BqgRYVDV+1j7x1IHzMQdCfMftPYZq3BjtuxEKBb5komQLGpLk7E5inGB9TszlbPVxOAuBwCYWRaaUgWVpSTBfe7+4USDydIs5rbMWiydd37">
 
         @csrf
         <div class="container-full-width">
@@ -67,7 +67,7 @@ if( s1.options[s1.selectedIndex].value=="99")
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name" >
                                     <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">เลขบัตรประชาชน</label>
-                                    <input type="number" name="ID_SSN" data-form-field="Name" class="form-control display-7" id="name-form1-1e" placeholder="เลขบัตรประชาชน"><p></p>
+                                    <input type="search" name="ID_SSN" data-form-field="Name" class="form-control display-7" id="name-form1-1e" placeholder="เลขบัตรประชาชน"><p></p>
                                     <div class="col-md-12 input-group-btn align-center">
                                         <button type="reset" class="btn btn-form btn-secondary display-5" href="Checkindividual">คืนค่า
 
@@ -89,7 +89,7 @@ if( s1.options[s1.selectedIndex].value=="99")
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name">
                                     <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">ชื่อ</label>
-                                    <input type="text" name="NAME" data-form-field="Name"  class="form-control display-5" id="name-form1-1e" placeholder="ระบุชื่อ">
+                                    <input type="search" name="NAME" data-form-field="Name"  class="form-control display-5" id="name-form1-1e" placeholder="ระบุชื่อ">
                                 </div>
                                 <div class="col-sm-6  form-group">
                                     <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">นามสกุล</label>
@@ -113,7 +113,7 @@ if( s1.options[s1.selectedIndex].value=="99")
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name">
                                     <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">รหัสนิสิต</label>
-                                    <input type="number" name="ID_STUDENT" data-form-field="Name"  class="form-control display-5" id="name-form1-1e" placeholder="ระบุรหัสนิสิต"><p></p>
+                                    <input type="search" name="ID_STUDENT" data-form-field="Name"  class="form-control display-5" id="name-form1-1e" placeholder="ระบุรหัสนิสิต"><p></p>
                                     <div class="col-md-12 input-group-btn align-center">
                                         <button type="reset" class="btn btn-form btn-secondary display-5" href="Checkindividual">คืนค่า</button>
                                     </div>
