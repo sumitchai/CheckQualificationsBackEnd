@@ -19,12 +19,13 @@
           <div class="col-sm-6" style="padding-left:120px; padding-right:20px;">
             <div class="card">
               <div class="card-body">
-                @foreach ($data as $x)
+                @foreach ($posts as $x)
                   <p class="card-text display-5">ชื่อ-นามสกุล : {{$x->NAME_TH}}</p>
                   <p class="card-text display-5">หลักสูตร :	{{$x->COURSE_NAME_TH}}</p>
                   <p class="card-text display-5">คณะ : {{ $x->FACULTY_NAME_TH }}</p>
                   <p class="card-text display-5">ปีสำเร็จการศึกษา (พ.ศ.): {{ $x->ACAD_YEAR }}</p>
                   <p class="card-text display-5">วันที่สำเร็จการศึกษา (พ.ศ.): {{ $x->GRADUATE_DATE }}</p>
+                  @break
                   
                 @endforeach
               </div>
@@ -33,12 +34,13 @@
           <div class="col-sm-6" style="padding-left:20px; padding-right:120px;">
             <div class="card">
               <div class="card-body">
-                @foreach ($data as $x)
+                @foreach ($posts as $x)
                   <p class="card-text display-5">Fullname :	{{$x->NAME_EN}}</p>
                   <p class="card-text display-5">Curriculum : {{$x->COURSE_NAME_EN}}</p>
                   <p class="card-text display-5">Facuty :  {{ $x->FACULTY_NAME_EN}}</p>
                   <p class="card-text display-5">Year of Graduation (A.D.) : {{ $x->ACAD_YEAR }}</p>
                   <p class="card-text display-5">Graduation date (A.D.) : {{ $x->GRADUATE_DATE }}</p>
+                  @break
                 @endforeach
               </div>
             </div>
