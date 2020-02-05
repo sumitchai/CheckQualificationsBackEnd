@@ -103,6 +103,9 @@
     <div class="py-4 bg-dark text-white-50 page-footer text-center ">
         มหาวิทยาลัยพะเยา, ระบบตรวจสอบคุณวุฒิ<br>
         Copyright 2019 © University of Phayao Page
+        <div>
+            <a href="#" class="text-decoration-none float-right">แก้ไขเว็บไซต์</a><br>
+        </div>
     </div>
     <!-- Copyright -->
 </footer>
