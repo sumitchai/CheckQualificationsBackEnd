@@ -43,15 +43,17 @@ class CheckController extends Controller
         print_r($request->all());
         $check->fill($request->all()); 
         $check->save();
-        return \redirect('/Checkindividual');
+        return view('dataindividual');
     }
     public function search(Request $request)
     {
       $search = $request->get('search') ;
       $posts = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
       ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
-      ->where('NAME_TH','COURSE_NAME_TH','FACULTY_NAME_TH','ACAD_YEAR','GRADUATE_DATE',
-              'NAME_EN','COURSE_NAME_EN','FACULTY_NAME_EN', 'like', '%'.search.'%' )->paginate(15);
+      ->where('NAME_TH','like', '%'.$search.'%' )
+      ->where('CITIZEN_ID','like', '%'.$search.'%' )
+      ->where('STUDENT_CODE','like', '%'.$search.'%' )
+      ->paginate();
       
               return view('dataindividual',['posts'=>$posts]);
       
