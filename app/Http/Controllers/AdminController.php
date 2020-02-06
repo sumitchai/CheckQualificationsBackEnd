@@ -14,9 +14,9 @@ class AdminController extends Controller
      */
     public function index()  /**  ฟังก์ชั่นแสดงข้อมูล */
     {
-        $admin = DB::connection('mysql')->select('SELECT * FROM checkindividual')
+        $admin = DB::connection('mysql')->table('checkindividual')
         ->get();
-        return view('home',['admin'=>$admin]);
+        return view('/home',['admin'=>$admin]);
     }
 
     /**
