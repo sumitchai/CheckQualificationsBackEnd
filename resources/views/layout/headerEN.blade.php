@@ -10,6 +10,10 @@
   <meta name="description" content="">
   
   <title>Qualification | University Of Phayao</title>
+    <!-----fonts--->
+    <link href="https://fonts.googleapis.com/css?family=K2D&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{env('APP_URL')}}/assets/web/{{env('APP_URL')}}/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="{{env('APP_URL')}}/assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="{{env('APP_URL')}}/assets/bootstrap/css/bootstrap-grid.min.css">
@@ -68,9 +72,9 @@
               </li></ul>
             <div class="navbar-buttons mbr-section-btn">
                 <a class="btn btn-sm btn-success display-4"  data-toggle="modal" data-target="#myModal">
-                <span class="mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn"></span>
+                <span class="display-2 mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn"></span>
                     <font face="MobiriseIcons">
-                        <span style="font-size: 25.6px;">Contact us</span>
+                        <span class="display-3">Contact us</span>
                     </font>
                 &nbsp;
               </a>
@@ -86,7 +90,7 @@
                 <h4 class="modal-title text-center" id="myModalLong">กองบริการการศึกษา : มหาวิทยาลัยพะเยา</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
             </div>
-            <div class="modal-body text-center" style="font-size: 18px;">
+            <div class="display-4 modal-body text-center" style="font-size: 18px;">
                 <b>งานทะเบียนนิสิตและประมวลผล</b><br>
                 <a>19 หมู่ 2 ตำบลแม่กา อำเภอเมือง จังหวัดพะเยา รหัสไปรษณีย์ 56000</a><br>
                 <a>โทรศัพท์:  054-466666 ต่อ 1028 </a>
@@ -100,11 +104,15 @@
 <!-- Footer -->
 <footer class="page-footer font-small blue">
     <!-- Copyright -->
-    <div class="py-4 bg-dark text-white-50 page-footer text-center ">
+    <div class="display-4 bg-dark text-white-50 page-footer text-center ">
+        <br>
+        <br>
         มหาวิทยาลัยพะเยา, ระบบตรวจสอบคุณวุฒิ<br>
         Copyright 2019 © University of Phayao Page
+        <br>
+        <br>
         <div>
-            <a href="home" class="text-decoration-none float-right">แก้ไขเว็บไซต์</a><br>
+            <a href="home" class="display-4 text-decoration-none float-right">แก้ไขเว็บไซต์</a><br>
         </div>
     </div>
     <!-- Copyright -->

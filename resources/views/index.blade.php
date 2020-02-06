@@ -17,8 +17,8 @@
                         <h1 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-1">มหาวิทยาลัยพะเยา</h1>
                      
                         <div class="mbr-section-btn">
-                            <a class="btn btn-md btn-bgr btn-primary display-4" href="/Check_course">ตรวจสอบคุณวุฒิตามหลักสูตร</a> 
-                            <a class="btn btn-md btn-bgr btn-primary display-4" href="/Checkindividual">ตรวจสอบคุณวุฒิรายบุคคล</a>
+                            <a class="btn btn-md btn-bgr btn-primary display-6" href="/Check_course">ตรวจสอบคุณวุฒิตามหลักสูตร</a> 
+                            <a class="btn btn-md btn-bgr btn-primary display-6" href="/Checkindividual">ตรวจสอบคุณวุฒิรายบุคคล</a>
                         </div>
                     </div>
                 </div>
