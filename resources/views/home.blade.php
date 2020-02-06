@@ -41,8 +41,8 @@
                     <td class="body-item mbr-fonts-style display-6">{{$i++}}</td>
                     <td class="body-item mbr-fonts-style display-6">
                         ชื่อ-สกุล : {{$t->NAME}} <br>
-                        รหัสนิสิต :{{$t->ID_STUDENT}} <br>
-                        เลขบัตรประชาชน :{{$t->ID_SSN}} <br>
+                        รหัสนิสิต :{{$t->STUDENT_CODE}} <br>
+                        เลขบัตรประชาชน :{{$t->CITIZEN_ID}} <br>
                     </td>
                     <td class="body-item mbr-fonts-style display-6">
                         ชื่อหน่วยงาน :{{$t->companyname}}<br>
@@ -51,8 +51,8 @@
                         หมายเลขโทรศัพท์ :{{$t->phone_number}} <br>
                     </td>
                     <td class="body-item mbr-fonts-style display-6">
-                      {{$t->objective}} <br>
-                        {{$t->objective_1 }}<br>
+                      {{$t->Objective}} <br>
+                        {{$t->Objective_1 }}<br>
                     </td>
                     <td class="body-item mbr-fonts-style display-6">
                       {{$t->department}}<br>
@@ -62,7 +62,7 @@
                       {{$t->created_at}} <br>
                     </td>
                   </tr>
-              @endforeach 
+                @endforeach 
               </tbody>
             </table>
           </div>

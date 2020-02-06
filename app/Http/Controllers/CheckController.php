@@ -43,7 +43,7 @@ class CheckController extends Controller
         print_r($request->all());
         $check->fill($request->all()); 
         $check->save();
-        return view('dataindividual');
+        return redirect()->route('dataindividual');
     }
     public function search(Request $request)
     {

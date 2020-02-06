@@ -46,7 +46,7 @@ class BookController extends Controller
      */
     public function show($id)   /**  แสดงรายละเอียดด้วยการหาตามคอร์ดไอดี */
     {
-       // $id = $_GET['id'];
+        $id = $_GET['id'];
         $data = \DB::table('test')->where('course_id',$id)->get();
         return view('book',['data'=>$data]);
     }
