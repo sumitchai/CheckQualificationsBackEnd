@@ -36,31 +36,33 @@
               
               <tbody>
                 <?php $i = 1; ?>
-              <tr> 
-                <td class="body-item mbr-fonts-style display-6">{{$i++}}</td>
-                <td class="body-item mbr-fonts-style display-6">
-                    ชื่อ-สกุล : <!-----name----> <br>
-                    รหัสนิสิต : <!---------> <br>
-                    เลขบัตรประชาชน : <!---------> <br>
-                </td>
-                <td class="body-item mbr-fonts-style display-6">
-                    ชื่อหน่วยงาน : <!-----company----> <br>
-                    ชื่อ-นามสกุลผู้ขอตรวจสอบ : <!-----namecheck----> <br>
-                    อีเมล์ : <!-----namecheck----> <br>
-                    หมายเลขโทรศัพท์ : <!-----namecheck----> <br>
-                </td>
-                <td class="body-item mbr-fonts-style display-6">
-                    <!----objective-----> <br>
-                    <!-----อื่นๆ = objective_1----> <br>
-                </td>
-                <td class="body-item mbr-fonts-style display-6">
-                    <!----department-----> <br>
-                    <!-----อื่นๆ = department_1----> <br>
-                </td>
-                <td class="body-item mbr-fonts-style display-6">
-                    <!----created_at-----> <br>
-                </td>
-              </tr>
+                @foreach ($admin as $t)
+                  <tr> 
+                    <td class="body-item mbr-fonts-style display-6">{{$i++}}</td>
+                    <td class="body-item mbr-fonts-style display-6">
+                        ชื่อ-สกุล : {{$t->NAME}} <br>
+                        รหัสนิสิต :{{$t->ID_STUDENT}} <br>
+                        เลขบัตรประชาชน :{{$t->ID_SSN}} <br>
+                    </td>
+                    <td class="body-item mbr-fonts-style display-6">
+                        ชื่อหน่วยงาน :{{$t->companyname}}<br>
+                        ชื่อ-นามสกุลผู้ขอตรวจสอบ : {{$t->namecheck}} <br>
+                        อีเมล์ :{{$t->e_mail}} <br>
+                        หมายเลขโทรศัพท์ :{{$t->phone_number}} <br>
+                    </td>
+                    <td class="body-item mbr-fonts-style display-6">
+                      {{$t->objective}} <br>
+                        {{$t->objective_1 }}<br>
+                    </td>
+                    <td class="body-item mbr-fonts-style display-6">
+                      {{$t->department}}<br>
+                      {{$t->department_1 }} <br>
+                    </td>
+                    <td class="body-item mbr-fonts-style display-6">
+                      {{$t->created_at}} <br>
+                    </td>
+                  </tr>
+              @endforeach 
               </tbody>
             </table>
           </div>
