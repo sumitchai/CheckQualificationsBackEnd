@@ -3,10 +3,8 @@
 <head>
     <!-- Site made with Mobirise Website Builder v4.11.6, https://mobirise.com -->
     <!-- mobirise -->
-    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="generator" content="Mobirise v4.11.6, mobirise.com">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <link rel="shortcut icon" href="{{env('APP_URL')}}/assets/images/up-536x536.png" type="image/x-icon">
     <meta name="description" content="">
 
@@ -100,11 +98,8 @@
     </div>
 
     <!-- mobirise -->
-    <script src="{{env('APP_URL')}}/assets/web/{{env('APP_URL')}}/assets/jquery/jquery.min.js"></script>
+    <script src="{{env('APP_URL')}}/assets/web/{{env('APP_URL')}}/assets/jquery/jquery.min.js"></script><script src="{{env('APP_URL')}}/assets/web/{{env('APP_URL')}}/assets/jquery/jquery.min.js"></script>
     <script src="{{env('APP_URL')}}/assets/popper/popper.min.js"></script>
-    <script src="{{env('APP_URL')}}/assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="{{env('APP_URL')}}/assets/dropdown/js/nav-dropdown.js"></script>
-    <script src="{{env('APP_URL')}}/assets/dropdown/js/navbar-dropdown.js"></script>
     <script src="{{env('APP_URL')}}/assets/smoothscroll/smooth-scroll.js"></script>
     <script src="{{env('APP_URL')}}/assets/tether/tether.min.js"></script>
     <script src="{{env('APP_URL')}}/assets/touchswipe/jquery.touch-swipe.min.js"></script>
