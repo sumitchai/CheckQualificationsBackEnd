@@ -36,33 +36,36 @@
               
               <tbody>
                 <?php $i = 1; ?>
-              
+               @foreach ( $admin as $admins)
                   <tr> 
                     <td class="body-item mbr-fonts-style display-6">{{$i++}}</td>
                     <td class="body-item mbr-fonts-style display-6">
-                        ชื่อ-สกุล : <br>
-                        รหัสนิสิต : <br>
-                        เลขบัตรประชาชน : <br>
+                        ชื่อ-สกุล : {{ $admins->NAME }} <br>
+                        รหัสนิสิต : {{ $admins->ID_STUDENT }}<br>
+                        เลขบัตรประชาชน : {{ $admins->ID_SSN }}<br>
                     </td>
                     <td class="body-item mbr-fonts-style display-6">
-                        ชื่อหน่วยงาน :<br>
-                        ชื่อ-นามสกุลผู้ขอตรวจสอบ :<br>
-                        อีเมล์ : <br>
-                        หมายเลขโทรศัพท์ : <br>
+                        ชื่อหน่วยงาน : {{ $admins->companyname }}<br>
+                        ชื่อ-นามสกุลผู้ขอตรวจสอบ : {{ $admins->namecheck }}<br>
+                        อีเมล์ : {{ $admins->e_mail }}<br>
+                        หมายเลขโทรศัพท์ : {{ $admins->phone_number }}<br>
                     </td>
                     <td class="body-item mbr-fonts-style display-6">
-                       <br>
+                       <br> 
+                         {{ $admins->Objective }} 
                        <br>
                     </td>
                     <td class="body-item mbr-fonts-style display-6">
                       <br>
+                        {{ $admins->department }}
                       <br>
                     </td>
                     <td class="body-item mbr-fonts-style display-6">
                      <br>
+                       {{ $admins->created_at }}
                     </td>
                   </tr>
-             
+              @endforeach
               </tbody>
             </table>
           </div>

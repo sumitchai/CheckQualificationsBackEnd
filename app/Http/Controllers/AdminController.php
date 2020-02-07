@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Checkup;
 use DB;
 
 class AdminController extends Controller
@@ -14,9 +15,9 @@ class AdminController extends Controller
      */
     public function index()  /**  ฟังก์ชั่นแสดงข้อมูล */
     {
-        $admin = DB::connection('mysql')->table('checkindividual')
-        ->get();
-        return view('/home',['admin'=>$admin]);
+        $admin = Checkup::get();
+        $admin = DB::connection('mysql')->table('checkindividual')->get();
+        return view('home',['admin'=>$admin]);
     }
 
     /**
