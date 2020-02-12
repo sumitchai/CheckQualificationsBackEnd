@@ -35,7 +35,18 @@ class CheckController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
+     * 
      */
+    public function search(Request $request)
+    {
+      $search = $request->get('search') ;
+      $post = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
+      ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
+      ->where('NAME_TH','CITIZEN_ID','STUDENT_CODE','like', '%'.$search.'%' )
+      ->paginate(5);
+              return view('dataindividual',['post'=>$post]);
+      
+    }
     public function store(Request $request)
     {
         
@@ -45,19 +56,7 @@ class CheckController extends Controller
         $check->save();
         return view('dataindividual');
     }
-    public function search(Request $request)
-    {
-      $search = $request->get('search') ;
-      $posts = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
-      ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
-      ->where('NAME_TH','like', '%'.$search.'%' )
-      ->where('CITIZEN_ID','like', '%'.$search.'%' )
-      ->where('STUDENT_CODE','like', '%'.$search.'%' )
-      ->paginate();
-      
-              return view('dataindividual',['posts'=>$posts]);
-      
-    }
+    
 
     /**
      * Display the specified resource.

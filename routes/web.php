@@ -85,3 +85,4 @@ Auth::routes();
 
 // Admin
 Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('searchform','BookController');

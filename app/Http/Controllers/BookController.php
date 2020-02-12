@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
 
 class BookController extends Controller
 {
@@ -13,8 +14,7 @@ class BookController extends Controller
      */
     public function index()  /**  แสดงข้อมูล */
     {
-        $data = \DB::table('book')->get();
-        return view('book_view',['data'=>$data]);
+        return view('/searchform');
     }
 
     /**
@@ -33,6 +33,15 @@ class BookController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+    public function search(Request $request)
+    {
+      $search = $request->get('search') ;
+      $post = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
+      ->where('STUDENT_CODE','like', '%'.$search.'%' )
+      ->paginate(5);
+              return view('dataindividual',['post'=>$post]);
+      
+    }
     public function store(Request $request)
     {
         //
@@ -47,8 +56,8 @@ class BookController extends Controller
     public function show($id)   /**  แสดงรายละเอียดด้วยการหาตามคอร์ดไอดี */
     {
        // $id = $_GET['id'];
-        $data = \DB::table('test')->where('course_id',$id)->get();
-        return view('book',['data'=>$data]);
+        // $data = \DB::table('test')->where('course_id',$id)->get();
+        // return view('book',['data'=>$data]);
     }
 
     /**
