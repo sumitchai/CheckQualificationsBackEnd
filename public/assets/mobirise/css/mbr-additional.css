@@ -5,10 +5,52 @@
 
 
 body {
-  font-family: Rubik;
+  font-family: Kanit;
 }
+.h3 {
+  font-family: 'K2D', sans-serif;
+  font-size: 1.75rem ;
+}
+.h3 > .mbr-iconfont {
+  font-size: 1.75rem ;
+}
+
+.h2 {
+  font-family: 'K2D', sans-serif;
+  font-size: 2rem;
+}
+.h2 > .mbr-iconfont {
+  font-size: 2rem ;
+}
+
+.h1 {
+  font-family: 'K2D', sans-serif;
+  font-size: 2.5rem;
+}
+.h1 > .mbr-iconfont {
+  font-size: 2.5rem ;
+}
+
+.h4 {
+  font-family: 'K2D', sans-serif;
+  font-size: 1.5rem;
+}
+.h4 > .mbr-iconfont {
+  font-size: 1.5rem ;
+}
+
+.h5 {
+  font-family: 'K2D', sans-serif;
+  font-size: 1.25rem;
+}
+.h5 > .mbr-iconfont {
+  font-size: 1.25rem ;
+}
+
+
+
 .display-1 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'K2D', sans-serif;
   font-size: 3.8rem;
   font-display: swap;
 }
@@ -16,15 +58,25 @@ body {
   font-size: 6.08rem;
 }
 .display-2 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'K2D', sans-serif;
   font-size: 3rem;
   font-display: swap;
 }
 .display-2 > .mbr-iconfont {
   font-size: 4.8rem;
 }
+
+.display-3 {
+  font-family: 'K2D', sans-serif;
+  font-size: 1.6rem;
+  font-display: swap;
+}
+.display-3 > .mbr-iconfont {
+  font-size: 2rem;
+}
+
 .display-4 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'K2D', sans-serif;
   font-size: 1rem;
   font-display: swap;
 }
@@ -32,15 +84,23 @@ body {
   font-size: 1.6rem;
 }
 .display-5 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'K2D', sans-serif;
   font-size: 1.5rem;
   font-display: swap;
 }
 .display-5 > .mbr-iconfont {
   font-size: 2.4rem;
 }
+.display-6 {
+  font-family: 'K2D', sans-serif;
+  font-size: 1.4rem;
+  font-display: swap;
+}
+.display-6 > .mbr-iconfont {
+  font-size: 1.6rem;
+}
 .display-7 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'K2D', sans-serif;
   font-size: 0.7rem;
   font-display: swap;
 }

@@ -39,6 +39,7 @@ class TestController extends Controller
          $check->fill($request->all()); 
          $check->save();
          return \redirect('/test');
+
     }
 
     /**

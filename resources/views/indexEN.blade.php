@@ -17,8 +17,8 @@
                         <h1 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-1">University Of Phayao</h1>
                      
                         <div class="mbr-section-btn">
-                            <a class="btn btn-md btn-bgr btn-primary display-4" href="/Check_course_EN">Check The Course Qualifications</a> 
-                            <a class="btn btn-md btn-bgr btn-primary display-4" href="/CheckindividualEN">Individual Qualification Examination</a>
+                            <a class="btn btn-md btn-bgr btn-primary display-6" href="/Check_course_EN">Check The Course Qualifications</a> 
+                            <a class="btn btn-md btn-bgr btn-primary display-6" href="/CheckindividualEN">Individual Qualification Examination</a>
                         </div>
                     </div>
                 </div>

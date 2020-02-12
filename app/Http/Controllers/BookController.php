@@ -55,9 +55,15 @@ class BookController extends Controller
      */
     public function show($id)   /**  แสดงรายละเอียดด้วยการหาตามคอร์ดไอดี */
     {
+<<<<<<< HEAD
        // $id = $_GET['id'];
         // $data = \DB::table('test')->where('course_id',$id)->get();
         // return view('book',['data'=>$data]);
+=======
+        $id = $_GET['id'];
+        $data = \DB::table('test')->where('course_id',$id)->get();
+        return view('book',['data'=>$data]);
+>>>>>>> bebbd82b6e360b1f6d14b355f113a82461c64afb
     }
 
     /**
