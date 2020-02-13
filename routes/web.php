@@ -22,9 +22,9 @@ Route::get('/tablefrom', function () {
 });
 
 
-Route::get('/Checkindividual', function () {
-    return view('Checkindividual');
-});
+// Route::get('/Checkindividual', function () {
+//     return view('Checkindividual');
+// });
 
 // Route::get('/SelectThailist', function () {
 //     return view('SelectThailist');
@@ -56,9 +56,9 @@ Route::resource ('Check_course_EN', 'insertEnController');
 Route::resource ('SelectEN', 'insertEnController');
 
 
-Route::resource ('Checkindividual', 'CheckController');
-Route::resource ('CheckindividualEN', 'CheckENController');
-Route::get ('/dataindividual','CheckController@search');
+ Route::resource ('Checkindividual', 'CheckController');
+ Route::resource ('CheckindividualEN', 'CheckENController');
+ Route::post ('/dataindividual','CheckController@search');
 // Route::resource ('dataindividual', 'CheckController');
 
 Route::get('/indexEN', function () {
@@ -85,4 +85,7 @@ Auth::routes();
 
 // Admin
 Route::get('/home', 'HomeController@index')->name('home');
-Route::resource('searchform','BookController');
+//Route::resource('searchform','BookController');
+
+Route::get('/searchform', 'BookController@index');
+Route::get('/searchform/action', 'BookController@action')->name('searchform.action');

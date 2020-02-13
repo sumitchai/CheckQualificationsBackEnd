@@ -24,15 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-<<<<<<< HEAD
-        $admin = Checkup::get(); 
-        $datas = DB::connection('mysql')->table('checkindividual')->get();
-        return view('home',['admin'=>$admin]);
-        
-=======
         $admin = DB::connection('mysql')->table('checkindividual')
         ->get();
         return view('/home',['admin'=>$admin]);
->>>>>>> bebbd82b6e360b1f6d14b355f113a82461c64afb
     }
 }

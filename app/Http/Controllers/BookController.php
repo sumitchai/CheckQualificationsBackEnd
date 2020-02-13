@@ -33,15 +33,75 @@ class BookController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function search(Request $request)
+
+    function action(Request $request)
     {
-      $search = $request->get('search') ;
-      $post = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
-      ->where('STUDENT_CODE','like', '%'.$search.'%' )
-      ->paginate(5);
-              return view('dataindividual',['post'=>$post]);
-      
+     if($request->ajax())
+     {
+      $output = '';
+      $query = $request->get('query');
+      if($query != '')
+      {
+       $data = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
+         ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
+         ->where('NAME_TH', 'like', '%'.$query.'%')
+         ->orWhere('CITIZEN_ID', 'like', '%'.$query.'%')
+         ->orWhere('STUDENT_CODE', 'like', '%'.$query.'%')
+         ->get();
+         
+      }
+      else
+      {
+       $data = DB::table('tbl_customer')
+         ->orderBy('CustomerID', 'desc')
+         ->get();
+      }
+      $total_row = $data->count();
+      if($total_row > 0)
+      {
+       foreach($data as $row)
+       {
+        $output .= '
+        <tr>
+         
+         <td > '.$row->NAME_TH.'</td>
+         <td>'.$row->COURSE_NAME_TH.'</td>
+         <td>'.$row->FACULTY_NAME_TH.'</td>
+         <td>'.$row->ACAD_YEAR.'</td>
+         <td>'.$row->GRADUATE_DATE.'</td>
+         
+        </tr>
+        ';
+       }
+      }
+      else
+      {
+       $output = '
+       <tr>
+        <td align="center" colspan="5">No Data Found</td>
+       </tr>
+       ';
+      }
+      $data = array(
+       'table_data'  => $output,
+       'total_data'  => $total_row
+      );
+
+      echo json_encode($data);
+     }
     }
+
+
+
+    // public function search(Request $request)
+    // {
+    //   $search = $request->get('search') ;
+    //   $post = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
+    //   ->where('STUDENT_CODE','like', '%'.$search.'%' )
+    //   ->paginate(5);
+    //           return view('dataindividual',['post'=>$post]);
+      
+    // }
     public function store(Request $request)
     {
         //
@@ -55,15 +115,9 @@ class BookController extends Controller
      */
     public function show($id)   /**  แสดงรายละเอียดด้วยการหาตามคอร์ดไอดี */
     {
-<<<<<<< HEAD
-       // $id = $_GET['id'];
-        // $data = \DB::table('test')->where('course_id',$id)->get();
-        // return view('book',['data'=>$data]);
-=======
         $id = $_GET['id'];
         $data = \DB::table('test')->where('course_id',$id)->get();
         return view('book',['data'=>$data]);
->>>>>>> bebbd82b6e360b1f6d14b355f113a82461c64afb
     }
 
     /**
