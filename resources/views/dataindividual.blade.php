@@ -19,7 +19,8 @@
           <div class="col-sm-6" style="padding-left:120px; padding-right:20px;">
             <div class="card">
               <div class="card-body">
-                @foreach ($posts as $x)
+                {{-- {{ print($posts) }} --}}
+               @foreach ($posts as $x)
                   <p class="card-text display-5">ชื่อ-นามสกุล : {{$x->NAME_TH}}</p>
                   <p class="card-text display-5">หลักสูตร :	{{$x->COURSE_NAME_TH}}</p>
                   <p class="card-text display-5">คณะ : {{ $x->FACULTY_NAME_TH }}</p>
@@ -34,7 +35,7 @@
           <div class="col-sm-6" style="padding-left:20px; padding-right:120px;">
             <div class="card">
               <div class="card-body">
-                @foreach ($posts as $x)
+                 @foreach ($posts as $x)
                   <p class="card-text display-5">Fullname :	{{$x->NAME_EN}}</p>
                   <p class="card-text display-5">Curriculum : {{$x->COURSE_NAME_EN}}</p>
                   <p class="card-text display-5">Facuty :  {{ $x->FACULTY_NAME_EN}}</p>

@@ -65,7 +65,7 @@ class PdfDemoController extends Controller
         PDF::AddPage('P', 'A4');
         PDF::writeHTML($html_content, true, false, true, false, '');
         $upktt = DB::connection('mysql')->table('checkindividual')
-        ->select('NAME','namecheck')
+        ->select('NAME_TH','namecheck')
         ->get();
         //print_r($upktt);
         

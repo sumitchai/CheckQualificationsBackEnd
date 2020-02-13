@@ -58,8 +58,12 @@ Route::resource ('SelectEN', 'insertEnController');
 
  Route::resource ('Checkindividual', 'CheckController');
  Route::resource ('CheckindividualEN', 'CheckENController');
- Route::post ('/dataindividual','CheckController@search');
-// Route::resource ('dataindividual', 'CheckController');
+ Route::any ('data','CheckController@search');
+ //Route::get ('dataindividual', 'CheckController@show');
+ Route::get ('dataindividual', 'CheckController@showResult');
+ Route::any ('save','CheckController@store');
+
+ 
 
 Route::get('/indexEN', function () {
     return view('indexEN');

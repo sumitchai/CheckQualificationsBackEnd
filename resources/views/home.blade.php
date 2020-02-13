@@ -40,15 +40,9 @@
                   <tr> 
                     <td class="body-item mbr-fonts-style display-6">{{$i++}}</td>
                     <td class="body-item mbr-fonts-style display-6">
-<<<<<<< HEAD
-                        ชื่อ-สกุล : {{ $admins->NAME }} <br>
-                        รหัสนิสิต : {{ $admins->ID_STUDENT }}<br>
-                        เลขบัตรประชาชน : {{ $admins->ID_SSN }}<br>
-=======
-                        ชื่อ-สกุล : {{$t->NAME}} <br>
-                        รหัสนิสิต :{{$t->STUDENT_CODE}} <br>
-                        เลขบัตรประชาชน :{{$t->CITIZEN_ID}} <br>
->>>>>>> bebbd82b6e360b1f6d14b355f113a82461c64afb
+                        ชื่อ-สกุล : {{ $admins->NAME_TH }} <br>
+                        รหัสนิสิต : {{ $admins->STUDENT_CODE }}<br>
+                        เลขบัตรประชาชน : {{ $admins->CITIZEN_ID }}<br>
                     </td>
                     <td class="body-item mbr-fonts-style display-6">
                         ชื่อหน่วยงาน : {{ $admins->companyname }}<br>
@@ -57,18 +51,13 @@
                         หมายเลขโทรศัพท์ : {{ $admins->phone_number }}<br>
                     </td>
                     <td class="body-item mbr-fonts-style display-6">
-<<<<<<< HEAD
                        <br> 
-                         {{ $admins->Objective }} 
+                         {{ $admins->Objective }} : {{ $admins->Objective_1 }}
                        <br>
-=======
-                      {{$t->Objective}} <br>
-                        {{$t->Objective_1 }}<br>
->>>>>>> bebbd82b6e360b1f6d14b355f113a82461c64afb
                     </td>
                     <td class="body-item mbr-fonts-style display-6">
                       <br>
-                        {{ $admins->department }}
+                        {{ $admins->department }} : {{ $admins->department_1 }}
                       <br>
                     </td>
                     <td class="body-item mbr-fonts-style display-6">
@@ -76,11 +65,7 @@
                        {{ $admins->created_at }}
                     </td>
                   </tr>
-<<<<<<< HEAD
               @endforeach
-=======
-                @endforeach 
->>>>>>> bebbd82b6e360b1f6d14b355f113a82461c64afb
               </tbody>
             </table>
           </div>
