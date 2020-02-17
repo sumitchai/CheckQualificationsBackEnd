@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Checkup;
 use DB;
 use Session;
+use PDF;
 
 class CheckController extends Controller
 {
@@ -129,8 +130,20 @@ class CheckController extends Controller
         
         return view('dataindividual',['posts'=>$final]);
     }
-
-    
+    public function showResultPDF(){
+        $view = \View::make('HtmlToPDF');
+        $html_content = $view->render();
+        PDF::SetMargins(20, 10, 20, true);
+        PDF::SetFont('thniramit','',16);
+        PDF::SetTitle('Sample PDF');
+        PDF::AddPage('P', 'A4');
+        PDF::writeHTML($html_content, true, false, true, false, '');
+        PDF::Output(uniqid().'Qualification.pdf');
+        $result = Session::get('posts');
+        $final = json_decode($result)
+        ;    
+        return view('HtmlToPDF',['posts'=>$final]);
+    }
     public function show()
     {   
         return view('dataindividual');

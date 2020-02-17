@@ -43,7 +43,17 @@
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;ขอแสดงความนับถือ
+
 </p>
+				 @foreach ($posts as $x)
+                  <p class="card-text display-5">ชื่อ-นามสกุล : {{$x->NAME_TH}}</p>
+                  <p class="card-text display-5">หลักสูตร :	{{$x->COURSE_NAME_TH}}</p>
+                  <p class="card-text display-5">คณะ : {{ $x->FACULTY_NAME_TH }}</p>
+                  <p class="card-text display-5">ปีสำเร็จการศึกษา (พ.ศ.): {{ $x->ACAD_YEAR }}</p>
+                  <p class="card-text display-5">วันที่สำเร็จการศึกษา (พ.ศ.): {{ $x->GRADUATE_DATE }}</p>
+                  @break
+                  
+                @endforeach
 
                 <table cellpadding="0" cellspacing="0" width="100%">
                     <tbody>

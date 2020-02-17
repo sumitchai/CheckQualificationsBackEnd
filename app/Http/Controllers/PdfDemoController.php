@@ -64,10 +64,7 @@ class PdfDemoController extends Controller
         PDF::SetTitle('Sample PDF');
         PDF::AddPage('P', 'A4');
         PDF::writeHTML($html_content, true, false, true, false, '');
-        $upktt = DB::connection('mysql')->table('checkindividual')
-        ->select('NAME_TH','namecheck')
-        ->get();
-        //print_r($upktt);
+      
         
         PDF::Output(uniqid().'Qualification.pdf');
     }
