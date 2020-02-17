@@ -81,7 +81,7 @@ return [
         'sqlsrv' => [
             'driver' => 'sqlsrv',
             'url' => env('DATABASE_URL'),
-            'host' => env('UP_HOST', 'DESKTOP-81NK8B7\SIRAPOP'),
+            'host' => env('UP_HOST', '10.204.10.80'),
             'port' => env('UP_PORT', '1433'),
             'database' => env('UP_DATABASE', 'UpReg'),
             'username' => env('UP_USERNAME', 'sql.voq'),

@@ -31,6 +31,15 @@ class CheckController extends Controller
     }
     public function search(Request $request)
     {
+        request()->validate([
+            
+            'companyname' => 'required',
+            'namecheck' => 'required',
+            'Objective' => 'required',
+            'department' => 'required',
+            'e_mail' => 'required|email',
+            'phone_number' => 'required',
+            ]);
       
 
       $CITIZEN_ID = $request->get('CITIZEN_ID') ;
@@ -41,7 +50,9 @@ class CheckController extends Controller
       ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
       ->select('VW_VOQ_STD_GRADUATE.ACAD_YEAR','VW_VOQ_STD_GRADUATE.NAME_TH','VW_VOQ_STD_GRADUATE.FACULTY_NAME_TH','VW_VOQ_STD_GRADUATE.GRADUATE_DATE',
       'VW_VOQ_COURSE.COURSE_NAME_TH','VW_VOQ_COURSE.COURSE_NAME_EN','VW_VOQ_STD_GRADUATE.NAME_EN','VW_VOQ_STD_GRADUATE.FACULTY_NAME_EN')
-      ->where('CITIZEN_ID',$CITIZEN_ID )->get();
+      ->where('CITIZEN_ID',$CITIZEN_ID )
+      ->where('VW_VOQ_STD_GRADUATE.ACAD_YEAR','>=',2553)
+      ->get();
       
     //   ->paginate();
       }
@@ -50,7 +61,9 @@ class CheckController extends Controller
         ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
         ->select('VW_VOQ_STD_GRADUATE.ACAD_YEAR','VW_VOQ_STD_GRADUATE.NAME_TH','VW_VOQ_STD_GRADUATE.FACULTY_NAME_TH','VW_VOQ_STD_GRADUATE.GRADUATE_DATE',
         'VW_VOQ_COURSE.COURSE_NAME_TH','VW_VOQ_COURSE.COURSE_NAME_EN','VW_VOQ_STD_GRADUATE.NAME_EN','VW_VOQ_STD_GRADUATE.FACULTY_NAME_EN')
-        ->where('NAME_TH',$NAME_TH)->get();
+        ->where('NAME_TH',$NAME_TH)
+        ->where('VW_VOQ_STD_GRADUATE.ACAD_YEAR','>=',2553)
+        ->get();
         
         // ->paginate();
     }
@@ -59,7 +72,9 @@ class CheckController extends Controller
         ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
         ->select('VW_VOQ_STD_GRADUATE.ACAD_YEAR','VW_VOQ_STD_GRADUATE.NAME_TH','VW_VOQ_STD_GRADUATE.FACULTY_NAME_TH','VW_VOQ_STD_GRADUATE.GRADUATE_DATE',
         'VW_VOQ_COURSE.COURSE_NAME_TH','VW_VOQ_COURSE.COURSE_NAME_EN','VW_VOQ_STD_GRADUATE.NAME_EN','VW_VOQ_STD_GRADUATE.FACULTY_NAME_EN')
-        ->where('STUDENT_CODE',$STUDENT_CODE )->get();
+        ->where('STUDENT_CODE',$STUDENT_CODE )
+        ->where('VW_VOQ_STD_GRADUATE.ACAD_YEAR','>=',2553)
+        ->get();
         // ->paginate();
     }
       
