@@ -70,7 +70,7 @@ if( s1.options[s1.selectedIndex].value=="อื่นๆ")
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name" >
                                     <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">เลขบัตรประชาชน</label>
-                                    <input type="number" name="CITIZEN_ID" data-form-field="CITIZEN_ID" class="form-control display-7" id="CITIZEN_ID" placeholder="ระบุเลขบัตรประชาชน" maxlength="13"><p></p>
+                                    <input type="number" name="CITIZEN_ID" data-form-field="CITIZEN_ID" class="form-control display-7" id="CITIZEN_ID" required placeholder="ระบุเลขบัตรประชาชน" maxlength="13"><p></p>
                                     
                                 </div>
                             </div>
@@ -88,7 +88,7 @@ if( s1.options[s1.selectedIndex].value=="อื่นๆ")
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name">
                                     <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">ชื่อ-นามสกุล</label>
-                                    <input type="Name" name="NAME_TH" data-form-field="NAME_TH"  class="form-control display-5" id="NAME_TH" placeholder="ระบุชื่อ">
+                                    <input type="Name" name="NAME_TH" data-form-field="NAME_TH"  class="form-control display-5" id="NAME_TH" required placeholder="ระบุชื่อ">
                                 </div>
                                 
                             </div>
@@ -106,7 +106,7 @@ if( s1.options[s1.selectedIndex].value=="อื่นๆ")
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name">
                                     <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">รหัสนิสิต</label>
-                                    <input type="number" name="STUDENT_CODE" data-form-field="STUDENT_CODE"  class="form-control display-5" id="STUDENT_CODE" placeholder="ระบุรหัสนิสิต"><p></p>
+                                    <input type="number" name="STUDENT_CODE" data-form-field="STUDENT_CODE"  class="form-control display-5" id="STUDENT_CODE" required placeholder="ระบุรหัสนิสิต"><p></p>
                                     
                                 </div>  
                             </div>
@@ -141,7 +141,7 @@ if( s1.options[s1.selectedIndex].value=="อื่นๆ")
                                 <option class="display-5" value="อื่นๆ">อื่นๆ</option>
                             </select>
                             <div  id="RTIDANS" style="display:none;">ระบุอื่นๆ
-                                <input class="form-control display-7" name="Objective_1" id="RTIDANS" type="text"  placeholder="กรุณาระบุอื่นๆ"/>
+                                <input class="form-control display-7" name="Objective_1" id="RTIDANS" type="text" required  placeholder="กรุณาระบุอื่นๆ"/>
                             </div>
                         </div>
                         <div class="form-group col-sm-6 display-5" >
@@ -155,7 +155,7 @@ if( s1.options[s1.selectedIndex].value=="อื่นๆ")
                             </select>  
                             
                             <div  id="OGIDANS" style="display:none;">ระบุอื่นๆ
-                                <input class="form-control display-7" name="department_1" id="OGIDANS" type="text"  placeholder="กรุณาระบุอื่นๆ"/>
+                                <input class="form-control display-7" name="department_1" id="OGIDANS" type="text" required  placeholder="กรุณาระบุอื่นๆ"/>
                             </div>
                         </div>
                         <div class="form-group col-sm-6 display-5">

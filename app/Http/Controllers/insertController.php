@@ -19,6 +19,7 @@ class insertController extends Controller
         ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
         ->select(DB::Raw('COURSE_NAME_TH, COUNT(*) as count'))
         ->where('DEGREE_CODE','=',$DEGREE_CODE)
+        ->where('VW_VOQ_STD_GRADUATE.ACAD_YEAR','>=',2553)
         ->groupBy('COURSE_NAME_TH')
         ->orderBy('count')
         ->get();
