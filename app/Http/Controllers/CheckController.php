@@ -7,6 +7,7 @@ use App\Checkup;
 use DB;
 use Session;
 use PDF;
+use Carbon\Carbon;
 
 class CheckController extends Controller
 {

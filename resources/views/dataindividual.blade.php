@@ -25,7 +25,8 @@
                   <p class="card-text display-5">หลักสูตร :	{{$x->COURSE_NAME_TH}}</p>
                   <p class="card-text display-5">คณะ : {{ $x->FACULTY_NAME_TH }}</p>
                   <p class="card-text display-5">ปีสำเร็จการศึกษา (พ.ศ.): {{ $x->ACAD_YEAR }}</p>
-                  <p class="card-text display-5">วันที่สำเร็จการศึกษา (พ.ศ.): {{ \Carbon\Carbon::parse($x->GRADUATE_DATE)->locale('th')->isoformat('D  MMMM  ')}}{{ $x->ACAD_YEAR }}</p>
+                  <p class="card-text display-5">วันที่สำเร็จการศึกษา (พ.ศ.): {{ \Carbon\Carbon::createFromDate($x->GRADUATE_DATE)->addYear(543)->locale('th')->isoformat('LL')}}</p>
+                  
                   @break
                   
                 @endforeach
