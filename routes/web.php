@@ -62,6 +62,7 @@ Route::resource ('SelectEN', 'insertEnController');
  //Route::get ('dataindividual', 'CheckController@show');
  Route::get ('dataindividual', 'CheckController@showResult');
  Route::any ('save','CheckController@store');
+ Route::get ('HtmlToPDF', 'CheckController@showResultPDF');
 
  
 

@@ -27,11 +27,17 @@ tr:nth-child(even) {
   <tr>
     <th>หลักสูตร</th>
     <th>รหัสนิสิต</th>
+    <th>รหัสนิสิต</th>
+    <th>รหัสนิสิต</th>
+    <th>รหัสนิสิต</th>
   </tr>
-  @foreach($data as $row)
+  @foreach($posts as $row)
   <tr>
-    <td>{{ $row->COURSE_NAME_EN }}</td>
-    <td>{{ $row->COUNT }}</td>
+    <td>{{ $row->NAME_TH }}</td>
+    <td>{{ $row->FACULTY_NAME_TH }}</td>
+    <td>{{ $row->ACAD_YEAR }}</td>
+    <td>{{ $row->COURSE_NAME_TH }}</td>
+    <td>{{ $row->GRADUATE_DATE }}</td>
   </tr>
   @endforeach
 </table>
