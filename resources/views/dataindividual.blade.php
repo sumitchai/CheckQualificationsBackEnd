@@ -62,43 +62,6 @@
     window.history.back();
   }
   </script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-  </script>
-  <script>
-      $(document).ready(function () {
-          $.ajaxSetup({
-              headers: {
-      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-    }
-  });
-          $("#submit").click(function () {
-                  
-                  $.ajax({
-                      type: "POST",
-                      data: $('#form1').serialize(),
-                      url: "/data",
-                      success: function (url) {
-                        //alert(data);
-                        window.location.assign('HtmlToPDF');
-                        $.ajax({
-                              type: "POST",
-                              data: $('#form1').serialize(),
-                              url: "/save",
-                              success: function (data) {
-                              //alert(data);
-                              window.location.assign('HtmlToPDF');
-                              
-  
-                              }
-  
-                          });
-  
-                      }
-  
-                  });
-              });
-      });
-  </script>
   
   
   

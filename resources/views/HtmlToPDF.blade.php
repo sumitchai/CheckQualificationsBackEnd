@@ -1,4 +1,6 @@
-@foreach($posts as $row)
+
+@foreach($posts as $posts)
+
 <p>ที่&nbsp;ศธ&nbsp;๐๕๙๐.๐๖&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	<img src="{{env('APP_URL')}}/assets/images/logo-full.png" alt="Mobirise" title="" style="height:80px; ">
@@ -22,20 +24,17 @@
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	 มกราคม&nbsp;&nbsp;2562</p>
 <p>
-    เรื่อง&nbsp;ขอส่งผลการตรวจสอบวุฒิการศึกษา
+    เรื่อง&nbsp;การตรวจสอบวุฒิการศึกษา
 </p>
 <p>
     เรียน&nbsp;เจ้ากรมสวัสดิการทหารเรือ
 </p>
+
 <p>
-    อ้างถึง&nbsp;หนังสือกรมสวัสดิการทหารเรือ&nbsp;ที่&nbsp;กห&nbsp;0532.1/135&nbsp;ลงวันที่&nbsp;23&nbsp;มกราคม&nbsp;2562
-</p>
-<p>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	ตามหนังสือที่อ้างถึง&nbsp;กรมสวัสดิการทหารเรือได้ขอความร่วมมือมหาวิทยาลัยพะเยาตรวจสอบ&nbsp;วุฒิใบแสดงผลการเรียนของนายวิวรรธน์หาทรัพย์ตามความทราบแล้วนั้น <br><br>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	มหาวิทยาลัยพะเยา&nbsp;ได้ตรวจสอบแล้วพบว่า&nbsp; <td>{{ $row->NAME_TH }}</td>&nbsp;สำเร็จการศึกษาจาก&nbsp;&nbsp;<td>{{ $row->COURSE_NAME_TH }}</td>&nbsp;<td>{{ $row->FACULTY_NAME_TH }}</td>&nbsp;
-	เมื่อวันที่&nbsp;<td>{{ $row->GRADUATE_DATE }}</td>&nbsp;จากมหาวิทยาลัยพะเยา&nbsp;จริง&nbsp;และได้รับอนุมัติให้สำเร็จการศึกษาถูกต้องตามที่ระบุไว้ในเอกสาร&nbsp;ซึ่งสำนักงาน&nbsp;ก.พ. รับรองเรียบร้อยแล้ว
+	
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	มหาวิทยาลัยพะเยา&nbsp;ได้ตรวจสอบแล้วพบว่า&nbsp; {{ $posts->NAME_TH }}&nbsp;สำเร็จการศึกษาจาก&nbsp;{{ $posts->COURSE_NAME_TH }}&nbsp;{{ $posts->FACULTY_NAME_TH }}&nbsp;
+	เมื่อวันที่&nbsp;{{ \Carbon\Carbon::createFromDate($posts->GRADUATE_DATE)->addYear(543)->locale('th')->isoformat('LL')}}&nbsp;จากมหาวิทยาลัยพะเยา&nbsp;จริง&nbsp;และได้รับอนุมัติให้สำเร็จการศึกษาถูกต้องตามที่ระบุไว้ในเอกสาร&nbsp;ซึ่งสำนักงาน&nbsp;ก.พ. รับรองเรียบร้อยแล้ว
 </p>
 <p>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จึงเรียนมาเพื่อโปรดทราบ <br>
@@ -71,7 +70,7 @@
 </p>
 
 	
-	
+	@break
 	@endforeach
 
 
