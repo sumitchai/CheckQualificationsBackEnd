@@ -14,7 +14,6 @@
     <br>
     <div >
       
-
         <div class="row">
           <div class="col-sm-6" style="padding-left:120px; padding-right:20px;">
             <div class="card">
@@ -25,7 +24,7 @@
                   <p class="card-text display-5">หลักสูตร :	{{$x->COURSE_NAME_TH}}</p>
                   <p class="card-text display-5">คณะ : {{ $x->FACULTY_NAME_TH }}</p>
                   <p class="card-text display-5">ปีสำเร็จการศึกษา (พ.ศ.): {{ $x->ACAD_YEAR }}</p>
-                  <p class="card-text display-5">วันที่สำเร็จการศึกษา (พ.ศ.): {{ \Carbon\Carbon::parse($x->GRADUATE_DATE)->locale('th')->isoformat('D  MMMM  ')}}{{ $x->ACAD_YEAR }}</p>
+                  <p class="card-text display-5">วันที่สำเร็จการศึกษา (พ.ศ.): {{ \Carbon\Carbon::parse($x->GRADUATE_DATE)->locale('th')->isoformat('D  MMMM Y')}}</p>
                   @break
                   
                 @endforeach
