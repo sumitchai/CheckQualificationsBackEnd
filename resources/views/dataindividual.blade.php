@@ -40,7 +40,7 @@
                   <p class="card-text display-5">Curriculum : {{$x->COURSE_NAME_EN}}</p>
                   <p class="card-text display-5">Facuty :  {{ $x->FACULTY_NAME_EN}}</p>
                   <p class="card-text display-5">Year of Graduation (A.D.) : {{ $x->ACAD_YEAR-543 }}</p>
-                  <p class="card-text display-5">Graduation date (A.D.) :  {{ \Carbon\Carbon::parse($x->GRADUATE_DATE)->format('d  M Y')}}</p>
+                  <p class="card-text display-5">Graduation date (A.D.) :  {{ \Carbon\Carbon::parse($x->GRADUATE_DATE)->locale('en')->isoformat('D  MMMM Y')}}</p>
                   @break
                 @endforeach
               </div>
