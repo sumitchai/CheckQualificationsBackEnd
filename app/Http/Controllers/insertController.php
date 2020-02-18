@@ -57,9 +57,11 @@ class insertController extends Controller
     {
         $data = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
         ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
+        ->select('VW_VOQ_STD_GRADUATE.NAME_TH','VW_VOQ_STD_GRADUATE.ACAD_YEAR','VW_VOQ_STD_GRADUATE.STUDENT_CODE','VW_VOQ_COURSE.COURSE_NAME_TH','VW_VOQ_STD_GRADUATE.DEGREE_NAME_TH')
         ->where('COURSE_NAME_TH',$id)
         ->where('ACAD_YEAR', '>=', 2553)
         ->orderBy('ACAD_YEAR')
+        ->distinct()
         ->get();
         return view('SelectThailist',['data'=>$data]);
     }

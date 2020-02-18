@@ -25,7 +25,7 @@
                   <p class="card-text display-5">หลักสูตร :	{{$x->COURSE_NAME_TH}}</p>
                   <p class="card-text display-5">คณะ : {{ $x->FACULTY_NAME_TH }}</p>
                   <p class="card-text display-5">ปีสำเร็จการศึกษา (พ.ศ.): {{ $x->ACAD_YEAR }}</p>
-                  <p class="card-text display-5">วันที่สำเร็จการศึกษา (พ.ศ.): {{ $x->GRADUATE_DATE }}</p>
+                  <p class="card-text display-5">วันที่สำเร็จการศึกษา (พ.ศ.): {{ \Carbon\Carbon::parse($x->GRADUATE_DATE)->format('d / m / ')}}{{ $x->ACAD_YEAR }}</p>
                   @break
                   
                 @endforeach
@@ -39,8 +39,8 @@
                   <p class="card-text display-5">Fullname :	{{$x->NAME_EN}}</p>
                   <p class="card-text display-5">Curriculum : {{$x->COURSE_NAME_EN}}</p>
                   <p class="card-text display-5">Facuty :  {{ $x->FACULTY_NAME_EN}}</p>
-                  <p class="card-text display-5">Year of Graduation (A.D.) : {{ $x->ACAD_YEAR }}</p>
-                  <p class="card-text display-5">Graduation date (A.D.) : {{ $x->GRADUATE_DATE }}</p>
+                  <p class="card-text display-5">Year of Graduation (A.D.) : {{ $x->ACAD_YEAR-543 }}</p>
+                  <p class="card-text display-5">Graduation date (A.D.) :  {{ \Carbon\Carbon::parse($x->GRADUATE_DATE)->format('d / m / Y')}}</p>
                   @break
                 @endforeach
               </div>
