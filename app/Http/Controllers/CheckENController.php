@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 Use App\Checkup;
+use DB;
+use Session;
+use PDF;
+use Carbon\Carbon;
 
 class CheckENController extends Controller
 {
@@ -37,10 +41,18 @@ class CheckENController extends Controller
 
     public function search(Request $request)
     {
-      
+        request()->validate([
+            
+            'companyname' => 'required',
+            'namecheck' => 'required',
+            'Objective' => 'required',
+            'department' => 'required',
+            'e_mail' => 'required|email',
+            'phone_number' => 'required',
+            ]);
 
       $CITIZEN_ID = $request->get('CITIZEN_ID') ;
-      $NAME_EN = $request->get('NAME_TH') ;
+      $NAME_EN = $request->get('NAME_EN') ;
       $STUDENT_CODE = $request->get('STUDENT_CODE') ;
       if(isset($CITIZEN_ID)) {
         $posts = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
@@ -56,7 +68,7 @@ class CheckENController extends Controller
         ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
         ->select('VW_VOQ_STD_GRADUATE.ACAD_YEAR','VW_VOQ_STD_GRADUATE.NAME_TH','VW_VOQ_STD_GRADUATE.FACULTY_NAME_TH','VW_VOQ_STD_GRADUATE.GRADUATE_DATE',
         'VW_VOQ_COURSE.COURSE_NAME_TH','VW_VOQ_COURSE.COURSE_NAME_EN','VW_VOQ_STD_GRADUATE.NAME_EN','VW_VOQ_STD_GRADUATE.FACULTY_NAME_EN')
-        ->where('NAME_EN',$NAME_TH)->get();
+        ->where('NAME_EN',$NAME_EN)->get();
         
         // ->paginate();
     }
@@ -91,7 +103,7 @@ class CheckENController extends Controller
         $posts = new Checkup();
         // print_r($request->all());
 
-        $posts->NAME_TH = $request->input('NAME_TH');
+        $posts->NAME_EN = $request->input('NAME_EN');
         $posts->STUDENT_CODE = $request->input('STUDENT_CODE');
         $posts->CITIZEN_ID = $request->input('CITIZEN_ID');
         $posts->companyname = $request->input('companyname');
@@ -125,12 +137,31 @@ class CheckENController extends Controller
         $result = Session::get('posts');
         $final = json_decode($result);
         
-        return view('dataindividual',['posts'=>$final]);
+        return view('dataindividualEN',['posts'=>$final]);
     }
 
-    public function show($id)
+    public function showResultPDF(){
+       
+        $result = Session::get('posts');
+        $final = json_decode($result);  
+        $view = \View::make('HtmlToPDF',['posts'=>$final]);
+        $html_content = $view->render();
+     
+
+        PDF::SetMargins(20, 10, 20, true);
+        PDF::SetFont('thniramit','',16);
+        PDF::SetTitle('Sample PDF');
+        PDF::AddPage('P', 'A4');
+        PDF::writeHTML($html_content, true, false, true, false, '');
+      
+        
+        PDF::Output('Qualification.pdf');  
+        //return view ('HtmlToPDF',['posts'=>$final]);
+    }
+
+    public function show()
     {
-        return view('dataindividual');
+        return view('dataindividualEN');
     }
 
     /**
