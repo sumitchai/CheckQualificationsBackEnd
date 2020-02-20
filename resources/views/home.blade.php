@@ -24,7 +24,7 @@
             <table class="table isSearch" cellspacing="0">
               <thead>
                 <tr class="table-heads ">
-                  <th class="head-item mbr-fonts-style display-6">ID</th>
+                  <th class="head-item mbr-fonts-style display-6">ลำดับ</th>
                   <th class="head-item mbr-fonts-style display-6">ข้อมูลที่เลือกสืบค้น</th>
                   <th class="head-item mbr-fonts-style display-6">รายละเอียดผู้สืบค้น</th>
                   <th class="head-item mbr-fonts-style display-6">วัตถุประสงค์ในการตรวจสอบ</th>

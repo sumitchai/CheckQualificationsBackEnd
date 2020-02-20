@@ -25,8 +25,15 @@
 <p>
     เรื่อง&nbsp;การตรวจสอบวุฒิการศึกษา
 </p>
+<<<<<<< HEAD
 <p>
     เรียน&nbsp;..............................................
+=======
+<p> @foreach ($admin as $admin)
+	เรียน&nbsp;{{$admin->namecheck}}&nbsp;จาก&nbsp;{{$admin->companyname}}
+@endforeach
+    
+>>>>>>> 8cafcdf4c735ab38add97362d7d725ed42ef2f67
 </p>
 @foreach($posts as $posts)
 <p>
