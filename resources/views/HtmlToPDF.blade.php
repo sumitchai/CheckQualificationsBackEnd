@@ -25,8 +25,10 @@
 <p>
     เรื่อง&nbsp;การตรวจสอบวุฒิการศึกษา
 </p>
-<p>
-    เรียน&nbsp;เจ้ากรมสวัสดิการทหารเรือ
+<p> @foreach ($admin as $admin)
+	เรียน&nbsp;{{$admin->namecheck}}&nbsp;จาก&nbsp;{{$admin->companyname}}
+@endforeach
+    
 </p>
 @foreach($posts as $posts)
 <p>
