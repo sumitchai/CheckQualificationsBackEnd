@@ -57,12 +57,19 @@ Route::resource ('SelectEN', 'insertEnController');
 
 
  Route::resource ('Checkindividual', 'CheckController');
- Route::resource ('CheckindividualEN', 'CheckENController');
  Route::any ('data','CheckController@search');
  //Route::get ('dataindividual', 'CheckController@show');
  Route::get ('dataindividual', 'CheckController@showResult');
  Route::any ('save','CheckController@store');
  Route::get ('HtmlToPDF', 'CheckController@showResultPDF');
+
+
+ //English
+ Route::resource ('CheckindividualEN', 'CheckENController');
+ Route::any ('dataEN','CheckENController@search');
+ Route::get ('dataindividualEN', 'CheckENController@showResult');
+ Route::any ('saveEN','CheckENController@store');
+ Route::get ('HtmlToPDF', 'CheckENController@showResultPDF');
 
  
 

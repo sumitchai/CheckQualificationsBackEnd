@@ -101,7 +101,7 @@
             <div class="display-4 modal-body text-center" style="font-size: 18px;">
                 <b>งานทะเบียนนิสิตและประมวลผล</b><br>
                 <a>19 หมู่ 2 ตำบลแม่กา อำเภอเมือง จังหวัดพะเยา รหัสไปรษณีย์ 56000</a><br>
-                <a>โทรศัพท์:  054-466666 ต่อ 1028 </a>
+                <a>โทรศัพท์:  054-466666 ต่อ 1021 </a>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">ปิด</button>

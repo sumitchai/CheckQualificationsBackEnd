@@ -1,19 +1,20 @@
-@extends('layout.header')
+@extends('layout.headerEN')
 
-@section('main')
+@section('mainEN')
 <br><br><br><br>
 
 <section >
   <div class="mbr-form form-with-styler" style="padding : 40px">
     <br>
       <div class="mbr-section-btn">
-        <a class="btn btn-md btn-bgr btn-primary display-4" onclick="goBack()">ย้อนกลับ</a> 
+        <a class="btn btn-md btn-bgr btn-primary display-4" onclick="goBack()">back</a> 
       </div>
     <br>
-    <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style ">ข้อมูลการตรวจสอบคุณวุฒิรายบุคคล</h2>
+    <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style ">Data Individual Qualification Examination</h2>
     <br>
     <div >
       
+
         <div class="row">
           <div class="col-sm-6" style="padding-left:120px; padding-right:20px;">
             <div class="card">
@@ -50,7 +51,7 @@
         <br>
       
       <div class="input-group-btn item-right" style="float: right ; padding-right : 120px">
-        <a href="{{ route('HtmlToPDF') }}" class="btn btn-form btn-success display-5" type="submit" target ="_blank"><span class="glyphicon glyphicon-save"></span>ดาวน์โหลด</a>
+        <a href="{{ route('HtmlToPDF') }}" class="btn btn-form btn-success display-5" type="submit" target ="_blank"><span class="glyphicon glyphicon-save"></span>Download</a>
       </div>
       <br><br><br><br><br>
     </div>

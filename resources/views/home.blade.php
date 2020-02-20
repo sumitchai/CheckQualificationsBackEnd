@@ -40,6 +40,7 @@
                   <tr> 
                     <td class="body-item mbr-fonts-style display-6">{{$i++}}</td>
                     <td class="body-item mbr-fonts-style display-6">
+                        ชื่อ-สกุล(Eng) : {{ $admins->NAME_EN }} <br>
                         ชื่อ-สกุล : {{ $admins->NAME_TH }} <br>
                         รหัสนิสิต : {{ $admins->STUDENT_CODE }}<br>
                         เลขบัตรประชาชน : {{ $admins->CITIZEN_ID }}<br>
@@ -62,7 +63,7 @@
                     </td>
                     <td class="body-item mbr-fonts-style display-6">
                      <br>
-                       {{ $admins->created_at }}
+                       {{ \Carbon\Carbon::createFromDate($admins->created_at)->addYear(543)->locale('th')->isoformat('D MMMM Y H:mm:ss น.')}}
                     </td>
                   </tr>
               @endforeach
