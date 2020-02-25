@@ -153,6 +153,7 @@ class CheckController extends Controller
         $result = Session::get('posts');
         $final = json_decode($result);
         $admin = DB::connection('mysql')->table('checkindividual')
+        ->latest()
         ->get();  
         $view = \View::make('HtmlToPDF',['posts'=>$final,'admin'=>$admin]);
         $html_content = $view->render();
