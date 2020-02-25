@@ -20,7 +20,7 @@
             </div>
           </div>
   
-          <div class="container scroll">
+          <div class="container scroll text-nowrap">
             <table class="table isSearch" cellspacing="0">
               <thead>
                 <tr class="table-heads ">
