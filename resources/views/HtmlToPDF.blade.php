@@ -21,19 +21,14 @@
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	{{ \Carbon\Carbon::now()->addYear(543)->locale('th')->isoformat('D MMMM Y')}}</p>
+	{{ \Carbon\Carbon::now()->addYear(543)->locale('th')->isoformat('MMMM Y')}}</p>
 <p>
     เรื่อง&nbsp;การตรวจสอบวุฒิการศึกษา
 </p>
-<<<<<<< HEAD
-<p>
-    เรียน&nbsp;..............................................
-=======
-<p> @foreach ($admin as $admin)
-	เรียน&nbsp;{{$admin->namecheck}}&nbsp;จาก&nbsp;{{$admin->companyname}}
-@endforeach
+<p> 
+	เรียน&nbsp;.....&nbsp;จาก&nbsp;......
+
     
->>>>>>> 8cafcdf4c735ab38add97362d7d725ed42ef2f67
 </p>
 @foreach($posts as $posts)
 <p>
@@ -57,7 +52,8 @@
                         <tr>
                             <td>
                                 
-                                    
+								<?php echo $_POST["companyname"]; ?>
+								<?php echo $_POST["namecheck"]; ?>
                                     <p align="center">
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ดร.ชลธิดา&nbsp;เทพหินลัพ) <br>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;รองอธิการบดีฝ่ายวิชาการและประกันคุณภาพ&nbsp;ปฏิบัติการแทน <br>

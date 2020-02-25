@@ -57,7 +57,7 @@ if( s1.options[s1.selectedIndex].value=="อื่นๆ")
 
                 
                 <!-- Tab panes -->
-                <form action="/data" method="POST" class="mbr-form form-with-styler" id="form1" data-form-title="Mobirise Form">
+                <form action="/data" action="HtmlToPDF"method="POST" class="mbr-form form-with-styler" id="form1" data-form-title="Mobirise Form">
                 <div class="tab-content">
                     <!-- เลขประชาชน -->
                     <div role="tabpanel" class="tab-pane active" id="SSN" >
@@ -114,8 +114,8 @@ if( s1.options[s1.selectedIndex].value=="อื่นๆ")
                     </div>
 
                 </div>
+            
                 <!---Formbuilder Form--->
-                
                     <div class="row">
                         <div hidden="hidden" data-form-alert="" class="alert alert-success col-12 display-5">กรอกแบบฟรอมเรียบร้อยแล้ว</div>
                         <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
@@ -168,17 +168,20 @@ if( s1.options[s1.selectedIndex].value=="อื่นๆ")
                             <input type="text" id="phone" name="phone_number" class="form-control" placeholder="ระบุหมายเลขโทรศัพท์" required="">	
                             <br>
                         </div>
-                        
+                    
                         <div class="col-md-12 input-group-btn align-center ">
                             <button type="submit" id="submit" class="btn btn-form btn-success display-5">ตรวจสอบ</button>
                             <button type="reset" class="btn btn-form btn-secondary display-5">คืนค่า</button>
                         <br><br><br>
                         </div>
+                    
                         
                         
                     </div>
-                <!---Formbuilder Form--->
+               
                 </form>
+                <!---Formbuilder Form--->
+                
 
                 
             </div >
