@@ -26,7 +26,7 @@
     เรื่อง&nbsp;การตรวจสอบวุฒิการศึกษา
 </p>
 <p> เรียน @foreach ($admin as $admin)
-	&nbsp;คุณ{{$admin->namecheck}}&nbsp;&nbsp;{{$admin->companyname}}
+	&nbsp;{{$admin->namecheck}}&nbsp;&nbsp;{{$admin->companyname}}
 	@break
 @endforeach
     
