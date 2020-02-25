@@ -106,7 +106,7 @@ if( s1.options[s1.selectedIndex].value=="อื่นๆ")
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name">
                                     <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">รหัสนิสิต</label>
-                                    <input type="number" name="STUDENT_CODE" data-form-field="STUDENT_CODE"  class="form-control display-5" id="STUDENT_CODE" required placeholder="ระบุรหัสนิสิต"><p></p>
+                                    <input type="number" name="STUDENT_CODE" data-form-field="STUDENT_CODE"  class="form-control display-5" id="STUDENT_CODE" required placeholder="ระบุรหัสนิสิต" maxlength="8"><p></p>
                                     
                                 </div>  
                             </div>

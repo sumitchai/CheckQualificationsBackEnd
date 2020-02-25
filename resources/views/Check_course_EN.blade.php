@@ -61,14 +61,14 @@
             <tbody>
               <?php $i = 1; ?>
               @foreach ($course as $x) 
-            <tr> 
-              <td class="body-item mbr-fonts-style display-6">{{$i++}}</td>
-              <td class="body-item mbr-fonts-style display-6">{{$x->COURSE_NAME_EN}}</td>
-              <td class="body-item mbr-fonts-style display-6">{{$x->count}}</td>
-              <td class="body-item mbr-fonts-style display-6">
-                <a href="/SelectEN/{{$x->COURSE_NAME_EN}}" class="badge badge-dark"> View</a>
-              </td>
-            </tr>
+                <tr> 
+                  <td class="body-item mbr-fonts-style display-6">{{$i++}}</td>
+                  <td class="body-item mbr-fonts-style display-6">{{$x->COURSE_NAME_EN}}</td>
+                  <td class="body-item mbr-fonts-style display-6">{{$x->count}}</td>
+                  <td class="body-item mbr-fonts-style display-6">
+                    <a href="/SelectEN/{{$x->COURSE_NAME_EN}}" class="badge badge-dark"> View</a>
+                  </td>
+                </tr>
               @endforeach 
               
             </tbody>

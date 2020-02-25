@@ -45,13 +45,16 @@
             
             <tbody>
               <?php $i = 1; ?>
-              <tr> 
-              <td class="body-item mbr-fonts-style display-6">{{$i++}}</td>
-              <td class="body-item mbr-fonts-style display-6">{{$x->STUDENT_CODE}}</td>
-              <td class="body-item mbr-fonts-style display-6">{{$x->NAME_EN}}</td>
-    
-              <td class="body-item mbr-fonts-style display-6">{{$x->ACAD_YEAR}}</td>
-              </tr>
+              @foreach ($data as $x)
+                <tr> 
+                  <td class="body-item mbr-fonts-style display-6">{{$i++}}</td>
+                  <td class="body-item mbr-fonts-style display-6">{{$x->STUDENT_CODE}}</td>
+                  <td class="body-item mbr-fonts-style display-6">{{$x->NAME_EN}}</td>
+        
+                  <td class="body-item mbr-fonts-style display-6">{{$x->ACAD_YEAR}}</td>
+                </tr>
+              @endforeach
+              
               </tbody>
           </table>
         </div>
