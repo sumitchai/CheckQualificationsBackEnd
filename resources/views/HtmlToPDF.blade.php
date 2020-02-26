@@ -19,17 +19,6 @@
 </p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<<<<<<< HEAD
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	{{ \Carbon\Carbon::now()->addYear(543)->locale('th')->isoformat('MMMM Y')}}</p>
-<p>
-    เรื่อง&nbsp;การตรวจสอบวุฒิการศึกษา
-</p>
-<p> 
-	เรียน&nbsp;.....&nbsp;จาก&nbsp;......
-
-=======
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	{{ \Carbon\Carbon::now()->addYear(543)->locale('th')->isoformat(' MMMM Y')}}</p>
@@ -40,15 +29,17 @@
 	&nbsp;<p1>คุณ{{$admin->namecheck}}&nbsp;&nbsp;&nbsp;{{$admin->companyname}}</p1>
 	@break
 @endforeach
->>>>>>> f986356583d5fb72cd49f8abf8cd2df9806eb14c
     
 </p>
 @foreach($posts as $posts)	
 	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		มหาวิทยาลัยพะเยา ทำการตรวจสอบแล้วพบว่า {{ $posts->NAME_TH }} ได้สำเร็จการศึกษา {{ $posts->COURSE_NAME_TH }} {{ $posts->FACULTY_NAME_TH }}
-		&nbsp;เมื่อวันที่ {{ \Carbon\Carbon::createFromDate($posts->GRADUATE_DATE)->addYear(543)->locale('th')->isoformat('LL')}}&nbsp;
+		&nbsp;เมื่อวันที่ 
+		
+		{{ \Carbon\Carbon::createFromDate ($posts->GRADUATE_DATE)->addYear(543)->locale('th')->isoformat('LL')}}&nbsp;
 		จากมหาวิทยาลัยพะเยา&nbsp;จริง&nbsp;และ&nbsp;&nbsp;ได้รับอนุมัติให้สำเร็จการศึกษาถูกต้องตามที่ระบุไว้ในเอกสาร&nbsp;ซึ่งสำนักงาน&nbsp;ก.พ. รับรองเรียบร้อยแล้ว
-	</p>
+		
+		</p>
 	@break
 @endforeach
 
@@ -67,13 +58,8 @@
                         <tr>
                             <td>
                                 
-<<<<<<< HEAD
-								<?php echo $_POST["companyname"]; ?>
-								<?php echo $_POST["namecheck"]; ?>
-=======
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/img/sing.png"  width="70"  height="70" >
->>>>>>> f986356583d5fb72cd49f8abf8cd2df9806eb14c
                                     <p align="center">
 
 										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
@@ -102,3 +88,19 @@
 
 
  
+<?php
+// การใช้งาน
+echo thainumDigit("ไก่ 3 ตัว หมู 2 ตัว มีขารวมกัน 14 ขา " );
+// ผลลัพธ์
+// ไก่ ๓ ตัว หมู ๒ ตัว มีขารวมกัน ๑๔ ขา 
+ 
+// การใช้งาน
+echo thainumDigit("1,521 บาท 50 สตางค์" );
+// ผลลัพธ์
+// ๑,๕๒๑ บาท ๕o สตางค์
+ 
+// การใช้งาน
+echo thainumDigit("1,245,650.00");
+// ผลลัพธ์
+// ๑,๒๔๕,๖๕o.oo
+?>

@@ -149,7 +149,6 @@ class CheckController extends Controller
         
     }
     public function showResultPDF(){
-       
         $result = Session::get('posts');
         $final = json_decode($result);
         $admin = DB::connection('mysql')->table('checkindividual')
