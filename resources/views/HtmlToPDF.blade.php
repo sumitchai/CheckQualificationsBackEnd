@@ -1,7 +1,13 @@
-
+<?php
+		function thainumDigit($num){
+			return str_replace(array( '0' , '1' , '2' , '3' , '4' , '5' , '6' ,'7' , '8' , '9' ),
+			array( "o" , "๑" , "๒" , "๓" , "๔" , "๕" , "๖" , "๗" , "๘" , "๙" ),
+			$num);
+		};
+?>
 
 @foreach ($admin as $admin)
-<p>ที่&nbsp;อว&nbsp;๗๓o๗&nbsp;/ {{$admin->id}}	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p>ที่&nbsp;อว&nbsp;๗๓o๗&nbsp;/ {{ thainumDigit($admin->id) }}	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	
 	<img src="{{env('APP_URL')}}/assets/images/logo-full.png" alt="Mobirise" title="" style="height:80px; ">
@@ -23,7 +29,7 @@
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	{{ \Carbon\Carbon::now()->addYear(543)->locale('th')->isoformat(' MMMM Y')}}</p>
+	{{thainumDigit(\Carbon\Carbon::now()->addYear(543)->locale('th')->isoformat(' MMMM Y')) }}</p>
 <p>
     เรื่อง&nbsp;การตรวจสอบวุฒิการศึกษา
 </p>
@@ -36,7 +42,8 @@
 @foreach($posts as $posts)	
 	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		มหาวิทยาลัยพะเยา ทำการตรวจสอบแล้วพบว่า {{ $posts->NAME_TH }} ได้สำเร็จการศึกษา {{ $posts->COURSE_NAME_TH }} {{ $posts->FACULTY_NAME_TH }}
-		&nbsp;เมื่อวันที่ {{ \Carbon\Carbon::createFromDate($posts->GRADUATE_DATE)->addYear(543)->locale('th')->isoformat('LL')}}&nbsp;
+		
+		&nbsp;เมื่อวันที่ {{ thainumDigit(\Carbon\Carbon::createFromDate($posts->GRADUATE_DATE)->addYear(543)->locale('th')->isoformat('LL'))}}&nbsp;
 		จากมหาวิทยาลัยพะเยา&nbsp;จริง&nbsp;และ&nbsp;&nbsp;ได้รับอนุมัติให้สำเร็จการศึกษาถูกต้องตามที่ระบุไว้ในเอกสาร&nbsp;ซึ่งสำนักงาน&nbsp;ก.พ. รับรองเรียบร้อยแล้ว
 	</p>
 	@break
