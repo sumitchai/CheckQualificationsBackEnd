@@ -120,7 +120,7 @@
         <br>
         <br>
         <div>
-            <div href="home" class="display-4 float-right">แก้ไขเว็บไซต์ </div><br>
+            <a href="home" class="display-4 float-right">แก้ไขเว็บไซต์ </a><br>
         </div>
     </div>
     <!-- Copyright -->
