@@ -36,7 +36,8 @@ if( s1.options[s1.selectedIndex].value=="อื่นๆ")
         <div class="container-full-width">
             <br><br>
 
-            <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style ">Individual Qualification Examination</h2>
+            
+            <div class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">Individual Qualification Examination</div>
             
             <div class="container">
                 <nav class="navbar  fbg-light">

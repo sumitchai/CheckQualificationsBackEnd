@@ -10,7 +10,8 @@
         <a class="btn btn-md btn-bgr btn-primary display-4" onclick="goBack()">back</a> 
       </div>
     <br>
-    <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style ">Data Individual Qualification Examination</h2>
+    
+    <div class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">Data Individual Qualification Examination</div>
     <br>
     <div >
       

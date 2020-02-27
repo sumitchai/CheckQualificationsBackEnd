@@ -10,8 +10,8 @@
         <a class="btn btn-md btn-bgr btn-primary display-4" onclick="goBack()">ย้อนกลับ</a> 
       </div>
     <br>
-    <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style ">ข้อมูลการตรวจสอบคุณวุฒิรายบุคคล</h2>
-    <br>
+    <div class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">ข้อมูลการตรวจสอบคุณวุฒิรายบุคคล</div>
+        <br>
     <div >
       
 
