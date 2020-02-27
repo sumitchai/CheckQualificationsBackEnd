@@ -119,7 +119,7 @@
         <br>
         <br>
         <div>
-            <a href="home" class="display-4 text-decoration-none float-right">แก้ไขเว็บไซต์</a><br>
+            <a href="home" class="display-4 float-right">แก้ไขเว็บไซต์ </a><br>
         </div>
     </div>
     <!-- Copyright -->
