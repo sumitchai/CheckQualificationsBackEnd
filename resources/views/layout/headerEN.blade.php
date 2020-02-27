@@ -93,13 +93,14 @@
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title text-center" id="myModalLong">กองบริการการศึกษา : มหาวิทยาลัยพะเยา</h4>
+                <h4 class="modal-title text-center" id="myModalLong">Enroll university of phayao</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
             </div>
             <div class="display-4 modal-body text-center" style="font-size: 18px;">
                 <b>งานทะเบียนนิสิตและประมวลผล</b><br>
-                <a>19 หมู่ 2 ตำบลแม่กา อำเภอเมือง จังหวัดพะเยา รหัสไปรษณีย์ 56000</a><br>
-                <a>โทรศัพท์:  054-466666 ต่อ 1021 </a>
+                <br>
+                <a>Address 19 No. 2  Area: city Sub-area: meaka Province: phayao post: 56000</a><br>
+                <a>Phone:  054466666  </a>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
