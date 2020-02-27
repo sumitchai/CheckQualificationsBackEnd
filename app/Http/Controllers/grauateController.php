@@ -22,9 +22,9 @@ class grauateController extends Controller
     }
 
     public function seclectgrauate01() {
-        // จำนวนนิสิตที่อยู่ในหลักสูตร
-        $DEGREE_CODE =  (isset($_GET['degree']))?$_GET['degree']:3;
-        $result1=DB::connection('sqlsrv')->select('SELECT VW_VOQ_COURSE.COURSE_NAME_EN,COUNT(VW_VOQ_COURSE.COURSE_NAME_EN) as COUNT_STUDENT 
+        
+       
+        $result1=DB::connection('sqlsrv')->select('SELECT * form table 
                              FROM VW_VOQ_STD_GRADUATE 
                              JOIN VW_VOQ_COURSE ON VW_VOQ_STD_GRADUATE.COURSE_ID=VW_VOQ_COURSE.COURSE_ID
                              WHERE VW_VOQ_STD_GRADUATE.DEGREE_CODE = '.$DEGREE_CODE.' AND VW_VOQ_STD_GRADUATE.ACAD_YEAR >=2553
