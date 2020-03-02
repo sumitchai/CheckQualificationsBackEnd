@@ -1,3 +1,4 @@
+<link rel="shortcut icon" href="{{env('APP_URL')}}/assets/images/up-536x536.png" type="image/x-icon">
 @extends('layout.headerEN')
 
 @section('mainEN')
