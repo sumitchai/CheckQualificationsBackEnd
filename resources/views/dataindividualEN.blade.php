@@ -108,24 +108,8 @@
         </div>
     </div>
 </div>
-<!-- Footer -->
-<footer class="page-footer font-small blue">
-    <!-- Copyright -->
-    <div class="display-4 bg-dark text-white-50 page-footer text-center ">
-        <br>
-        <br>
-        มหาวิทยาลัยพะเยา, ระบบตรวจสอบคุณวุฒิ<br>
-        Copyright 2019 © University of Phayao Page
-        <br>
-        <br>
-        <div>
-            <a href="home" class="display-4 float-right">แก้ไขเว็บไซต์ </a><br>
-        </div>
-    </div>
-    <!-- Copyright -->
-</footer>
-<!-- Footer -->
-</section>
+
+</section><br><br>
 <section >
   <div class="mbr-form form-with-styler" style="padding : 40px">
     <br>
@@ -180,6 +164,23 @@
       <br><br><br><br><br>
     </div>
   </div>
+  <!-- Footer -->
+<footer class="page-footer font-small blue">
+  <!-- Copyright -->
+  <div class="display-4 bg-dark text-white-50 page-footer text-center ">
+      <br>
+      <br>
+      มหาวิทยาลัยพะเยา, ระบบตรวจสอบคุณวุฒิ<br>
+      Copyright 2019 © University of Phayao Page
+      <br>
+      <br>
+      <div>
+          <a href="home" class="display-4 float-right">แก้ไขเว็บไซต์ </a><br>
+      </div>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
 </section>
 
 
