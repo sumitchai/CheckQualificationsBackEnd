@@ -115,7 +115,7 @@
   <div class="mbr-form form-with-styler" style="padding : 40px">
     <br>
       <div class="mbr-section-btn">
-        <a class="btn btn-md btn-bgr btn-primary display-4" onclick="goBack()">ย้อนกลับ</a> 
+        <a class="btn btn-md btn-bgr btn-primary display-4" href="/Checkindividual">ย้อนกลับ</a> 
       </div>
     <br>
     <div class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">ข้อมูลการตรวจสอบคุณวุฒิรายบุคคล</div>

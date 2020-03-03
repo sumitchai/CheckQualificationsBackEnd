@@ -99,7 +99,7 @@
             <div class="display-4 modal-body text-center" style="font-size: 18px;">
                 <b>งานทะเบียนนิสิตและประมวลผล</b><br>
                 <br>
-                <a>Address 19 No. 2  Area: city Sub-area: meaka Province: phayao post: 56000</a><br>
+                <a>Address 19 No. 2  Area: city Sub-area: meaka <br> Province: phayao post: 56000</a><br>
                 <a>Phone:  054466666  </a>
             </div>
             <div class="modal-footer">
@@ -151,7 +151,7 @@
                             </div>
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name" >
-                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">Citizen Id</label>
+                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">Citizen Id <sup class="star">**</sup></label>
                                     <input type="number" name="CITIZEN_ID" data-form-field="CITIZEN_ID" class="form-control display-7" id="CITIZEN_ID" placeholder="Specify Citizen Id" maxlength="13"><p></p>
                                     
                                 </div>
@@ -169,7 +169,7 @@
                             </div>
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name">
-                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">Full name</label>
+                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">Full name <sup class="star">**</sup></label>
                                     <input type="Name" name="NAME_EN" data-form-field="NAME_EN"  class="form-control display-5" id="NAME_EN" placeholder="Specify Full name">
                                 </div>
                                 
@@ -187,7 +187,7 @@
                             </div>
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name">
-                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">Student ID number</label>
+                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">Student ID number <sup class="star">**</sup></label>
                                     <input type="number" name="STUDENT_CODE" data-form-field="STUDENT_CODE"  class="form-control display-5" id="STUDENT_CODE" placeholder="Specify Student ID number"><p></p>
                                     
                                 </div>  
@@ -205,15 +205,15 @@
                     </div>
                     <div class="dragArea row ">
                         <div class="col-sm-6  form-group" data-for="companyName">
-                            <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-5">Name of Department</label>
+                            <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-5">Name of Department <sup class="star">**</sup></label>
                             <input type="text" name="companyname" data-form-field="companyname" required="required" class="form-control display-7" id="companyname" placeholder="Specify Name of Department">
                         </div>
                         <div class="col-sm-6  form-group" data-for="name">
-                            <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-5">Name of Applicant</label>
+                            <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-5">Name of Applicant <sup class="star">**</sup></label>
                             <input type="text" name="namecheck" data-form-field="namecheck" required="required" class="form-control display-7" id="namecheck" placeholder="Specify Name of Applicant">
                         </div>
                         <div class="form-group col-sm-6 display-5" >
-                            <label>Purpose of inspection</label>   
+                            <label>Purpose of inspection <sup class="star">**</sup></label>   
                             <select name="Objective" id="RTID" class="form-control  select2 select2-hidden-accessible"  onChange="hideshow1()">
                                 <option class="display-5" value="">Select Purpose of inspection</option>
                                 <option class="display-5" value="เพื่อรับเข้าศึกษาต่อ" >For admission</option>
@@ -222,12 +222,12 @@
                                 <option class="display-5" value="เพื่อเป็นหลักฐานประกอบการอสิทธิ์ลดวันรับราชการกองประจำการ">As evidence for the right to reduce the days of service of the Division </option>
                                 <option class="display-5" value="อื่นๆ">Other</option>
                             </select>
-                            <div  id="RTIDANS" style="display:none;">Other
+                            <div  id="RTIDANS" style="display:none;">Other <sup class="star">**</sup>
                                 <input class="form-control display-7" name="Objective_1" id="RTIDANS" type="text"  placeholder="Specify Other"/>
                             </div>
                         </div>
                         <div class="form-group col-sm-6 display-5" >
-                            <label>Type of Agency</label>
+                            <label>Type of Agency <sup class="star">**</sup></label>
                             <select id="OGID" name="department" class="form-control  select2 select2-hidden-accessible" onChange="hideshow2()">
                                 <option class="display-5"  value="">Select Type of Agency</option>
                                 <option class="display-5"  value="หน่วยงานราชการ">Government agencies</option>
@@ -236,17 +236,17 @@
                                 <option class="display-5"  value="อื่นๆ">Other</option>
                             </select>  
                             
-                            <div  id="OGIDANS" style="display:none;">Other
+                            <div  id="OGIDANS" style="display:none;">Other <sup class="star">**</sup>
                                 <input class="form-control display-7" name="department_1" id="OGIDANS" type="text"  placeholder="Specify Other"/>
                             </div>
                         </div>
                         <div class="form-group col-sm-6 display-5">
-                            <label>E-Mail</label>
+                            <label>E-Mail <sup class="star">**</sup></label>
                             <input id="email" name="e_mail" class="form-control" placeholder="exsample@email.com" type="email" required="">	
                         </div>
 
                         <div class="form-group col-sm-6 display-5">
-                            <label>Phone Number</label>
+                            <label>Phone Number <sup class="star">**</sup></label>
                             <input type="text" id="phone" name="phone_number" class="form-control" placeholder="Specify Phone Number" required="">	
                             <br>
                         </div>
@@ -379,3 +379,67 @@ if( s1.options[s1.selectedIndex].value=="อื่นๆ")
             });
     });
 </script>
+<style>
+    .star{
+color:red;
+}
+</style>
+
+<style>
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+   color: red;
+   font-size: 12pt; 
+}
+::-moz-placeholder { /* Firefox 19+ */
+   color: red;
+   font-size: 12pt; 
+}
+:-ms-input-placeholder { /* IE 10+ */
+   color: red;
+   font-size: 12pt; 
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: red;
+   font-size: 12pt;
+}
+</style>
+<style>
+    select option
+{
+    
+    font-size:24px;
+    font-weight:normal;
+    height:30px;
+    
+}
+</style>
+
+<style>
+    input[type=text], select {
+  
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=number], select {
+  
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email], select {
+  
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+</style>

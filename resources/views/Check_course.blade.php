@@ -172,10 +172,10 @@
               <?php $i = 1; ?>
               @foreach ($course as $x) 
             <tr> 
-              <td class="body-item mbr-fonts-style display-6">{{$i++}}</td>
-              <td class="body-item mbr-fonts-style display-6">{{$x->COURSE_NAME_TH}}</td>
-              <td class="body-item mbr-fonts-style display-6">{{$x->count}}</td>
-              <td class="body-item mbr-fonts-style display-6">
+              <td class="body-item mbr-fonts-style display-6" width="100px" align="center">{{$i++}}</td>
+              <td class="body-item mbr-fonts-style display-6" >{{$x->COURSE_NAME_TH}}</td>
+              <td class="body-item mbr-fonts-style display-6" width="130px" align="center">{{$x->count}}</td>
+              <td class="body-item mbr-fonts-style display-6" width="130px" align="center">
                 <a href="/SelectThailist/{{$x->COURSE_NAME_TH}}" class="badge badge-dark"> ดูข้อมูล</a>
               </td>
             </tr>

@@ -99,7 +99,7 @@
             <div class="display-4 modal-body text-center" style="font-size: 18px;">
                 <b>งานทะเบียนนิสิตและประมวลผล</b><br>
                 <br>
-                <a>Address 19 No. 2  Area: city Sub-area: meaka Province: phayao post: 56000</a><br>
+                <a>Address 19 No. 2  Area: city Sub-area: meaka <br> Province: phayao post: 56000</a><br>
                 <a>Phone:  054466666  </a>
             </div>
             <div class="modal-footer">

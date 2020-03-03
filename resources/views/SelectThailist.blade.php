@@ -147,7 +147,7 @@
           <table class="table isSearch" cellspacing="0">
             <thead>
               <tr class="table-heads ">
-              <th class="head-item mbr-fonts-style display-6">ลำดับที่</th>
+              <th class="head-item mbr-fonts-style display-6" >ลำดับที่</th>
               <th class="head-item mbr-fonts-style display-6">รหัสนิสิต </th>
               <th class="head-item mbr-fonts-style display-6">ชื่อ-นามสกุล</th>
               <th class="head-item mbr-fonts-style display-6">ปีที่สำเร็จการศึกษา</th>
@@ -159,10 +159,10 @@
               <?php $i = 1; ?>
               @foreach ($data as $x)
               <tr> 
-              <td class="body-item mbr-fonts-style display-6">{{$i++}}</td>
-              <td class="body-item mbr-fonts-style display-6">{{$x->STUDENT_CODE}}</td>
-              <td class="body-item mbr-fonts-style display-6">{{$x->NAME_TH}}</td>
-              <td class="body-item mbr-fonts-style display-6">{{$x->ACAD_YEAR}}</td>
+              <td class="body-item mbr-fonts-style display-6" align="center">{{$i++}}</td>
+              <td class="body-item mbr-fonts-style display-6" align="center">{{$x->STUDENT_CODE}}</td>
+              <td class="body-item mbr-fonts-style display-6" >{{$x->NAME_TH}}</td>
+              <td class="body-item mbr-fonts-style display-6" align="center">{{$x->ACAD_YEAR}}</td>
               
               </tr>
               @endforeach

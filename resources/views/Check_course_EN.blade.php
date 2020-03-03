@@ -99,7 +99,7 @@
             <div class="display-4 modal-body text-center" style="font-size: 18px;">
                 <b>งานทะเบียนนิสิตและประมวลผล</b><br>
                 <br>
-                <a>Address 19 No. 2  Area: city Sub-area: meaka Province: phayao post: 56000</a><br>
+                <a>Address 19 No. 2  Area: city Sub-area: meaka <br> Province: phayao post: 56000</a><br>
                 <a>Phone:  054466666  </a>
             </div>
             <div class="modal-footer">
@@ -160,7 +160,7 @@
             <thead>
               <tr class="table-heads ">
                 <th class="head-item mbr-fonts-style display-6">No</th>
-                <th class="head-item mbr-fonts-style display-6">COURSE</th>
+                <th class="head-item mbr-fonts-style display-6" >COURSE</th>
                 <th class="head-item mbr-fonts-style display-6">Total students</th>
                 <th class="head-item mbr-fonts-style display-6">View</th>
               </tr>
@@ -170,9 +170,9 @@
               <?php $i = 1; ?>
               @foreach ($course as $x) 
                 <tr> 
-                  <td class="body-item mbr-fonts-style display-6">{{$i++}}</td>
+                  <td class="body-item mbr-fonts-style display-6" >{{$i++}}</td>
                   <td class="body-item mbr-fonts-style display-6">{{$x->COURSE_NAME_EN}}</td>
-                  <td class="body-item mbr-fonts-style display-6">{{$x->count}}</td>
+                  <td class="body-item mbr-fonts-style display-6" width="180px" align="center">{{$x->count}}</td>
                   <td class="body-item mbr-fonts-style display-6">
                     <a href="/SelectEN/{{$x->COURSE_NAME_EN}}" class="badge badge-dark"> View</a>
                   </td>

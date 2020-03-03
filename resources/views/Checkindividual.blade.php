@@ -124,15 +124,15 @@
                 <nav class="navbar  fbg-light">
                     <ul class="nav nav-pills" role="tablist" >
                         <li class="nav-item nav-pills active">
-                            <a class="nav-link btn-outline-secondary active display-5" data-toggle="tab" href="#SSN">เลขบัตรประชาชน</a>
+                            <a class="nav-link btn-outline-secondary active display-5" data-toggle="tab" href="#SSN" type="reset">เลขบัตรประชาชน</a>
                         </li>
                         <div ></div>
                         <li class="nav-item nav-pills">
-                            <a class="nav-link btn-outline-secondary display-5" data-toggle="tab" href="#name">ชื่อ-นามสกุล </a>
+                            <a class="nav-link btn-outline-secondary display-5" data-toggle="tab" href="#name" type="reset">ชื่อ-นามสกุล </a>
                         </li>
                         <div></div>
                         <li class="nav-item nav-pills">
-                            <a class="nav-link btn-outline-secondary display-5" data-toggle="tab" href="#studenID"  >รหัสนิสิต</a>
+                            <a class="nav-link btn-outline-secondary display-5" data-toggle="tab" href="#studenID" type="reset" >รหัสนิสิต</a>
                         </li>
                     </ul>
                 </nav><br>
@@ -151,7 +151,7 @@
                             </div>
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name" >
-                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">เลขบัตรประชาชน</label>
+                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">เลขบัตรประชาชน <sup class="star">**</sup></label>
                                     <input type="number" name="CITIZEN_ID" data-form-field="CITIZEN_ID" class="form-control display-7" id="CITIZEN_ID" required placeholder="ระบุเลขบัตรประชาชน" maxlength="13"><p></p>
                                     
                                 </div>
@@ -169,7 +169,7 @@
                             </div>
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name">
-                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">ชื่อ-นามสกุล</label>
+                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">ชื่อ-นามสกุล <sup class="star">**</sup></label>
                                     <input type="Name" name="NAME_TH" data-form-field="NAME_TH"  class="form-control display-5" id="NAME_TH" required placeholder="ระบุชื่อ">
                                 </div>
                                 
@@ -187,7 +187,7 @@
                             </div>
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name">
-                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">รหัสนิสิต</label>
+                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">รหัสนิสิต <sup class="star">**</sup></label>
                                     <input type="number" name="STUDENT_CODE" data-form-field="STUDENT_CODE"  class="form-control display-5" id="STUDENT_CODE" required placeholder="ระบุรหัสนิสิต" maxlength="8"><p></p>
                                     
                                 </div>  
@@ -205,15 +205,15 @@
                     </div>
                     <div class="dragArea row ">
                         <div class="col-sm-6  form-group" data-for="companyName">
-                            <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-5">ชื่อหน่วยงาน</label>
+                            <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-5">ชื่อหน่วยงาน <sup class="star">**</sup></label>
                             <input type="text" name="companyname" data-form-field="companyname" required="required" class="form-control display-7" id="companyname" placeholder="ระบุชื่อหน่วยงาน">
                         </div>
                         <div class="col-sm-6  form-group" data-for="name">
-                            <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-5">ชื่อ-นามสกุลผู้ขอตรวจสอบ</label>
+                            <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-5">ชื่อ-นามสกุลผู้ขอตรวจสอบ <sup class="star">**</sup></label>
                             <input type="text" name="namecheck" data-form-field="namecheck" required="required" class="form-control display-7" id="namecheck" placeholder="ระบุชื่อ-นามสกุลผู้ขอตรวจสอบ">
                         </div>
                         <div class="form-group col-sm-6 display-5" >
-                            <label>วัตถประสงค์ในการตรวจสอบ</label>   
+                            <label>วัตถประสงค์ในการตรวจสอบ <sup class="star">**</sup></label>   
                             <select name="Objective" id="RTID" class="form-control  select2 select2-hidden-accessible"  onChange="hideshow1()">
                                 <option class="display-5" value="">เลือกประเภทหน่วยงาน</option>
                                 <option class="display-5" value="เพื่อรับเข้าศึกษาต่อ" >เพื่อรับเข้าศึกษาต่อ</option>
@@ -222,12 +222,12 @@
                                 <option class="display-5" value="เพื่อเป็นหลักฐานประกอบการอสิทธิ์ลดวันรับราชการกองประจำการ">เพื่อเป็นหลักฐานประกอบการอสิทธิ์ลดวันรับราชการกองประจำการ </option>
                                 <option class="display-5" value="อื่นๆ">อื่นๆ</option>
                             </select>
-                            <div  id="RTIDANS" style="display:none;">ระบุอื่นๆ
+                            <div  id="RTIDANS" style="display:none;">ระบุอื่นๆ <sup class="star">**</sup>
                                 <input class="form-control display-7" name="Objective_1" id="RTIDANS" type="text" required  placeholder="กรุณาระบุอื่นๆ"/>
                             </div>
                         </div>
                         <div class="form-group col-sm-6 display-5" >
-                            <label>ประเภทหน่วยงาน</label>
+                            <label>ประเภทหน่วยงาน <sup class="star">**</sup></label>
                             <select id="OGID" name="department" class="form-control  select2 select2-hidden-accessible" onChange="hideshow2()">
                                 <option class="display-5"  value="">เลือกประเภทหน่วยงาน</option>
                                 <option class="display-5"  value="หน่วยงานราชการ">หน่วยงานราชการ</option>
@@ -236,17 +236,17 @@
                                 <option class="display-5"  value="อื่นๆ">อื่นๆ</option>
                             </select>  
                             
-                            <div  id="OGIDANS" style="display:none;">ระบุอื่นๆ
+                            <div  id="OGIDANS" style="display:none;">ระบุอื่นๆ <sup class="star">**</sup>
                                 <input class="form-control display-7" name="department_1" id="OGIDANS" type="text" required  placeholder="กรุณาระบุอื่นๆ"/>
                             </div>
                         </div>
                         <div class="form-group col-sm-6 display-5">
-                            <label>อีเมล์</label>
+                            <label>อีเมล์ <sup class="star">**</sup></label>
                             <input id="email" name="e_mail" class="form-control" placeholder="exsample@email.com" type="email" required="">	
                         </div>
 
                         <div class="form-group col-sm-6 display-5">
-                            <label>หมายเลขโทรศัพท์</label>
+                            <label>หมายเลขโทรศัพท์ <sup class="star">**</sup></label>
                             <input type="text" id="phone" name="phone_number" class="form-control" placeholder="ระบุหมายเลขโทรศัพท์" required="">	
                             <br>
                         </div>
@@ -380,8 +380,69 @@ if( s1.options[s1.selectedIndex].value=="อื่นๆ")
             });
     });
 </script>
+<style>
+    .star{
+color:red;
+}
+</style>
 
+<style>
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+   color: red;
+   font-size: 12pt; 
+}
+::-moz-placeholder { /* Firefox 19+ */
+   color: red;
+   font-size: 12pt; 
+}
+:-ms-input-placeholder { /* IE 10+ */
+   color: red;
+   font-size: 12pt; 
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: red;
+   font-size: 12pt;
+}
+</style>
+<style>
+    select option
+{
+    
+    font-size:24px;
+    font-weight:normal;
+    height:30px;
+    
+}
+</style>
 
-
+<style>
+    input[type=text], select {
+  
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=number], select {
+  
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email], select {
+  
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+</style>
 
 
