@@ -145,7 +145,7 @@ class CheckController extends Controller
         $result = Session::get('posts');
         $final = json_decode($result);
         if(empty($final)){
-            return redirect("/Checkindividual");    
+            return redirect("/Checkindividual")->with('alert', 'ไม่พบข้อมูล!'); 
         }else{  
             return view('dataindividual',['posts'=>$final]);
         }
