@@ -1331,6 +1331,7 @@ section.lazy-placeholder:after {
 }
 .cid-rN9ViYOSs1 .dataTables_filter {
   text-align: right;
+  float: left !important;
   margin-bottom: .5rem;
 }
 .cid-rN9ViYOSs1 .dataTables_filter label {
@@ -1342,7 +1343,7 @@ section.lazy-placeholder:after {
   width: auto;
   margin-left: .5rem;
   border-radius: 100px;
-  padding-left: 1rem;
+  padding-left : 1rem;
 }
 .cid-rN9ViYOSs1 .dataTables_info {
   padding-bottom: 1rem;
