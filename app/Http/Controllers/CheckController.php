@@ -77,11 +77,12 @@ class CheckController extends Controller
         ->where('STUDENT_CODE',$STUDENT_CODE )
         ->where('VW_VOQ_STD_GRADUATE.ACAD_YEAR','>=',2553)
         ->get();
+        
         // ->paginate();
     }
-      
-      $result = json_encode($posts);
-      Session::put('posts', $result);
+    
+    $result = json_encode($posts);
+    Session::put('posts', $result);
     //    return  view('dataindividual',['posts'=>$posts]);
     //   $posts = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
     //   ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
@@ -143,9 +144,13 @@ class CheckController extends Controller
         
         $result = Session::get('posts');
         $final = json_decode($result);
-        
-        
-        return view('dataindividual',['posts'=>$final]);
+        if(empty($final)){
+            return redirect("/Checkindividual");    
+        }else{  
+            return view('dataindividual',['posts'=>$final]);
+        }
+    //   return($result);
+       
         
     }
     public function showResultPDF(){
