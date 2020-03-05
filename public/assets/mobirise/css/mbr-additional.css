@@ -605,9 +605,18 @@ a:hover {
 .scrollToTop_wraper {
   display: none;
 }
+.form-control-sh {
+  font-family: 'K2D', sans-serif;
+  font-size: 1.4rem;
+  font-display: swap;
+}
+.form-control-sh > .mbr-iconfont {
+  font-size: 1.12rem;
+}
+
 .form-control {
-  font-family: 'Rubik', sans-serif;
-  font-size: 0.7rem;
+  font-family: 'K2D', sans-serif;
+  font-size: 0.9rem;
   font-display: swap;
 }
 .form-control > .mbr-iconfont {
@@ -641,6 +650,11 @@ blockquote {
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
 }
 .form2 .form-control {
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.form2 .form-control-sh {
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
 }
