@@ -2,25 +2,25 @@
 
 @section('content')
 <section class="section-table cid-rN9ViYOSs1" id="table1-2e">
-    <div class="container container-table">
+    <div class="container-table" style="padding:2%">
         <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5">ตรวจสอบคุณวุฒิตามหลักสูตร <br></h2>
         <h3 class="mbr-section-subtitle mbr-fonts-style align-center pb-5 mbr-light display-5">
           <strong>ข้อมูลการสืบค้นคุณวุฒิ</strong>
         </h3>
-        <div class="table-wrapper">
-          <div class="container">
+        <div class="table-wrapper" >
+          <div >
             <div class="row search">
               <div class="col-md-6"></div>
               <div class="col-md-6">
                   <div class="dataTables_filter">
                     <label class="searchInfo mbr-fonts-style display-6">ค้นหา : </label>
-                    <input class="form-control input-sm" disabled="">
+                    <input class="form-control-sh  input-sm" disabled="">
                   </div>
               </div>
             </div>
           </div>
   
-          <div class="container scroll text-nowrap">
+          <div class="scroll text-nowrap">
             <table class="table isSearch" cellspacing="0">
               <thead>
                 <tr class="table-heads ">
@@ -40,10 +40,10 @@
                   <tr> 
                     <td class="body-item mbr-fonts-style display-6">{{$i++}}</td>
                     <td class="body-item mbr-fonts-style display-6">
-                        ชื่อ-สกุล(Eng) : {{ $admins->NAME_EN }} <br>
-                        ชื่อ-สกุล : {{ $admins->NAME_TH }} <br>
-                        รหัสนิสิต : {{ $admins->STUDENT_CODE }}<br>
-                        เลขบัตรประชาชน : {{ $admins->CITIZEN_ID }}<br>
+                      <br>
+                        {{ $admins->NAME_EN }} {{ $admins->NAME_TH }}<br>
+                        {{ $admins->STUDENT_CODE }}<br>
+                        {{ $admins->CITIZEN_ID }}
                     </td>
                     <td class="body-item mbr-fonts-style display-6">
                         ชื่อหน่วยงาน : {{ $admins->companyname }}<br>
@@ -53,12 +53,12 @@
                     </td>
                     <td class="body-item mbr-fonts-style display-6">
                        <br> 
-                         {{ $admins->Objective }} : {{ $admins->Objective_1 }}
+                         {{ $admins->Objective }}  {{ $admins->Objective_1 }}
                        <br>
                     </td>
                     <td class="body-item mbr-fonts-style display-6">
                       <br>
-                        {{ $admins->department }} : {{ $admins->department_1 }}
+                        {{ $admins->department }}  {{ $admins->department_1 }}
                       <br>
                     </td>
                     <td class="body-item mbr-fonts-style display-6">

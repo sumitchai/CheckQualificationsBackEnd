@@ -209,11 +209,11 @@
                             <input type="text" name="companyname" data-form-field="companyname" required="required" class="form-control display-7" id="companyname" placeholder="ระบุชื่อหน่วยงาน">
                         </div>
                         <div class="col-sm-6  form-group" data-for="name">
-                            <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-5">ชื่อ-นามสกุลผู้ขอตรวจสอบ <sup class="star">**</sup></label>
+                            <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-5">ชื่อ-นามสกุล ผู้ขอตรวจสอบ <sup class="star">**</sup></label>
                             <input type="text" name="namecheck" data-form-field="namecheck" required="required" class="form-control display-7" id="namecheck" placeholder="ระบุชื่อ-นามสกุลผู้ขอตรวจสอบ">
                         </div>
-                        <div class="form-group col-sm-6 display-5" >
-                            <label>วัตถประสงค์ในการตรวจสอบ <sup class="star">**</sup></label>   
+                        <div class="form-group  col-sm-6 display-5" >
+                            <label>วัตถุประสงค์ในการตรวจสอบ <sup class="star">**</sup></label>   
                             <select name="Objective" id="RTID" class="form-control  select2 select2-hidden-accessible"  onChange="hideshow1()">
                                 <option class="display-5" value="">เลือกประเภทหน่วยงาน</option>
                                 <option class="display-5" value="เพื่อรับเข้าศึกษาต่อ" >เพื่อรับเข้าศึกษาต่อ</option>
