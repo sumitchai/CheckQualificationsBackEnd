@@ -97,7 +97,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
             </div>
             <div class="display-4 modal-body text-center" style="font-size: 18px;">
-                <b>งานทะเบียนนิสิตและประมวลผล</b><br>
+                <b>Student registration and processing</b><br>
                 <br>
                 <a>Address 19 No. 2  Area: city Sub-area: meaka <br> Province: phayao post: 56000</a><br>
                 <a>Phone:  054466666  </a>
@@ -156,7 +156,7 @@
         </div>
 
         <div class="container scroll">
-          <table class="table isSearch" cellspacing="0">
+          <table id="example" class="table striped bordered" cellspacing="0">
             <thead>
               <tr class="table-heads ">
                 <th class="head-item mbr-fonts-style display-6">No</th>
@@ -248,6 +248,16 @@
         window.history.back();
       }
       </script>
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" type="text/javascript"></script>
+    
+    <script>
+      $(document).ready(function () {
+      $('#example').DataTable();
+      $('.dataTables_length').addClass('bs-select');
+    });
+    </script>
 
 </body>
 </html> 

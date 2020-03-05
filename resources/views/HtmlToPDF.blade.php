@@ -15,7 +15,7 @@
 </style>
 
 @foreach ($admin as $admin)
-<p>ที่&nbsp;อว&nbsp;๗๓o๗&nbsp;/ {{ thainumDigit($admin->id) }}	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p>ที่&nbsp;อว&nbsp;๗๓๐๗&nbsp;/ {{ thainumDigit($admin->id) }}	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	
 	<img src="{{env('APP_URL')}}/assets/images/logo-full.png" alt="Mobirise" title="" style="height:80px; ">
@@ -53,7 +53,7 @@
 		&nbsp;เมื่อวันที่ 
 		
 		&nbsp;เมื่อวันที่ {{ thainumDigit(\Carbon\Carbon::createFromDate($posts->GRADUATE_DATE)->addYear(543)->locale('th')->isoformat('LL'))}}&nbsp;
-		จากมหาวิทยาลัยพะเยา&nbsp;จริง&nbsp;และ&nbsp;&nbsp;ได้รับอนุมัติให้สำเร็จการศึกษาถูกต้อง&nbsp;ตามที่ระบุไว้ใน&nbsp;เอกสาร&nbsp;ซึ่งสำนักงาน&nbsp;ก.พ. รับรองเรียบร้อยแล้ว
+		จากมหาวิทยาลัยพะเยา&nbsp;จริง&nbsp;และได้รับอนุมัติให้สำเร็จการศึกษาถูกต้อง&nbsp;ตามที่ระบุไว้ใน&nbsp;เอกสาร&nbsp;ซึ่งสำนักงาน&nbsp;ก.พ. รับรองเรียบร้อยแล้ว
 	</p>
 	@break
 @endforeach

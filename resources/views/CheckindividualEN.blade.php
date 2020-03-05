@@ -97,7 +97,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
             </div>
             <div class="display-4 modal-body text-center" style="font-size: 18px;">
-                <b>งานทะเบียนนิสิตและประมวลผล</b><br>
+                <b>Student registration and processing</b><br>
                 <br>
                 <a>Address 19 No. 2  Area: city Sub-area: meaka <br> Province: phayao post: 56000</a><br>
                 <a>Phone:  054466666  </a>
@@ -170,7 +170,7 @@
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name">
                                     <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">Full name <sup class="star">**</sup></label>
-                                    <input type="Name" name="NAME_EN" data-form-field="NAME_EN"  class="form-control display-5" id="NAME_EN" placeholder="Specify Full name">
+                                    <input type="Name" name="NAME_TH" data-form-field="NAME_TH"  class="form-control display-5" id="NAME_TH" placeholder="Specify Full name">
                                 </div>
                                 
                             </div>

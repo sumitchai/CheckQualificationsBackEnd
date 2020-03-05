@@ -29,7 +29,11 @@
  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script rel="stylesheet" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+  
+
+
  
   
   
@@ -157,10 +161,10 @@
           </div>
         </div>
 
-        <div class="container scroll">
-          <table class="table isSearch" cellspacing="0">
+        <div class="container ">
+          <table id="example" class="table striped bordered" cellspacing="0">
             <thead>
-              <tr class="table-heads ">
+              <tr >
                 <th class="head-item mbr-fonts-style display-6">ลำดับที่</th>
                 <th class="head-item mbr-fonts-style display-6">หลักสูตร</th>
                 <th class="head-item mbr-fonts-style display-6">จำนวนนิสิต</th>
@@ -219,9 +223,8 @@
 </footer>
 <!-- Footer -->
 </section>
-        
 
-
+      
   <script src="{{env('APP_URL')}}/assets/web/{{env('APP_URL')}}/assets/jquery/jquery.min.js"></script>
   <script src="{{env('APP_URL')}}/assets/popper/popper.min.js"></script>
   <script src="{{env('APP_URL')}}/assets/bootstrap/js/bootstrap.min.js"></script>
@@ -246,6 +249,17 @@
       window.history.back();
     }
     </script>
+
+<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" type="text/javascript"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" type="text/javascript"></script>
+
+<script>
+  $(document).ready(function () {
+  $('#example').DataTable();
+  $('.dataTables_length').addClass('bs-select');
+});
+</script>
   
 </body>
 </html> 

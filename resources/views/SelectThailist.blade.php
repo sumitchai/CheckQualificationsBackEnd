@@ -29,6 +29,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
  
   
   
@@ -144,13 +145,13 @@
         </div>
 
         <div class="container scroll">
-          <table class="table isSearch" cellspacing="0">
+          <table id="example" class="table striped bordered" cellspacing="0">
             <thead>
               <tr class="table-heads ">
-              <th class="head-item mbr-fonts-style display-6" >ลำดับที่</th>
-              <th class="head-item mbr-fonts-style display-6">รหัสนิสิต </th>
-              <th class="head-item mbr-fonts-style display-6">ชื่อ-นามสกุล</th>
-              <th class="head-item mbr-fonts-style display-6">ปีที่สำเร็จการศึกษา</th>
+                <th class="head-item mbr-fonts-style display-6" >ลำดับที่</th>
+                <th class="head-item mbr-fonts-style display-6">รหัสนิสิต </th>
+                <th class="head-item mbr-fonts-style display-6">ชื่อ-นามสกุล</th>
+                <th class="head-item mbr-fonts-style display-6">ปีที่สำเร็จการศึกษา</th>
               
               </tr>
             </thead>
@@ -180,9 +181,11 @@
                 <span class="inactive infoRows"></span>
                 <span class="infoFilteredAfter"> total entries)</span>
               </div>
+              
             </div>
             <div class="col-md-6"></div>
           </div>
+          
         </div>
       </div>
     </div>
@@ -232,7 +235,16 @@
       window.history.back();
     }
     </script>
+  <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" type="text/javascript"></script>
+  <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" type="text/javascript"></script>
   
+  <script>
+    $(document).ready(function () {
+    $('#example').DataTable();
+    $('.dataTables_length').addClass('bs-select');
+  });
+  </script>
 </body>
 </html> 
 
