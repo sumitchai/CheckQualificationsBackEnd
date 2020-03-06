@@ -163,29 +163,28 @@
 
         <div class="container ">
           <table id="example" class="table striped bordered" cellspacing="0">
-            <thead>
-              <tr >
-                <th class="head-item mbr-fonts-style display-6">ลำดับที่</th>
-                <th class="head-item mbr-fonts-style display-6">หลักสูตร</th>
-                <th class="head-item mbr-fonts-style display-6">จำนวนนิสิต</th>
-                <th class="head-item mbr-fonts-style display-6">รายละเอียด</th>
+              <thead>
+                <tr>
+                  <th class=" mbr-fonts-style display-6">ลำดับที่</th>
+                  <th class=" mbr-fonts-style display-6">หลักสูตร</th>
+                  <th class=" mbr-fonts-style display-6">จำนวนนิสิต</th>
+                  <th class=" mbr-fonts-style display-6">รายละเอียด</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php $i = 1; ?>
+                @foreach ($course as $x) 
+              <tr> 
+                <td class="body-item mbr-fonts-style display-6" width="100px" align="center">{{$i++}}</td>
+                <td class="body-item mbr-fonts-style display-6" >{{$x->COURSE_NAME_TH}}</td>
+                <td class="body-item mbr-fonts-style display-6" width="130px" align="center">{{$x->count}}</td>
+                <td class="body-item mbr-fonts-style display-6" width="130px" align="center">
+                  <a href="/SelectThailist/{{$x->COURSE_NAME_TH}}" class="badge badge-dark"> ดูข้อมูล</a>
+                </td>
               </tr>
-            </thead>
-            
-            <tbody>
-              <?php $i = 1; ?>
-              @foreach ($course as $x) 
-            <tr> 
-              <td class="body-item mbr-fonts-style display-6" width="100px" align="center">{{$i++}}</td>
-              <td class="body-item mbr-fonts-style display-6" >{{$x->COURSE_NAME_TH}}</td>
-              <td class="body-item mbr-fonts-style display-6" width="130px" align="center">{{$x->count}}</td>
-              <td class="body-item mbr-fonts-style display-6" width="130px" align="center">
-                <a href="/SelectThailist/{{$x->COURSE_NAME_TH}}" class="badge badge-dark"> ดูข้อมูล</a>
-              </td>
-            </tr>
-              @endforeach 
-              
-            </tbody>
+                @endforeach 
+                
+              </tbody>
           </table>
         </div>
         <div class="container table-info-container">
@@ -206,22 +205,26 @@
       </div>
     </div>
     <!-- Footer -->
-<footer class="page-footer font-small blue">
-  <!-- Copyright -->
-  <div class="display-4 bg-dark text-white-50 page-footer text-center ">
-      <br>
-      <br>
-      มหาวิทยาลัยพะเยา, ระบบตรวจสอบคุณวุฒิ<br>
-      Copyright 2019 © University of Phayao Page
-      <br>
-      <br>
-      <div>
-          <a href="home" class="display-4 float-right">แก้ไขเว็บไซต์ </a><br>
-      </div>
-  </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
+    <div class="footer">
+      <footer class="page-footer font-small blue">
+        <!-- Copyright -->
+        <div class="display-4 bg-dark text-white-50 page-footer text-center ">
+            <br>
+            <br>
+            มหาวิทยาลัยพะเยา, ระบบตรวจสอบคุณวุฒิ<br>
+            Copyright 2019 © University of Phayao Page
+            <br>
+            <br>
+            <div>
+                <a href="home" class="display-4 float-right">แก้ไขเว็บไซต์ </a><br>
+            </div>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+
+    </div>
+
 </section>
 
       
@@ -257,7 +260,7 @@
 <script>
   $(document).ready(function () {
   $('#example').DataTable();
-  $('.dataTables_length').addClass('bs-select');
+  
 });
 </script>
   

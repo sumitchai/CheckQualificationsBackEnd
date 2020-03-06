@@ -127,39 +127,29 @@
             <div class="card">
               <div class="card-body">
                 {{-- {{ print($posts) }} --}}
-               @foreach ($posts as $x)
-                  <p class="card-text display-5">ชื่อ-นามสกุล : {{$x->NAME_TH}}</p>
-                  <p class="card-text display-5">หลักสูตร :	{{$x->COURSE_NAME_TH}}</p>
-                  <p class="card-text display-5">คณะ : {{ $x->FACULTY_NAME_TH }}</p>
-                  <p class="card-text display-5">ปีสำเร็จการศึกษา (พ.ศ.): {{ $x->ACAD_YEAR }}</p>
-                  <p class="card-text display-5">วันที่สำเร็จการศึกษา (พ.ศ.): {{ \Carbon\Carbon::createFromDate($x->GRADUATE_DATE)->addYear(543)->locale('th')->isoformat('LL')}}</p>
-                  
-                  @break
-                  
-                @endforeach
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6" style="padding-left:20px; padding-right:120px;">
-            <div class="card">
-              <div class="card-body">
-                 @foreach ($posts as $x)
-                  <p class="card-text display-5">Fullname :	{{$x->NAME_EN}}</p>
-                  <p class="card-text display-5">Curriculum : {{$x->COURSE_NAME_EN}}</p>
-                  <p class="card-text display-5">Facuty :  {{ $x->FACULTY_NAME_EN}}</p>
-                  <p class="card-text display-5">Year of Graduation (A.D.) : {{ $x->ACAD_YEAR-543 }}</p>
-                  <p class="card-text display-5">Graduation date (A.D.) :  {{ \Carbon\Carbon::parse($x->GRADUATE_DATE)->locale('en')->isoformat('D  MMMM Y')}}</p>
-                  @break
-                @endforeach
+                @foreach ($posts as $x)
+                <p class="card-text display-5">ชื่อ-นามสกุล : {{$x->NAME_TH}}</p>
+                <p class="card-text display-5">หลักสูตร :	{{$x->COURSE_NAME_TH}}</p>
+                <p class="card-text display-5">คณะ : {{ $x->FACULTY_NAME_TH }}</p>
+                <p class="card-text display-5">ปีสำเร็จการศึกษา (พ.ศ.): {{ $x->ACAD_YEAR }}</p>
+                <p class="card-text display-5">วันที่สำเร็จการศึกษา (พ.ศ.): {{ \Carbon\Carbon::createFromDate($x->GRADUATE_DATE)->addYear(543)->locale('th')->isoformat('LL')}}</p>
+                <br><br>
+                <p class="card-text display-5">Fullname :	{{$x->NAME_EN}}</p>
+                <p class="card-text display-5">Curriculum : {{$x->COURSE_NAME_EN}}</p>
+                <p class="card-text display-5">Facuty :  {{ $x->FACULTY_NAME_EN}}</p>
+                <p class="card-text display-5">Year of Graduation (A.D.) : {{ $x->ACAD_YEAR-543 }}</p>
+                <p class="card-text display-5">Graduation date (A.D.) :  {{ \Carbon\Carbon::parse($x->GRADUATE_DATE)->locale('en')->isoformat('D  MMMM Y')}}</p>
+                <div class="input-group-btn item-right" style="float: right ; padding-right : 120px">
+                  <a href="{{ route('HtmlToPDF') }}" class="btn btn-form btn-success display-5" type="submit" target ="_blank"><span class="glyphicon glyphicon-save"></span>ดาวน์โหลด</a>
+                </div>
+              @endforeach
               </div>
             </div>
           </div>
         </div>
         <br>
       
-      <div class="input-group-btn item-right" style="float: right ; padding-right : 120px">
-        <a href="{{ route('HtmlToPDF') }}" class="btn btn-form btn-success display-5" type="submit" target ="_blank"><span class="glyphicon glyphicon-save"></span>ดาวน์โหลด</a>
-      </div>
+      
       <br><br><br><br><br>
     </div>
   </div>

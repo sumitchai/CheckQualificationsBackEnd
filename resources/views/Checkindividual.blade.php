@@ -247,7 +247,7 @@
 
                         <div class="form-group col-sm-6 display-5">
                             <label>หมายเลขโทรศัพท์ <sup class="star">**</sup></label>
-                            <input type="text" id="phone" name="phone_number" class="form-control" placeholder="ระบุหมายเลขโทรศัพท์" required="">	
+                            <input type="number" id="phone" name="phone_number" class="form-control" placeholder="ระบุหมายเลขโทรศัพท์" required="">	
                             <br>
                         </div>
                     
