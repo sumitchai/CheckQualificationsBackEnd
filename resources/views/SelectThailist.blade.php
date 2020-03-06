@@ -189,9 +189,9 @@
         </div>
       </div>
     </div>
-    <!-- Footer -->
+    <!-- Footer -
 <footer class="page-footer font-small blue">
-  <!-- Copyright -->
+  <!-- Copyright -
   <div class="display-4 bg-dark text-white-50 page-footer text-center ">
       <br>
       <br>
@@ -203,7 +203,7 @@
           <a href="home" class="display-4 float-right">แก้ไขเว็บไซต์ </a><br>
       </div>
   </div>
-  <!-- Copyright -->
+  <!-- Copyright -
 </footer>
 <!-- Footer -->
 </section>
