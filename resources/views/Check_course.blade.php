@@ -161,7 +161,7 @@
           </div>
         </div>
 
-        <div class="container ">
+        <div style="padding:1%">
           <table id="example" class="table striped bordered" cellspacing="0">
               <thead>
                 <tr>
