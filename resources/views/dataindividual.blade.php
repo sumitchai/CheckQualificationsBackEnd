@@ -53,7 +53,7 @@
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="/">
-                        <img src="{{env('APP_URL')}}/assets/images/up-536x536.png" alt="Mobirise" title="" style="height: 3.8rem;">
+                        <img src="{{env('APP_URL')}}/assets/images/1200px-UPLogo11.png" alt="Mobirise" title="" style="height: 3.8rem;">
                     </a>
                 </span>
                 
@@ -198,11 +198,7 @@
 </html> 
 
 
-<script>
-  function goBack() {
-    window.history.back();
-  }
-  </script>
+
   
   
   
