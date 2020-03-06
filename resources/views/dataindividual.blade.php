@@ -139,7 +139,7 @@
     </div>
     
     <div class="input-group-btn item-right" style="float: right ; padding-right : 120px">
-    <a href="/HtmlToPDF/{{$x->DEGREE_ID}}" class="btn btn-form btn-success display-5" type="submit" target ="_blank"><span class="glyphicon glyphicon-save"></span>ดาวน์โหลด</a>
+    <a href="{{ route('HtmlToPDF')}}?degree={{$x->DEGREE_ID}}" class="btn btn-form btn-success display-5" type="submit" target ="_blank"><span class="glyphicon glyphicon-save"></span>ดาวน์โหลด</a>
     </div>
     <br><br><br><br><br>
     @endforeach   
