@@ -54,7 +54,7 @@
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="/">
-                        <img src="{{env('APP_URL')}}/assets/images/up-536x536.png" alt="Mobirise" title="" style="height: 3.8rem;">
+                        <img src="{{env('APP_URL')}}/assets/images/1200px-UPLogo11.png" alt="Mobirise" title="" style="height: 3.8rem;">
                     </a>
                 </span>
                 
@@ -145,14 +145,10 @@
         </div>
 
         <div class="container scroll">
-          <table id="example" class="table striped bordered" cellspacing="0">
-            <thead>
+          <table id="dtMaterialDesignExample" class="table striped bordered" cellspacing="0">
+            <thead class="head-item mbr-fonts-style display-6">
               <tr class="table-heads ">
-                <th class="head-item mbr-fonts-style display-6" >ลำดับที่</th>
-                <th class="head-item mbr-fonts-style display-6">รหัสนิสิต </th>
-                <th class="head-item mbr-fonts-style display-6">ชื่อ-นามสกุล</th>
-                <th class="head-item mbr-fonts-style display-6">ปีที่สำเร็จการศึกษา</th>
-              
+                
               </tr>
             </thead>
             
@@ -241,8 +237,32 @@
   
   <script>
     $(document).ready(function () {
-    $('#example').DataTable();
-    $('.dataTables_length').addClass('bs-select');
+      
+      $('#dtMaterialDesignExample_wrapper .dataTables_filter').find('input').each(function () {
+      const $this = $(this);
+      $this.attr("placeholder", "Search");
+      $this.removeClass('form-control-sm');
+    });
+    $('#dtMaterialDesignExample_wrapper').find('label').each(function () {
+      $(this).parent().append($(this).children());
+    });
+    $('#dtMaterialDesignExample').DataTable({
+      columns: [
+              
+              { title: "ลำดับที่" },
+              { title: "หลักสูตร" },
+              { title: "จำนวน" },
+              { title: "รายละเอียด" }
+          ]
+    });
+    $('#dtMaterialDesignExample_wrapper .dataTables_length').addClass('d-flex flex-row');
+    $('#dtMaterialDesignExample_wrapper .dataTables_filter').addClass('md-form');
+    $('#dtMaterialDesignExample_wrapper select').removeClass(
+    'custom-select custom-select-sm form-control form-control-sm');
+    $('#dtMaterialDesignExample_wrapper select').addClass('mdb-select');
+    $('#dtMaterialDesignExample_wrapper .mdb-select').materialSelect();
+    $('#dtMaterialDesignExample_wrapper .dataTables_filter').find('label').remove();
+    
   });
   </script>
 </body>

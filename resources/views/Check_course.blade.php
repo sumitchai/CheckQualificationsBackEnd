@@ -58,7 +58,7 @@
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="/">
-                        <img src="{{env('APP_URL')}}/assets/images/up-536x536.png" alt="Mobirise" title="" style="height: 3.8rem;">
+                        <img src="{{env('APP_URL')}}/assets/images/1200px-UPLogo11.png" alt="Mobirise" title="" style="height: 3.8rem;">
                     </a>
                 </span>
                 
@@ -149,26 +149,13 @@
         </div>
       </h3>
       <div class="table-wrapper">
-        <div class="container">
-          <div class="row search">
-            <div class="col-md-6"></div>
-            <div class="col-md-6">
-                <div class="dataTables_filter">
-                  <label class="searchInfo mbr-fonts-style display-6">ค้นหา : </label>
-                  <input class="form-control-sh input-sm" disabled="">
-                </div>
-            </div>
-          </div>
-        </div>
+        
 
         <div class="container ">
-          <table id="example" class="table striped bordered" cellspacing="0">
-              <thead>
+          <table id="dtMaterialDesignExample"  >
+              <thead class=" mbr-fonts-style display-6">
                 <tr>
-                  <th class=" mbr-fonts-style display-6">ลำดับที่</th>
-                  <th class=" mbr-fonts-style display-6">หลักสูตร</th>
-                  <th class=" mbr-fonts-style display-6">จำนวนนิสิต</th>
-                  <th class=" mbr-fonts-style display-6">รายละเอียด</th>
+                  
                 </tr>
               </thead>
               <tbody>
@@ -241,6 +228,9 @@
   <script src="{{env('APP_URL')}}/assets/datatables/data-tables.bootstrap4.min.js"></script>
   <script src="{{env('APP_URL')}}/assets/theme/js/script.js"></script>
   <script src="{{env('APP_URL')}}/assets/formoid/formoid.min.js"></script>
+  <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" type="text/javascript"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" type="text/javascript"></script>
   <script>
   $(window).load(function(){
     $('#cover').fadeOut(1000);
@@ -253,13 +243,33 @@
     }
     </script>
 
-<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" type="text/javascript"></script>
-<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" type="text/javascript"></script>
-
 <script>
   $(document).ready(function () {
-  $('#example').DataTable();
+    
+    $('#dtMaterialDesignExample_wrapper .dataTables_filter').find('input').each(function () {
+    const $this = $(this);
+    $this.attr("placeholder", "Search");
+    $this.removeClass('form-control-sm');
+  });
+  $('#dtMaterialDesignExample_wrapper').find('label').each(function () {
+    $(this).parent().append($(this).children());
+  });
+  $('#dtMaterialDesignExample').DataTable({
+    columns: [
+            
+            { title: "ลำดับที่" },
+            { title: "หลักสูตร" },
+            { title: "จำนวน" },
+            { title: "รายละเอียด" }
+        ]
+  });
+  $('#dtMaterialDesignExample_wrapper .dataTables_length').addClass('d-flex flex-row');
+  $('#dtMaterialDesignExample_wrapper .dataTables_filter').addClass('md-form');
+  $('#dtMaterialDesignExample_wrapper select').removeClass(
+  'custom-select custom-select-sm form-control form-control-sm');
+  $('#dtMaterialDesignExample_wrapper select').addClass('mdb-select');
+  $('#dtMaterialDesignExample_wrapper .mdb-select').materialSelect();
+  $('#dtMaterialDesignExample_wrapper .dataTables_filter').find('label').remove();
   
 });
 </script>
