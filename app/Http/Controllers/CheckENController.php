@@ -136,8 +136,11 @@ class CheckENController extends Controller
         
         $result = Session::get('posts');
         $final = json_decode($result);
-        
-        return view('dataindividualEN',['posts'=>$final]);
+        if(empty($final)){
+            return redirect("/CheckindividualEN")->with('alert', 'No Data!'); 
+        }else{  
+            return view('dataindividuaEN',['posts'=>$final]);
+        }
     }
 
     public function showResultPDF(){
