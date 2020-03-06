@@ -151,15 +151,9 @@
       <div class="table-wrapper">
         
 
-<<<<<<< HEAD
         <div class="container ">
           <table id="dtMaterialDesignExample"  >
               <thead class=" mbr-fonts-style display-6">
-=======
-        <div >
-          <table id="example" class="table striped bordered" cellspacing="0">
-              <thead>
->>>>>>> 8b5b36628d8be7eb8b8acbb513afd609b1893d9b
                 <tr>
                   
                 </tr>
