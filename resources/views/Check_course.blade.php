@@ -117,7 +117,7 @@
 
 </section> <br><br>
 <section class="section-table cid-rN9ViYOSs1" id="table1-2e">
-  <div class="container container-table">
+  <div class=" container-table" style="padding:5%">
       <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5">ตรวจสอบคุณวุฒิตามหลักสูตร <br></h2>
       <h3 class="mbr-section-subtitle mbr-fonts-style align-center pb-5 mbr-light display-5">
         <strong>ระดับการศึกษา :    
@@ -161,7 +161,7 @@
           </div>
         </div>
 
-        <div style="padding:1%">
+        <div >
           <table id="example" class="table striped bordered" cellspacing="0">
               <thead>
                 <tr>
