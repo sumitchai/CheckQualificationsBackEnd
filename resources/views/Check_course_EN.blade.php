@@ -111,7 +111,7 @@
 
 </section>
 <section class="section-table cid-rN9ViYOSs1" id="table1-2e">
-  <div class="container container-table">
+  <div class="container-table" style="padding:5%">
       <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5">Check the qualifications according to the course<br></h2>
       <h3 class="mbr-section-subtitle mbr-fonts-style align-center pb-5 mbr-light display-5">
         <strong>Education level : 
@@ -155,9 +155,15 @@
           </div>
         </div>
 
+<<<<<<< HEAD
         <div class="container scroll">
           <table id="dtMaterialDesignExample" class="table striped bordered" cellspacing="0">
             <thead class="head-item mbr-fonts-style display-6">
+=======
+        <div >
+          <table id="example" class="table striped bordered" cellspacing="0">
+            <thead>
+>>>>>>> 8b5b36628d8be7eb8b8acbb513afd609b1893d9b
               <tr class="table-heads ">
                 
               </tr>
@@ -168,7 +174,7 @@
               @foreach ($course as $x) 
                 <tr> 
                   <td class="body-item mbr-fonts-style display-6" >{{$i++}}</td>
-                  <td class="body-item mbr-fonts-style display-6">{{$x->COURSE_NAME_EN}}</td>
+                  <td class="body-item mbr-fonts-style display-6" >{{$x->COURSE_NAME_EN}}</td>
                   <td class="body-item mbr-fonts-style display-6" width="180px" align="center">{{$x->count}}</td>
                   <td class="body-item mbr-fonts-style display-6">
                     <a href="/SelectEN/{{$x->COURSE_NAME_EN}}" class="badge badge-dark"> View</a>
@@ -196,9 +202,9 @@
         </div>
       </div>
     </div>
-    <!-- Footer -->
+    <!-- Footer --
 <footer class="page-footer font-small blue">
-  <!-- Copyright -->
+  Copyright --
   <div class="display-4 bg-dark text-white-50 page-footer text-center ">
       <br>
       <br>
@@ -210,9 +216,9 @@
           <a href="home" class="display-4 float-right">แก้ไขเว็บไซต์ </a><br>
       </div>
   </div>
-  <!-- Copyright -->
+  Copyright --
 </footer>
-<!-- Footer -->
+ Footer -->
 </section>
 
 

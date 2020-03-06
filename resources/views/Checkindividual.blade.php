@@ -271,7 +271,7 @@
             
         </div>
         <!-- Footer -->
-<footer class="page-footer font-small blue">
+<footer class="page-footer font-small blue ">
     <!-- Copyright -->
     <div class="display-4 bg-dark text-white-50 page-footer text-center ">
         <br>
