@@ -32,6 +32,7 @@
   <script rel="stylesheet" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
   
+  
 
 
  
@@ -115,7 +116,7 @@
     </div>
 </div>
 
-</section> <br><br>
+</section> 
 <section class="section-table cid-rN9ViYOSs1" id="table1-2e">
   <div class=" container-table" style="padding:5%">
       <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5">ตรวจสอบคุณวุฒิตามหลักสูตร <br></h2>
@@ -148,24 +149,24 @@
           </div>
         </div>
       </h3>
-      <div class="table-wrapper">
+      <div class="table-wrapper" >
         
 
         <div class="container ">
-          <table id="dtMaterialDesignExample"  >
-              <thead class=" mbr-fonts-style display-6">
+          <table id="dtMaterialDesignExample"  class="table mbr-fonts-style display-6">
+              <thead  height="90px" width="100px" align="center">
                 <tr>
                   
                 </tr>
               </thead>
-              <tbody>
+              <tbody >
                 <?php $i = 1; ?>
                 @foreach ($course as $x) 
               <tr> 
-                <td class="body-item mbr-fonts-style display-6" width="100px" align="center">{{$i++}}</td>
+                <td class="body-item mbr-fonts-style display-6" height="60px" width="120px" align="center">{{$i++}}</td>
                 <td class="body-item mbr-fonts-style display-6" >{{$x->COURSE_NAME_TH}}</td>
-                <td class="body-item mbr-fonts-style display-6" width="130px" align="center">{{$x->count}}</td>
-                <td class="body-item mbr-fonts-style display-6" width="130px" align="center">
+                <td class="body-item mbr-fonts-style display-6" height="60px" width="130px" align="center">{{$x->count}}</td>
+                <td class="body-item mbr-fonts-style display-6" height="60px" width="150px" align="center">
                   <a href="/SelectThailist/{{$x->COURSE_NAME_TH}}" class="badge badge-dark"> ดูข้อมูล</a>
                 </td>
               </tr>
@@ -248,6 +249,7 @@
     
     $('#dtMaterialDesignExample_wrapper .dataTables_filter').find('input').each(function () {
     const $this = $(this);
+    {this.right}
     $this.attr("placeholder", "Search");
     $this.removeClass('form-control-sm');
   });
@@ -255,13 +257,13 @@
     $(this).parent().append($(this).children());
   });
   $('#dtMaterialDesignExample').DataTable({
+    
     columns: [
-            
             { title: "ลำดับที่" },
             { title: "หลักสูตร" },
             { title: "จำนวน" },
             { title: "รายละเอียด" }
-        ]
+        ],  
   });
   $('#dtMaterialDesignExample_wrapper .dataTables_length').addClass('d-flex flex-row');
   $('#dtMaterialDesignExample_wrapper .dataTables_filter').addClass('md-form');
