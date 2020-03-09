@@ -156,10 +156,17 @@ class CheckController extends Controller
     public function showResultPDF(){
         $result = Session::get('posts');
         $final = json_decode($result);
+        $DEGREE_ID =  (isset($_GET['degree']))?$_GET['degree']:0;
+        $posts = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
+        ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
+        ->select('VW_VOQ_STD_GRADUATE.ACAD_YEAR','VW_VOQ_STD_GRADUATE.NAME_TH','VW_VOQ_STD_GRADUATE.FACULTY_NAME_TH','VW_VOQ_STD_GRADUATE.GRADUATE_DATE','VW_VOQ_STD_GRADUATE.DEGREE_ID',
+        'VW_VOQ_COURSE.COURSE_NAME_TH','VW_VOQ_COURSE.COURSE_NAME_EN','VW_VOQ_STD_GRADUATE.NAME_EN','VW_VOQ_STD_GRADUATE.FACULTY_NAME_EN')
+        ->where('DEGREE_ID',$DEGREE_ID )
+        ->get();
         $admin = DB::connection('mysql')->table('checkindividual')
         ->latest()
         ->get();  
-        $view = \View::make('HtmlToPDF',['posts'=>$final,'admin'=>$admin]);
+        $view = \View::make('HtmlToPDF',['posts'=>$final,'admin'=>$admin,'degree'=>$DEGREE_ID]);
         $html_content = $view->render();
      
 
@@ -201,7 +208,7 @@ class CheckController extends Controller
     {
         //
     }
-
+ 
     /**
      * Update the specified resource in storage.
      *

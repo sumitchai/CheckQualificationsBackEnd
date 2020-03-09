@@ -53,7 +53,7 @@
 		&nbsp;เมื่อวันที่ 
 		
 		&nbsp;เมื่อวันที่ {{ thainumDigit(\Carbon\Carbon::createFromDate($posts->GRADUATE_DATE)->addYear(543)->locale('th')->isoformat('LL'))}}&nbsp;
-		จากมหาวิทยาลัยพะเยา&nbsp;จริง&nbsp;และได้รับอนุมัติให้สำเร็จการศึกษาถูกต้อง&nbsp;ตามที่ระบุไว้ใน&nbsp;เอกสาร&nbsp;ซึ่งสำนักงาน&nbsp;ก.พ. รับรองเรียบร้อยแล้ว
+		จากมหาวิทยาลัยพะเยา&nbsp;&nbsp;จริง&nbsp;และได้รับอนุมัติให้สำเร็จการศึกษาถูกต้อง&nbsp;ตามที่ระบุไว้ใน&nbsp;เอกสาร&nbsp;ซึ่งสำนักงาน&nbsp;ก.พ. รับรองเรียบร้อยแล้ว
 	</p>
 	@break
 @endforeach
@@ -89,7 +89,7 @@
                         </tr>
                     </tbody>
                 </table>
-  <br><br><br><br><br>          
+  <br><br><br>        
 <p>
 	&nbsp;&nbsp;กองบริการการศึกษา&nbsp;งานทะเบียนนิสิตและประมวลผล <br>
     โทร.&nbsp;๐&nbsp;๕๔๔๖&nbsp;๖๖๖๖&nbsp;ต่อ&nbsp;๑๐๒๑ <br>

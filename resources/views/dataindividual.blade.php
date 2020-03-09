@@ -136,8 +136,7 @@
               <p class="card-text display-5">Year of Graduation (A.D.) : {{ $x->ACAD_YEAR-543 }}</p>
               <p class="card-text display-5">Graduation date (A.D.) :  {{ \Carbon\Carbon::parse($x->GRADUATE_DATE)->locale('en')->isoformat('D  MMMM Y')}}</p></div>
         </div>
-    </div>
-    
+    </div>   
     <div class="input-group-btn item-right" style="float: right ; padding-right : 120px">
     <a href="{{ route('HtmlToPDF')}}?degree={{$x->DEGREE_ID}}" class="btn btn-form btn-success display-5" type="submit" target ="_blank"><span class="glyphicon glyphicon-save"></span>ดาวน์โหลด</a>
     </div>
