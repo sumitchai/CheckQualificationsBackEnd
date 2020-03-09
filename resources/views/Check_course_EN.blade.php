@@ -167,10 +167,10 @@
               <?php $i = 1; ?>
               @foreach ($course as $x) 
                 <tr> 
-                  <td class="body-item mbr-fonts-style display-6" >{{$i++}}</td>
-                  <td class="body-item mbr-fonts-style display-6" >{{$x->COURSE_NAME_EN}}</td>
-                  <td class="body-item mbr-fonts-style display-6" width="180px" align="center">{{$x->count}}</td>
-                  <td class="body-item mbr-fonts-style display-6">
+                  <td class="body-item mbr-fonts-style display-6" height="100px" width="50px" >{{$i++}}</td>
+                  <td class="body-item mbr-fonts-style display-6" height="100px" width="180px">{{$x->COURSE_NAME_EN}}</td>
+                  <td class="body-item mbr-fonts-style display-6" height="100px" width="50px" align="center">{{$x->count}}</td>
+                  <td class="body-item mbr-fonts-style display-6" height="100px" width="50px">
                     <a href="/SelectEN/{{$x->COURSE_NAME_EN}}" class="badge badge-dark"> View</a>
                   </td>
                 </tr>
