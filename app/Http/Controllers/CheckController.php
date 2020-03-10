@@ -157,19 +157,18 @@ class CheckController extends Controller
         $result = Session::get('posts');
         $final = json_decode($result);
         $DEGREE_ID =  (isset($_GET['degree']))?$_GET['degree']:0;
+        $NAME_TH =  (isset($_GET['name']))?$_GET['name']:0;
         $posts = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
         ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
-        ->select('VW_VOQ_STD_GRADUATE.ACAD_YEAR','VW_VOQ_STD_GRADUATE.NAME_TH','VW_VOQ_STD_GRADUATE.FACULTY_NAME_TH','VW_VOQ_STD_GRADUATE.GRADUATE_DATE','VW_VOQ_STD_GRADUATE.DEGREE_ID',
-        'VW_VOQ_COURSE.COURSE_NAME_TH','VW_VOQ_COURSE.COURSE_NAME_EN','VW_VOQ_STD_GRADUATE.NAME_EN','VW_VOQ_STD_GRADUATE.FACULTY_NAME_EN')
+        ->select('VW_VOQ_STD_GRADUATE.NAME_TH','VW_VOQ_STD_GRADUATE.FACULTY_NAME_TH','VW_VOQ_STD_GRADUATE.GRADUATE_DATE','VW_VOQ_COURSE.COURSE_NAME_TH','VW_VOQ_STD_GRADUATE.DEGREE_ID')
         ->where('DEGREE_ID',$DEGREE_ID )
+        ->where('NAME_TH',$NAME_TH )
         ->get();
         $admin = DB::connection('mysql')->table('checkindividual')
         ->latest()
         ->get();  
-        $view = \View::make('HtmlToPDF',['posts'=>$final,'admin'=>$admin,'degree'=>$DEGREE_ID]);
+        $view = \View::make('HtmlToPDF',['posts'=>$posts,'admin'=>$admin,'degree'=>$DEGREE_ID,'name'=>$NAME_TH]);
         $html_content = $view->render();
-     
-
         PDF::SetMargins(20, 10, 20, true);
         PDF::SetFont('thniramit','',16);
         PDF::SetTitle('Sample PDF');

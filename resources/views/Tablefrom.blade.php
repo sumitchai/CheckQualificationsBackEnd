@@ -1,46 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+<div>
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist" id="myTab">
+      <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+      <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+      <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
 
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-</style>
-</head>
-<body>
+  <!-- Tab panes -->
+  <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="home">Content Home</div>
+      <div role="tabpanel" class="tab-pane" id="profile">Content Profile</div>
+      <div role="tabpanel" class="tab-pane" id="messages">Content Messages</div>
+      <div role="tabpanel" class="tab-pane" id="settings">Content Settings</div>
+  </div>
 
-<h2>HTML Table</h2>
-
-<table>
-  <tr>
-    <th>หลักสูตร</th>
-    <th>รหัสนิสิต</th>
-    <th>รหัสนิสิต</th>
-    <th>รหัสนิสิต</th>
-    <th>รหัสนิสิต</th>
-  </tr>
-  @foreach($posts as $row)
-  <tr>
-    <td>{{ $row->NAME_TH }}</td>
-    <td>{{ $row->FACULTY_NAME_TH }}</td>
-    <td>{{ $row->ACAD_YEAR }}</td>
-    <td>{{ $row->COURSE_NAME_TH }}</td>
-    <td>{{ $row->GRADUATE_DATE }}</td>
-  </tr>
-  @endforeach
-</table>
-
-</body>
-</html>
+</div>
