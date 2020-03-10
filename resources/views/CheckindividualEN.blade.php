@@ -123,20 +123,40 @@
             <div class="container">
                 <nav class="navbar  fbg-light">
                     <ul class="nav nav-pills" role="tablist" >
-                        <li class="nav-item nav-pills active">
+                        <li class="nav-item nav-pills active" id="LI_CITIZEN_ID">
                             <a class="nav-link btn-outline-secondary active display-5" data-toggle="tab" href="#SSN">Citizen Id</a>
                         </li>
                         <div ></div>
-                        <li class="nav-item nav-pills">
+                        <li class="nav-item nav-pills" id="LI_NAME_TH">
                             <a class="nav-link btn-outline-secondary display-5" data-toggle="tab" href="#name">Full name </a>
                         </li>
                         <div></div>
-                        <li class="nav-item nav-pills">
+                        <li class="nav-item nav-pills" id="LI_STUDENT_CODE">
                             <a class="nav-link btn-outline-secondary display-5" data-toggle="tab" href="#studenID"  >Student ID number</a>
                         </li>
                     </ul>
                 </nav><br>
+             <script>
+   
+                $("#LI_CITIZEN_ID").click(function(){
+                $("#NAME_TH").val('');
+                $("#STUDENT_CODE").val('');
 
+                });
+                $("#LI_NAME_TH").click(function(){
+                $("#CITIZEN_ID").val('');
+                $("#STUDENT_CODE").val('');
+
+                });
+                $("#LI_STUDENT_CODE").click(function(){
+                $("#NAME_TH").val('');
+                $("#CITIZEN_ID").val('');
+
+                });
+                
+
+             
+                </script>
                 
                 <!-- Tab panes -->
                 <form action="/dataEN" method="POST"  class="mbr-form form-with-styler" id="form1" data-form-title="Mobirise Form">
