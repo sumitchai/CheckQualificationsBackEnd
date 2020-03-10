@@ -338,7 +338,6 @@ if( s1.options[s1.selectedIndex].value=="อื่นๆ")
 
 
 
-
 </script>
 
 
