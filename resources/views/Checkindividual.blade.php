@@ -119,24 +119,44 @@
             <br><br>
 
             <div class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">ตรวจสอบคุณวุฒิรายบุคคล</div>
-            
+           
             <div class="container">
                 <nav class="navbar  fbg-light">
                     <ul class="nav nav-pills" role="tablist" >
-                        <li class="nav-item nav-pills active">
+                        <li class="nav-item nav-pills active" id="LI_CITIZEN_ID">
                             <a class="nav-link btn-outline-secondary active display-5" data-toggle="tab" href="#SSN" type="reset">เลขบัตรประชาชน</a>
                         </li>
                         <div ></div>
-                        <li class="nav-item nav-pills">
+                        <li class="nav-item nav-pills" id="LI_NAME_TH">
                             <a class="nav-link btn-outline-secondary display-5" data-toggle="tab" href="#name" type="reset">ชื่อ-นามสกุล </a>
                         </li>
                         <div></div>
-                        <li class="nav-item nav-pills">
+                        <li class="nav-item nav-pills" id="LI_STUDENT_CODE">
                             <a class="nav-link btn-outline-secondary display-5" data-toggle="tab" href="#studenID" type="reset" >รหัสนิสิต</a>
                         </li>
                     </ul>
                 </nav><br>
+                <script>
+   
+                $("#LI_CITIZEN_ID").click(function(){
+                $("#NAME_TH").val('');
+                $("#STUDENT_CODE").val('');
 
+                });
+                $("#LI_NAME_TH").click(function(){
+                $("#CITIZEN_ID").val('');
+                $("#STUDENT_CODE").val('');
+
+                });
+                $("#LI_STUDENT_CODE").click(function(){
+                $("#NAME_TH").val('');
+                $("#CITIZEN_ID").val('');
+
+                });
+                
+
+             
+                </script>
                 
                 <!-- Tab panes -->
                 <form action="/data" action="HtmlToPDF"method="POST" class="mbr-form form-with-styler" id="form1" data-form-title="Mobirise Form">
