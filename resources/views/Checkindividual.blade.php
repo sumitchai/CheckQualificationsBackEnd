@@ -121,21 +121,19 @@
             <div class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">ตรวจสอบคุณวุฒิรายบุคคล</div>
             
             <div class="container">
-                <nav class="navbar  fbg-light">
-                    <ul class="nav nav-pills" role="tablist" >
+                
+                    <ul class="nav nav-pills" role="tablist" id="myTab">
                         <li class="nav-item nav-pills active">
                             <a class="nav-link btn-outline-secondary active display-5" data-toggle="tab" href="#SSN" type="reset">เลขบัตรประชาชน</a>
                         </li>
-                        <div ></div>
                         <li class="nav-item nav-pills">
                             <a class="nav-link btn-outline-secondary display-5" data-toggle="tab" href="#name" type="reset">ชื่อ-นามสกุล </a>
                         </li>
-                        <div></div>
                         <li class="nav-item nav-pills">
                             <a class="nav-link btn-outline-secondary display-5" data-toggle="tab" href="#studenID" type="reset" >รหัสนิสิต</a>
                         </li>
                     </ul>
-                </nav><br>
+                <br>
 
                 
                 <!-- Tab panes -->
@@ -453,3 +451,21 @@ input[type=email], select {
       alert(msg);
     }
   </script>
+<script>
+    $('#myTab a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    });
+    
+    // store the currently selected tab in the hash value
+    $("ul.nav-tabs > li > a").on("shown.bs.tab", function (e) {
+        var id = $(e.target).attr("href").substr(1);
+        $.cookie('activeTab', id);
+    });
+    
+        // on load of the page: switch to the currently selected tab
+        var hash = $.cookie('activeTab');
+        if (hash != null) {
+            $('#myTab a[href="#' + hash + '"]').tab('show');
+        }
+    </script>
