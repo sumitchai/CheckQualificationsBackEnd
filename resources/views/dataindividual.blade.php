@@ -129,7 +129,7 @@
               <p class="card-text display-5">คณะ : {{ $x->FACULTY_NAME_TH }}</p>
               <p class="card-text display-5">ปีสำเร็จการศึกษา (พ.ศ.): {{ $x->ACAD_YEAR }}</p>
               <p class="card-text display-5">วันที่สำเร็จการศึกษา (พ.ศ.): {{ \Carbon\Carbon::createFromDate($x->GRADUATE_DATE)->addYear(543)->locale('th')->isoformat('LL')}}</p>
-            </div>
+            </div>&nbsp;&nbsp;
             <div class="col-md-5"><p class="card-text display-5">Fullname :	{{$x->NAME_EN}}</p>
               <p class="card-text display-5">Curriculum : {{$x->COURSE_NAME_EN}}</p>
               <p class="card-text display-5">Facuty :  {{ $x->FACULTY_NAME_EN}}</p>
