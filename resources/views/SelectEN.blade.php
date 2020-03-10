@@ -247,6 +247,7 @@
         $(this).parent().append($(this).children());
       });
       $('#dtMaterialDesignExample').DataTable({
+        dom:'ftip',
         columns: [
                 
                 { title: "No" },
