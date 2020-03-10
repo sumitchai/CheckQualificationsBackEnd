@@ -23,6 +23,8 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
+    
+
 
 
     <!-- mobirise -->
@@ -36,7 +38,12 @@
   <link rel="stylesheet" href="{{env('APP_URL')}}/assets/theme/css/style.css">
   <link rel="preload" as="style" href="{{env('APP_URL')}}/assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="{{env('APP_URL')}}/assets/mobirise/css/mbr-additional.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+
+  <script rel="stylesheet" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+
+
 
     <!-- Styles -->
     
@@ -112,5 +119,10 @@
     <script src="{{env('APP_URL')}}/assets/datatables/data-tables.bootstrap4.min.js"></script>
     <script src="{{env('APP_URL')}}/assets/theme/js/script.js"></script>
     <script src="{{env('APP_URL')}}/assets/formoid/formoid.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" type="text/javascript"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" type="text/javascript"></script>
+  
+
 </body>
 </html>
