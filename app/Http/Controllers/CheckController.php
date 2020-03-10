@@ -50,8 +50,8 @@ class CheckController extends Controller
       if(isset($CITIZEN_ID)) {
         $posts = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
       ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
-      ->select('VW_VOQ_STD_GRADUATE.ACAD_YEAR','VW_VOQ_STD_GRADUATE.NAME_TH','VW_VOQ_STD_GRADUATE.FACULTY_NAME_TH','VW_VOQ_STD_GRADUATE.GRADUATE_DATE','VW_VOQ_STD_GRADUATE.DEGREE_ID',
-      'VW_VOQ_COURSE.COURSE_NAME_TH','VW_VOQ_COURSE.COURSE_NAME_EN','VW_VOQ_STD_GRADUATE.NAME_EN','VW_VOQ_STD_GRADUATE.FACULTY_NAME_EN')
+      ->select('VW_VOQ_STD_GRADUATE.ACAD_YEAR','VW_VOQ_STD_GRADUATE.NAME_TH','VW_VOQ_STD_GRADUATE.FACULTY_NAME_TH','VW_VOQ_STD_GRADUATE.GRADUATE_DATE','VW_VOQ_STD_GRADUATE.DEGREE_ID','VW_VOQ_STD_GRADUATE.DEGREE_NAME_TH',
+      'VW_VOQ_COURSE.COURSE_NAME_TH','VW_VOQ_COURSE.COURSE_NAME_EN','VW_VOQ_STD_GRADUATE.NAME_EN','VW_VOQ_STD_GRADUATE.FACULTY_NAME_EN','VW_VOQ_STD_GRADUATE.DEGREE_NAME_EN')
       ->where('CITIZEN_ID',$CITIZEN_ID )
       ->where('VW_VOQ_STD_GRADUATE.ACAD_YEAR','>=',2553)
       ->get();
@@ -61,8 +61,8 @@ class CheckController extends Controller
       elseif(isset($NAME_TH)){
         $posts = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
         ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
-        ->select('VW_VOQ_STD_GRADUATE.ACAD_YEAR','VW_VOQ_STD_GRADUATE.NAME_TH','VW_VOQ_STD_GRADUATE.FACULTY_NAME_TH','VW_VOQ_STD_GRADUATE.GRADUATE_DATE','VW_VOQ_STD_GRADUATE.DEGREE_ID',
-        'VW_VOQ_COURSE.COURSE_NAME_TH','VW_VOQ_COURSE.COURSE_NAME_EN','VW_VOQ_STD_GRADUATE.NAME_EN','VW_VOQ_STD_GRADUATE.FACULTY_NAME_EN')
+        ->select('VW_VOQ_STD_GRADUATE.ACAD_YEAR','VW_VOQ_STD_GRADUATE.NAME_TH','VW_VOQ_STD_GRADUATE.FACULTY_NAME_TH','VW_VOQ_STD_GRADUATE.GRADUATE_DATE','VW_VOQ_STD_GRADUATE.DEGREE_ID','VW_VOQ_STD_GRADUATE.DEGREE_NAME_TH',
+        'VW_VOQ_COURSE.COURSE_NAME_TH','VW_VOQ_COURSE.COURSE_NAME_EN','VW_VOQ_STD_GRADUATE.NAME_EN','VW_VOQ_STD_GRADUATE.FACULTY_NAME_EN','VW_VOQ_STD_GRADUATE.DEGREE_NAME_EN')
         ->where('NAME_TH',$NAME_TH)
         ->where('VW_VOQ_STD_GRADUATE.ACAD_YEAR','>=',2553)
         ->get();
@@ -72,8 +72,8 @@ class CheckController extends Controller
     else{
         $posts = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
         ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
-        ->select('VW_VOQ_STD_GRADUATE.ACAD_YEAR','VW_VOQ_STD_GRADUATE.NAME_TH','VW_VOQ_STD_GRADUATE.FACULTY_NAME_TH','VW_VOQ_STD_GRADUATE.GRADUATE_DATE','VW_VOQ_STD_GRADUATE.DEGREE_ID',
-        'VW_VOQ_COURSE.COURSE_NAME_TH','VW_VOQ_COURSE.COURSE_NAME_EN','VW_VOQ_STD_GRADUATE.NAME_EN','VW_VOQ_STD_GRADUATE.FACULTY_NAME_EN')
+        ->select('VW_VOQ_STD_GRADUATE.ACAD_YEAR','VW_VOQ_STD_GRADUATE.NAME_TH','VW_VOQ_STD_GRADUATE.FACULTY_NAME_TH','VW_VOQ_STD_GRADUATE.GRADUATE_DATE','VW_VOQ_STD_GRADUATE.DEGREE_ID','VW_VOQ_STD_GRADUATE.DEGREE_NAME_TH',
+        'VW_VOQ_COURSE.COURSE_NAME_TH','VW_VOQ_COURSE.COURSE_NAME_EN','VW_VOQ_STD_GRADUATE.NAME_EN','VW_VOQ_STD_GRADUATE.FACULTY_NAME_EN','VW_VOQ_STD_GRADUATE.DEGREE_NAME_EN')
         ->where('STUDENT_CODE',$STUDENT_CODE )
         ->where('VW_VOQ_STD_GRADUATE.ACAD_YEAR','>=',2553)
         ->get();
@@ -145,7 +145,7 @@ class CheckController extends Controller
         $result = Session::get('posts');
         $final = json_decode($result);
         if(empty($final)){
-            return redirect("/Checkindividual")->with('alert', 'ไม่พบข้อมูล!'); 
+            return redirect("/Checkindividual")->with('alert', 'ไม่พบข้อมูล! กรุณากรอกใหม่'); 
         }else{  
             return view('dataindividual',['posts'=>$final]);
         }
@@ -159,8 +159,7 @@ class CheckController extends Controller
         $NAME_TH =  (isset($_GET['NAME_TH']))?$_GET['NAME_TH']:0;
         $posts = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
         ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
-        ->select('VW_VOQ_STD_GRADUATE.ACAD_YEAR','VW_VOQ_STD_GRADUATE.NAME_TH','VW_VOQ_STD_GRADUATE.FACULTY_NAME_TH','VW_VOQ_STD_GRADUATE.GRADUATE_DATE','VW_VOQ_STD_GRADUATE.DEGREE_ID',
-        'VW_VOQ_COURSE.COURSE_NAME_TH','VW_VOQ_COURSE.COURSE_NAME_EN','VW_VOQ_STD_GRADUATE.NAME_EN','VW_VOQ_STD_GRADUATE.FACULTY_NAME_EN')
+        ->select('VW_VOQ_STD_GRADUATE.NAME_TH','VW_VOQ_STD_GRADUATE.FACULTY_NAME_TH','VW_VOQ_STD_GRADUATE.GRADUATE_DATE','VW_VOQ_COURSE.COURSE_NAME_TH','VW_VOQ_STD_GRADUATE.DEGREE_ID')
         ->where('DEGREE_ID',$DEGREE_ID )
         ->where('NAME_TH',$NAME_TH )
         ->get();
@@ -169,8 +168,6 @@ class CheckController extends Controller
         ->get();  
         $view = \View::make('HtmlToPDF',['posts'=>$posts,'admin'=>$admin,'degree'=>$DEGREE_ID,'NAME_TH'=>$NAME_TH]);
         $html_content = $view->render();
-     
-
         PDF::SetMargins(20, 10, 20, true);
         PDF::SetFont('thniramit','',16);
         PDF::SetTitle('Sample PDF');

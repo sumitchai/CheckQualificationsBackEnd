@@ -358,7 +358,6 @@ if( s1.options[s1.selectedIndex].value=="อื่นๆ")
 
 
 
-
 </script>
 
 
@@ -473,3 +472,21 @@ input[type=email], select {
       alert(msg);
     }
   </script>
+<script>
+    $('#myTab a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    });
+    
+    // store the currently selected tab in the hash value
+    $("ul.nav-tabs > li > a").on("shown.bs.tab", function (e) {
+        var id = $(e.target).attr("href").substr(1);
+        $.cookie('activeTab', id);
+    });
+    
+        // on load of the page: switch to the currently selected tab
+        var hash = $.cookie('activeTab');
+        if (hash != null) {
+            $('#myTab a[href="#' + hash + '"]').tab('show');
+        }
+    </script>

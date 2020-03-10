@@ -57,8 +57,8 @@ class CheckENController extends Controller
       if(isset($CITIZEN_ID)) {
         $posts = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
       ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
-      ->select('VW_VOQ_STD_GRADUATE.ACAD_YEAR','VW_VOQ_STD_GRADUATE.NAME_TH','VW_VOQ_STD_GRADUATE.FACULTY_NAME_TH','VW_VOQ_STD_GRADUATE.GRADUATE_DATE',
-      'VW_VOQ_COURSE.COURSE_NAME_TH','VW_VOQ_COURSE.COURSE_NAME_EN','VW_VOQ_STD_GRADUATE.NAME_EN','VW_VOQ_STD_GRADUATE.FACULTY_NAME_EN')
+      ->select('VW_VOQ_STD_GRADUATE.ACAD_YEAR','VW_VOQ_STD_GRADUATE.NAME_TH','VW_VOQ_STD_GRADUATE.FACULTY_NAME_TH','VW_VOQ_STD_GRADUATE.GRADUATE_DATE','VW_VOQ_STD_GRADUATE.DEGREE_ID','VW_VOQ_STD_GRADUATE.DEGREE_NAME_TH',
+      'VW_VOQ_COURSE.COURSE_NAME_TH','VW_VOQ_COURSE.COURSE_NAME_EN','VW_VOQ_STD_GRADUATE.NAME_EN','VW_VOQ_STD_GRADUATE.FACULTY_NAME_EN','VW_VOQ_STD_GRADUATE.DEGREE_NAME_EN')
       ->where('CITIZEN_ID',$CITIZEN_ID )->get();
       
     //   ->paginate();
@@ -66,17 +66,17 @@ class CheckENController extends Controller
       elseif(isset($NAME_EN)){
         $posts = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
         ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
-        ->select('VW_VOQ_STD_GRADUATE.ACAD_YEAR','VW_VOQ_STD_GRADUATE.NAME_TH','VW_VOQ_STD_GRADUATE.FACULTY_NAME_TH','VW_VOQ_STD_GRADUATE.GRADUATE_DATE',
-        'VW_VOQ_COURSE.COURSE_NAME_TH','VW_VOQ_COURSE.COURSE_NAME_EN','VW_VOQ_STD_GRADUATE.NAME_EN','VW_VOQ_STD_GRADUATE.FACULTY_NAME_EN')
-        ->where('NAME_EN',$NAME_EN)->get();
-        
+        ->select('VW_VOQ_STD_GRADUATE.ACAD_YEAR','VW_VOQ_STD_GRADUATE.NAME_TH','VW_VOQ_STD_GRADUATE.FACULTY_NAME_TH','VW_VOQ_STD_GRADUATE.GRADUATE_DATE','VW_VOQ_STD_GRADUATE.DEGREE_ID','VW_VOQ_STD_GRADUATE.DEGREE_NAME_TH',
+        'VW_VOQ_COURSE.COURSE_NAME_TH','VW_VOQ_COURSE.COURSE_NAME_EN','VW_VOQ_STD_GRADUATE.NAME_EN','VW_VOQ_STD_GRADUATE.FACULTY_NAME_EN','VW_VOQ_STD_GRADUATE.DEGREE_NAME_EN')
+        ->where('NAME_EN',$NAME_EN)
+        ->get();
         // ->paginate();
     }
     else{
         $posts = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
         ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
-        ->select('VW_VOQ_STD_GRADUATE.ACAD_YEAR','VW_VOQ_STD_GRADUATE.NAME_TH','VW_VOQ_STD_GRADUATE.FACULTY_NAME_TH','VW_VOQ_STD_GRADUATE.GRADUATE_DATE',
-        'VW_VOQ_COURSE.COURSE_NAME_TH','VW_VOQ_COURSE.COURSE_NAME_EN','VW_VOQ_STD_GRADUATE.NAME_EN','VW_VOQ_STD_GRADUATE.FACULTY_NAME_EN')
+        ->select('VW_VOQ_STD_GRADUATE.ACAD_YEAR','VW_VOQ_STD_GRADUATE.NAME_TH','VW_VOQ_STD_GRADUATE.FACULTY_NAME_TH','VW_VOQ_STD_GRADUATE.GRADUATE_DATE','VW_VOQ_STD_GRADUATE.DEGREE_ID','VW_VOQ_STD_GRADUATE.DEGREE_NAME_TH',
+        'VW_VOQ_COURSE.COURSE_NAME_TH','VW_VOQ_COURSE.COURSE_NAME_EN','VW_VOQ_STD_GRADUATE.NAME_EN','VW_VOQ_STD_GRADUATE.FACULTY_NAME_EN','VW_VOQ_STD_GRADUATE.DEGREE_NAME_EN')
         ->where('STUDENT_CODE',$STUDENT_CODE )->get();
         // ->paginate();
     }
@@ -139,7 +139,7 @@ class CheckENController extends Controller
         if(empty($final)){
             return redirect("/CheckindividualEN")->with('alert', 'No Data!'); 
         }else{  
-            return view('dataindividuaEN',['posts'=>$final]);
+            return view('dataindividualEN',['posts'=>$final]);
         }
     }
 
@@ -147,10 +147,19 @@ class CheckENController extends Controller
        
         $result = Session::get('posts');
         $final = json_decode($result);  
+        $DEGREE_ID =  (isset($_GET['degree']))?$_GET['degree']:0;
+        $NAME_TH =  (isset($_GET['NAME_TH']))?$_GET['NAME_TH']:0;
+        $posts = DB::connection('sqlsrv')->table('VW_VOQ_STD_GRADUATE')
+        ->Join('VW_VOQ_COURSE','VW_VOQ_COURSE.COURSE_ID','=','VW_VOQ_STD_GRADUATE.COURSE_ID')
+        ->select('VW_VOQ_STD_GRADUATE.ACAD_YEAR','VW_VOQ_STD_GRADUATE.NAME_TH','VW_VOQ_STD_GRADUATE.FACULTY_NAME_TH','VW_VOQ_STD_GRADUATE.GRADUATE_DATE','VW_VOQ_STD_GRADUATE.DEGREE_ID',
+        'VW_VOQ_COURSE.COURSE_NAME_TH','VW_VOQ_COURSE.COURSE_NAME_EN','VW_VOQ_STD_GRADUATE.NAME_EN','VW_VOQ_STD_GRADUATE.FACULTY_NAME_EN')
+        ->where('DEGREE_ID',$DEGREE_ID )
+        ->where('NAME_TH',$NAME_TH )
+        ->get();
         $admin = DB::connection('mysql')->table('checkindividual')
         ->latest()
         ->get(); 
-        $view = \View::make('HtmlToPDF',['posts'=>$final,'admin'=>$admin]);
+        $view = \View::make('HtmlToPDF',['posts'=>$posts,'admin'=>$admin,'degree'=>$DEGREE_ID,'NAME_TH'=>$NAME_TH]);
         $html_content = $view->render();
      
 

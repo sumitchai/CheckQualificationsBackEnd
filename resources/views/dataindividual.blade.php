@@ -125,18 +125,20 @@
       <div class="container">
         <div class="row">
             <div class="col-md-5"><p class="card-text display-5">ชื่อ-นามสกุล : {{$x->NAME_TH}}</p>
+              <p class="card-text display-5">ระดับ :	{{$x->DEGREE_NAME_TH}}</p>
               <p class="card-text display-5">หลักสูตร :	{{$x->COURSE_NAME_TH}}</p>
               <p class="card-text display-5">คณะ : {{ $x->FACULTY_NAME_TH }}</p>
               <p class="card-text display-5">ปีสำเร็จการศึกษา (พ.ศ.): {{ $x->ACAD_YEAR }}</p>
               <p class="card-text display-5">วันที่สำเร็จการศึกษา (พ.ศ.): {{ \Carbon\Carbon::createFromDate($x->GRADUATE_DATE)->addYear(543)->locale('th')->isoformat('LL')}}</p>
-            </div>
+            </div>&nbsp;&nbsp;
             <div class="col-md-5"><p class="card-text display-5">Fullname :	{{$x->NAME_EN}}</p>
+              <p class="card-text display-5">level :	{{$x->DEGREE_NAME_EN}}</p>
               <p class="card-text display-5">Curriculum : {{$x->COURSE_NAME_EN}}</p>
               <p class="card-text display-5">Facuty :  {{ $x->FACULTY_NAME_EN}}</p>
               <p class="card-text display-5">Year of Graduation (A.D.) : {{ $x->ACAD_YEAR-543 }}</p>
               <p class="card-text display-5">Graduation date (A.D.) :  {{ \Carbon\Carbon::parse($x->GRADUATE_DATE)->locale('en')->isoformat('D  MMMM Y')}}</p></div>
         </div>
-    </div>   
+    </div>  
     <div class="input-group-btn item-right" style="float: right ; padding-right : 120px">
     <a href="{{ route('HtmlToPDF')}}?degree={{$x->DEGREE_ID}}&NAME_TH={{$x->NAME_TH}}" class="btn btn-form btn-success display-5" type="submit" target ="_blank"><span class="glyphicon glyphicon-save"></span>ดาวน์โหลด</a>
     </div>
