@@ -29,6 +29,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
  
   
   
@@ -171,7 +173,7 @@
                             </div>
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name" >
-                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">เลขบัตรประชาชน <sup class="star">**</sup></label>
+                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">เลขบัตรประชาชน <sup class="star">*</sup></label>
                                     <input type="number" name="CITIZEN_ID" data-form-field="CITIZEN_ID" class="form-control display-7" id="CITIZEN_ID" required placeholder="ระบุเลขบัตรประชาชน" maxlength="13"><p></p>
                                     
                                 </div>
@@ -189,8 +191,8 @@
                             </div>
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name">
-                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">ชื่อ-นามสกุล <sup class="star">**</sup></label>
-                                    <input type="Name" name="NAME_TH" data-form-field="NAME_TH"  class="form-control display-5" id="NAME_TH" required placeholder="ระบุชื่อ">
+                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">ชื่อ-นามสกุล <sup class="star">*</sup></label>
+                                    <input type="text" name="NAME_TH" data-form-field="NAME_TH"  class="form-control display-5" id="NAME_TH" required placeholder="ระบุชื่อ">
                                 </div>
                                 
                             </div>
@@ -207,7 +209,7 @@
                             </div>
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name">
-                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">รหัสนิสิต <sup class="star">**</sup></label>
+                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">รหัสนิสิต <sup class="star">*</sup></label>
                                     <input type="number" name="STUDENT_CODE" data-form-field="STUDENT_CODE"  class="form-control display-5" id="STUDENT_CODE" required placeholder="ระบุรหัสนิสิต" maxlength="8"><p></p>
                                     
                                 </div>  
@@ -225,15 +227,15 @@
                     </div>
                     <div class="dragArea row ">
                         <div class="col-sm-6  form-group" data-for="companyName">
-                            <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-5">ชื่อหน่วยงาน <sup class="star">**</sup></label>
+                            <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-5">ชื่อหน่วยงาน <sup class="star">*</sup></label>
                             <input type="text" name="companyname" data-form-field="companyname" required="required" class="form-control display-7" id="companyname" placeholder="ระบุชื่อหน่วยงาน">
                         </div>
                         <div class="col-sm-6  form-group" data-for="name">
-                            <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-5">ชื่อ-นามสกุล ผู้ขอตรวจสอบ <sup class="star">**</sup></label>
+                            <label for="name-form1-1f" class="form-control-label mbr-fonts-style display-5">ชื่อ-นามสกุล ผู้ขอตรวจสอบ <sup class="star">*</sup></label>
                             <input type="text" name="namecheck" data-form-field="namecheck" required="required" class="form-control display-7" id="namecheck" placeholder="ระบุชื่อ-นามสกุลผู้ขอตรวจสอบ">
                         </div>
                         <div class="form-group  col-sm-6 display-5" >
-                            <label>วัตถุประสงค์ในการตรวจสอบ <sup class="star">**</sup></label>   
+                            <label>วัตถุประสงค์ในการตรวจสอบ <sup class="star">*</sup></label>   
                             <select name="Objective" id="RTID" class="form-control  select2 select2-hidden-accessible"  onChange="hideshow1()">
                                 <option class="display-5" value="">เลือกประเภทหน่วยงาน</option>
                                 <option class="display-5" value="เพื่อรับเข้าศึกษาต่อ" >เพื่อรับเข้าศึกษาต่อ</option>
@@ -242,12 +244,12 @@
                                 <option class="display-5" value="เพื่อเป็นหลักฐานประกอบการอสิทธิ์ลดวันรับราชการกองประจำการ">เพื่อเป็นหลักฐานประกอบการอสิทธิ์ลดวันรับราชการกองประจำการ </option>
                                 <option class="display-5" value="อื่นๆ">อื่นๆ</option>
                             </select>
-                            <div  id="RTIDANS" style="display:none;">ระบุอื่นๆ <sup class="star">**</sup>
+                            <div  id="RTIDANS" style="display:none;">ระบุอื่นๆ <sup class="star">*</sup>
                                 <input class="form-control display-7" name="Objective_1" id="RTIDANS" type="text" required  placeholder="กรุณาระบุอื่นๆ"/>
                             </div>
                         </div>
                         <div class="form-group col-sm-6 display-5" >
-                            <label>ประเภทหน่วยงาน <sup class="star">**</sup></label>
+                            <label>ประเภทหน่วยงาน <sup class="star">*</sup></label>
                             <select id="OGID" name="department" class="form-control  select2 select2-hidden-accessible" onChange="hideshow2()">
                                 <option class="display-5"  value="">เลือกประเภทหน่วยงาน</option>
                                 <option class="display-5"  value="หน่วยงานราชการ">หน่วยงานราชการ</option>
@@ -256,17 +258,17 @@
                                 <option class="display-5"  value="อื่นๆ">อื่นๆ</option>
                             </select>  
                             
-                            <div  id="OGIDANS" style="display:none;">ระบุอื่นๆ <sup class="star">**</sup>
+                            <div  id="OGIDANS" style="display:none;">ระบุอื่นๆ <sup class="star">*</sup>
                                 <input class="form-control display-7" name="department_1" id="OGIDANS" type="text" required  placeholder="กรุณาระบุอื่นๆ"/>
                             </div>
                         </div>
                         <div class="form-group col-sm-6 display-5">
-                            <label>อีเมล์ <sup class="star">**</sup></label>
+                            <label>อีเมล์ <sup class="star">*</sup></label>
                             <input id="email" name="e_mail" class="form-control" placeholder="exsample@email.com" type="email" required="">	
                         </div>
 
                         <div class="form-group col-sm-6 display-5">
-                            <label>หมายเลขโทรศัพท์ <sup class="star">**</sup></label>
+                            <label>หมายเลขโทรศัพท์ <sup class="star">*</sup></label>
                             <input type="number" id="phone" name="phone_number" class="form-control" placeholder="ระบุหมายเลขโทรศัพท์" required="">	
                             <br>
                         </div>
@@ -464,12 +466,21 @@ input[type=email], select {
 }
 </style>
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="sweetalert2.all.min.js"></script>
+<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
 
 <script>
     var msg = '{{Session::get('alert')}}';
     var exist = '{{Session::has('alert')}}';
     if(exist){
-      alert(msg);
+        Swal.fire({
+  icon: 'warning',
+  title: 'ไม่พบข้อมูล!',
+  text: 'กรุณากรอกใหม่อีกครั้ง',
+  
+})
     }
   </script>
 <script>

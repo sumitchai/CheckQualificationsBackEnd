@@ -146,7 +146,7 @@
 
         <div class="container scroll">
           <table id="dtMaterialDesignExample" class="table striped bordered" cellspacing="0">
-            <thead class="head-item mbr-fonts-style display-6">
+            <thead class="head-item mbr-fonts-style display-6" align="center">
               <tr class="table-heads ">
                 
               </tr>
@@ -187,7 +187,7 @@
     </div>
     <!-- Footer -
 <footer class="page-footer font-small blue">
-  <!-- Copyright -
+   Copyright -
   <div class="display-4 bg-dark text-white-50 page-footer text-center ">
       <br>
       <br>
@@ -199,9 +199,9 @@
           <a href="home" class="display-4 float-right">แก้ไขเว็บไซต์ </a><br>
       </div>
   </div>
-  <!-- Copyright -
+   Copyright -
 </footer>
-<!-- Footer -->
+ Footer -->
 </section>
 
 
@@ -251,8 +251,8 @@
       columns: [
               
               { title: "ลำดับที่" },
-              { title: "หลักสูตร" },
-              { title: "จำนวน" },
+              { title: "รหัสนิสิต" },
+              { title: "ชื่อ-นามสกุล" },
               { title: "รายละเอียด" }
           ]
     });
