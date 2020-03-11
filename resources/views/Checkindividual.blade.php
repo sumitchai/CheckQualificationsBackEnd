@@ -29,6 +29,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
  
   
   
@@ -469,7 +472,12 @@ input[type=email], select {
     var msg = '{{Session::get('alert')}}';
     var exist = '{{Session::has('alert')}}';
     if(exist){
-      alert(msg);
+        Swal.fire({
+  icon: 'error',
+  title: 'ไม่พบข้อมูล!',
+  text: 'กรุณากรอกอีกครั้ง!',
+  
+})   
     }
   </script>
 <script>
@@ -490,3 +498,6 @@ input[type=email], select {
             $('#myTab a[href="#' + hash + '"]').tab('show');
         }
     </script>
+    <script src="sweetalert2.all.min.js"></script>
+    <!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
