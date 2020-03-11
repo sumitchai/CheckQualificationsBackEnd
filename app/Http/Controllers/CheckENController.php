@@ -166,7 +166,7 @@ class CheckENController extends Controller
 
         PDF::SetMargins(20, 10, 20, true);
         PDF::SetFont('thniramit','',16);
-        PDF::SetTitle('Sample PDF');
+        PDF::SetTitle('Qualification.pdf');
         PDF::AddPage('P', 'A4');
         PDF::writeHTML($html_content, true, false, true, false, '');
       
