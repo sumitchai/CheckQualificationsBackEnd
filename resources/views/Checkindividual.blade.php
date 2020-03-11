@@ -189,8 +189,8 @@
                             </div>
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name">
-                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">ชื่อ-นามสกุล <sup class="star">**</sup></label>
-                                    <input type="Name" name="NAME_TH" data-form-field="NAME_TH"  class="form-control display-5" id="NAME_TH" required placeholder="ระบุชื่อ">
+                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">ชื่อ-นามสกุล <sup class="star">**(กรุณาระบุคำนำหน้าชื่อด้วย)</sup></label>
+                                    <input type="Name" name="NAME_TH" data-form-field="NAME_TH"  class="form-control display-5" id="NAME_TH" required placeholder="ตัวอย่าง นายxxxxxx xxxxx">
                                 </div>
                                 
                             </div>
