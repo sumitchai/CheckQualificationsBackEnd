@@ -111,7 +111,7 @@
 
 </section>
 <section class="section-table cid-rN9ViYOSs1" id="table1-2e">
-  <div class="container-table" style="padding:5%">
+  <div class="container-table" style="padding:2%">
       <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-5">Check the qualifications according to the course<br></h2>
       <h3 class="mbr-section-subtitle mbr-fonts-style align-center pb-5 mbr-light display-5">
         <strong>Education level : 
@@ -143,7 +143,7 @@
         </div>
       </h3>
       <div class="table-wrapper">
-        <div class="container">
+        <div >
           <div class="row search">
             <div class="col-md-6"></div>
             <div class="col-md-6">
@@ -155,7 +155,7 @@
           </div>
         </div>
 
-        <div class="container scroll">
+        <div class=" scroll">
           <table id="dtMaterialDesignExample" class="table striped bordered" cellspacing="0">
             <thead class="head-item mbr-fonts-style display-6">
               <tr class="table-heads ">
@@ -179,7 +179,7 @@
             </tbody>
           </table>
         </div>
-        <div class="container table-info-container">
+        <div class=" table-info-container">
           <div class="row info">
             <div class="col-md-6">
               <div class="dataTables_info mbr-fonts-style display-7">
