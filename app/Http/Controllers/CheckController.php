@@ -165,6 +165,7 @@ class CheckController extends Controller
         ->select ('VW_VOQ_STD_GRADUATE.NAME_TH','VW_VOQ_STD_GRADUATE.FACULTY_NAME_TH','VW_VOQ_STD_GRADUATE.GRADUATE_DATE','VW_VOQ_COURSE.COURSE_NAME_TH','VW_VOQ_STD_GRADUATE.DEGREE_ID')
         ->where('DEGREE_ID',$DEGREE_ID )
         ->where('NAME_TH',$NAME_TH )
+        ->distinct()
         ->get();
         $admin = DB::connection('mysql')->table('checkindividual')
         ->latest()
