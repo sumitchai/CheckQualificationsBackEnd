@@ -42,7 +42,7 @@
     เรื่อง&nbsp;การตรวจสอบวุฒิการศึกษา
 </p>
 <p> เรียน 
-	&nbsp;<p1>คุณ{{$admin->namecheck}}&nbsp;&nbsp;&nbsp;{{$admin->companyname}}</p1>
+	&nbsp;<p1>คุณ&nbsp;{{$admin->namecheck}}&nbsp;&nbsp;&nbsp;{{$admin->companyname}}</p1>
 	@break
 @endforeach
     

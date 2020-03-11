@@ -477,7 +477,7 @@ input[type=email], select {
     var exist = '{{Session::has('alert')}}';
     if(exist){
         Swal.fire({
-  icon: 'error',
+  icon: 'warning',
   title: 'ไม่พบข้อมูล!',
   text: 'กรุณากรอกอีกครั้ง!',
   

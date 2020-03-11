@@ -175,7 +175,7 @@
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name" >
                                     <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">Citizen Id <sup class="star">*</sup></label>
-                                    <input type="number" name="CITIZEN_ID" data-form-field="CITIZEN_ID" class="form-control display-7" id="CITIZEN_ID" placeholder="Specify Citizen Id" maxlength="13"><p></p>
+                                    <input type="number" name="CITIZEN_ID" data-form-field="CITIZEN_ID" class="form-control display-7" id="CITIZEN_ID" placeholder="Specify Citizen Id" maxlength="13" required><p></p>
                                     
                                 </div>
                             </div>
@@ -193,7 +193,7 @@
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name">
                                     <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">Full name <sup class="star">**</sup></label>
-                                    <input type="Name" name="NAME_EN" data-form-field="NAME_EN"  class="form-control display-5" id="NAME_TH" placeholder="Mr. xxxx xxxx or Miss xxxx xxxx">
+                                    <input type="Name" name="NAME_EN" data-form-field="NAME_EN"  class="form-control display-5" id="NAME_TH" placeholder="Mr. xxxx xxxx or Miss xxxx xxxx" required>
                                 </div>
                                 
                             </div>
@@ -211,7 +211,7 @@
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name">
                                     <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">Student ID number <sup class="star">*</sup></label>
-                                    <input type="number" name="STUDENT_CODE" data-form-field="STUDENT_CODE"  class="form-control display-5" id="STUDENT_CODE" placeholder="Specify Student ID number"><p></p>
+                                    <input type="number" name="STUDENT_CODE" data-form-field="STUDENT_CODE"  class="form-control display-5" id="STUDENT_CODE" placeholder="Specify Student ID number" required><p></p>
                                     
                                 </div>  
                             </div>
@@ -270,7 +270,7 @@
 
                         <div class="form-group col-sm-6 display-5">
                             <label>Phone Number <sup class="star">*</sup></label>
-                            <input type="text" id="phone" name="phone_number" class="form-control" placeholder="Specify Phone Number" required="">	
+                            <input type="number" id="phone" name="phone_number" class="form-control" placeholder="Specify Phone Number" required="">	
                             <br>
                         </div>
                         
@@ -479,6 +479,8 @@ input[type=email], select {
         Swal.fire({
   icon: 'warning',
   title: 'No data found!',
-  text: 'Please enter again',
+  text: 'Please enter again!',
+  
+})   
     }
   </script>
