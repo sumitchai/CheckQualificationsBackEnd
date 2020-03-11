@@ -5,10 +5,10 @@
 
 
 body {
-  font-family: Kanit;
+  font-family: 'Krub', sans-serif;
 }
 .h3 {
-  font-family: 'K2D', sans-serif;
+  font-family: 'Krub', sans-serif;
   font-size: 1.75rem ;
 }
 .h3 > .mbr-iconfont {
@@ -16,7 +16,7 @@ body {
 }
 
 .h2 {
-  font-family: 'K2D', sans-serif;
+  font-family: 'Krub', sans-serif;
   font-size: 2rem;
 }
 .h2 > .mbr-iconfont {
@@ -24,7 +24,7 @@ body {
 }
 
 .h1 {
-  font-family: 'K2D', sans-serif;
+  font-family: 'Krub', sans-serif;
   font-size: 2.5rem;
 }
 .h1 > .mbr-iconfont {
@@ -32,7 +32,7 @@ body {
 }
 
 .h4 {
-  font-family: 'K2D', sans-serif;
+  font-family: 'Krub', sans-serif;
   font-size: 1.5rem;
 }
 .h4 > .mbr-iconfont {
@@ -40,7 +40,7 @@ body {
 }
 
 .h5 {
-  font-family: 'K2D', sans-serif;
+  font-family: 'Krub', sans-serif;
   font-size: 1.25rem;
 }
 .h5 > .mbr-iconfont {
@@ -50,7 +50,7 @@ body {
 
 
 .display-1 {
-  font-family: 'K2D', sans-serif;
+  font-family: 'Krub', sans-serif;
   font-size: 3.8rem;
   font-display: swap;
 }
@@ -58,7 +58,7 @@ body {
   font-size: 6.08rem;
 }
 .display-2 {
-  font-family: 'K2D', sans-serif;
+  font-family: 'Krub', sans-serif;
   font-size: 3rem;
   font-display: swap;
 }
@@ -67,7 +67,7 @@ body {
 }
 
 .display-3 {
-  font-family: 'K2D', sans-serif;
+  font-family: 'Krub', sans-serif;
   font-size: 1.6rem;
   font-display: swap;
 }
@@ -76,7 +76,7 @@ body {
 }
 
 .display-4 {
-  font-family: 'K2D', sans-serif;
+  font-family: 'Krub', sans-serif;
   font-size: 1rem;
   font-display: swap;
 }
@@ -84,7 +84,7 @@ body {
   font-size: 1.6rem;
 }
 .display-5 {
-  font-family: 'K2D', sans-serif;
+  font-family: 'Krub', sans-serif;
   font-size: 1.5rem;
   font-display: swap;
 }
@@ -92,7 +92,7 @@ body {
   font-size: 2.4rem;
 }
 .display-6 {
-  font-family: 'K2D', sans-serif;
+  font-family: 'Krub', sans-serif;
   font-size: 1.4rem;
   font-display: swap;
 }
@@ -100,7 +100,7 @@ body {
   font-size: 1.6rem;
 }
 .display-7 {
-  font-family: 'K2D', sans-serif;
+  font-family: 'Krub', sans-serif;
   font-size: 0.7rem;
   font-display: swap;
 }
@@ -606,7 +606,7 @@ a:hover {
   display: none;
 }
 .form-control-sh {
-  font-family: 'K2D', sans-serif;
+  font-family: 'Krub', sans-serif;
   font-size: 1.4rem;
   font-display: swap;
 }
@@ -615,7 +615,7 @@ a:hover {
 }
 
 .form-control {
-  font-family: 'K2D', sans-serif;
+  font-family: 'Krub', sans-serif;
   font-size: 0.9rem;
   font-display: swap;
 }

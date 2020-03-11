@@ -14,6 +14,7 @@
   
   <title>Qualification | University Of Phayao</title>
     <!-----fonts--->
+    <link href="https://fonts.googleapis.com/css?family=Krub&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=K2D&display=swap" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
