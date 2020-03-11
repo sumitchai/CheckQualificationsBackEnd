@@ -53,8 +53,8 @@
                 <?php $i = 1; ?>
                @foreach ( $admin as $admins)
                   <tr> 
-                    <td class="body-item mbr-fonts-style display-6">{{$i++}}</td>
-                    <td class="body-item mbr-fonts-style display-6">
+                    <td class="body-item mbr-fonts-style display-6" align="center">{{$i++}}</td>
+                    <td class="body-item mbr-fonts-style display-6" align="center">
                       <br>
                       {{ $admins->CITIZEN_ID }}{{ $admins->NAME_EN }} {{ $admins->NAME_TH }}{{ $admins->STUDENT_CODE }}<br>                        
                     </td>
@@ -64,17 +64,17 @@
                         อีเมล์ : {{ $admins->e_mail }}<br>
                         หมายเลขโทรศัพท์ : {{ $admins->phone_number }}<br>
                     </td>
-                    <td class="body-item mbr-fonts-style display-6">
+                    <td class="body-item mbr-fonts-style display-6" align="center">
                        <br> 
                          {{ $admins->Objective }}  {{ $admins->Objective_1 }}
                        <br>
                     </td>
-                    <td class="body-item mbr-fonts-style display-6">
+                    <td class="body-item mbr-fonts-style display-6" align="center">
                       <br>
                         {{ $admins->department }}  {{ $admins->department_1 }}
                       <br>
                     </td>
-                    <td class="body-item mbr-fonts-style display-6">
+                    <td class="body-item mbr-fonts-style display-6" align="center">
                      <br>
                        {{ \Carbon\Carbon::createFromDate($admins->created_at)->addYear(543)->locale('th')->isoformat('D MMMM Y H:mm:ss น.')}}
                     </td>
