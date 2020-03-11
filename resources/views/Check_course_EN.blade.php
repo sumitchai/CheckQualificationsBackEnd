@@ -157,7 +157,7 @@
 
         <div class=" scroll">
           <table id="dtMaterialDesignExample" class="table striped bordered" cellspacing="0">
-            <thead class="head-item mbr-fonts-style display-6">
+            <thead class="head-item mbr-fonts-style display-6" align="center">
               <tr class="table-heads ">
                 
               </tr>
@@ -167,10 +167,10 @@
               <?php $i = 1; ?>
               @foreach ($course as $x) 
                 <tr> 
-                  <td class="body-item mbr-fonts-style display-6" height="100px" width="50px" >{{$i++}}</td>
+                  <td class="body-item mbr-fonts-style display-6" height="100px" width="50px" align="center" >{{$i++}}</td>
                   <td class="body-item mbr-fonts-style display-6" height="100px" width="180px">{{$x->COURSE_NAME_EN}}</td>
                   <td class="body-item mbr-fonts-style display-6" height="100px" width="50px" align="center">{{$x->count}}</td>
-                  <td class="body-item mbr-fonts-style display-6" height="100px" width="50px">
+                  <td class="body-item mbr-fonts-style display-6" height="100px" width="50px" align="center">
                     <a href="/SelectEN/{{$x->COURSE_NAME_EN}}" class="badge badge-dark"> View</a>
                   </td>
                 </tr>

@@ -143,7 +143,7 @@
 
         <div >
           <table id="dtMaterialDesignExample" class="table striped bordered" cellspacing="0">
-            <thead class="head-item mbr-fonts-style display-6">
+            <thead class="head-item mbr-fonts-style display-6" align="center">
               <tr class="table-heads ">
               
               </tr>
@@ -153,11 +153,11 @@
               <?php $i = 1; ?>
               @foreach ($data as $x)
                 <tr> 
-                  <td class="body-item mbr-fonts-style display-6">{{$i++}}</td>
-                  <td class="body-item mbr-fonts-style display-6">{{$x->STUDENT_CODE}}</td>
-                  <td class="body-item mbr-fonts-style display-6">{{$x->NAME_EN}}</td>
+                  <td class="body-item mbr-fonts-style display-6" align="center">{{$i++}}</td>
+                  <td class="body-item mbr-fonts-style display-6" align="center">{{$x->STUDENT_CODE}}</td>
+                  <td class="body-item mbr-fonts-style display-6" >{{$x->NAME_EN}}</td>
         
-                  <td class="body-item mbr-fonts-style display-6">{{$x->ACAD_YEAR-543}}</td>
+                  <td class="body-item mbr-fonts-style display-6" align="center">{{$x->ACAD_YEAR-543}}</td>
                 </tr>
               @endforeach
               
