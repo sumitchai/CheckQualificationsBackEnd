@@ -56,9 +56,7 @@
                     <td class="body-item mbr-fonts-style display-6">{{$i++}}</td>
                     <td class="body-item mbr-fonts-style display-6">
                       <br>
-                        {{ $admins->NAME_EN }} {{ $admins->NAME_TH }}<br>
-                        {{ $admins->STUDENT_CODE }}<br>
-                        {{ $admins->CITIZEN_ID }}
+                      {{ $admins->CITIZEN_ID }}{{ $admins->NAME_EN }} {{ $admins->NAME_TH }}{{ $admins->STUDENT_CODE }}<br>                        
                     </td>
                     <td class="body-item mbr-fonts-style display-6">
                         ชื่อหน่วยงาน : {{ $admins->companyname }}<br>

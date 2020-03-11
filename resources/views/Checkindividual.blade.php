@@ -29,6 +29,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   <script src="sweetalert2.min.js"></script>
 <link rel="stylesheet" href="sweetalert2.min.css">
  
@@ -191,8 +192,8 @@
                             </div>
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name">
-                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">ชื่อ-นามสกุล <sup class="star">*</sup></label>
-                                    <input type="text" name="NAME_TH" data-form-field="NAME_TH"  class="form-control display-5" id="NAME_TH" required placeholder="ระบุชื่อ">
+                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">ชื่อ-นามสกุล <sup class="star">**(กรุณาระบุคำนำหน้าชื่อด้วย)</sup></label>
+                                    <input type="Name" name="NAME_TH" data-form-field="NAME_TH"  class="form-control display-5" id="NAME_TH" required placeholder="ตัวอย่าง นายxxxx xxxx หรือ นางสาวxxxx xxxx">
                                 </div>
                                 
                             </div>
@@ -476,11 +477,11 @@ input[type=email], select {
     var exist = '{{Session::has('alert')}}';
     if(exist){
         Swal.fire({
-  icon: 'warning',
+  icon: 'error',
   title: 'ไม่พบข้อมูล!',
-  text: 'กรุณากรอกใหม่อีกครั้ง',
+  text: 'กรุณากรอกอีกครั้ง!',
   
-})
+})   
     }
   </script>
 <script>
@@ -501,3 +502,6 @@ input[type=email], select {
             $('#myTab a[href="#' + hash + '"]').tab('show');
         }
     </script>
+    <script src="sweetalert2.all.min.js"></script>
+    <!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>

@@ -192,8 +192,8 @@
                             </div>
                             <div class="dragArea row">
                                 <div class="col-sm-6  form-group" data-for="name">
-                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">Full name <sup class="star">*</sup></label>
-                                    <input type="text" name="NAME_EN" data-form-field="NAME_EN"  class="form-control display-5" id="NAME_TH" placeholder="Specify Full name">
+                                    <label for="name-form1-1e" class="form-control-label mbr-fonts-style display-5">Full name <sup class="star">**</sup></label>
+                                    <input type="Name" name="NAME_EN" data-form-field="NAME_EN"  class="form-control display-5" id="NAME_TH" placeholder="Mr. xxxx xxxx or Miss xxxx xxxx">
                                 </div>
                                 
                             </div>
